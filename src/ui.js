@@ -489,37 +489,37 @@ const tools = [
   {
     title: "Heatload",
     description: "heatload_description",
-    image: "heatload_notext_square.svg",
+    image: "img/heatload_notext_square.svg",
     url: "https://heatload.buildwise.be/"
   },
   {
     title: "Waterdim",
     description: "Application rendant les modèles BIM accessibles.",
-    image: "sww2_01_notext_square.svg",
+    image: "img/sww2_01_notext_square.svg",
     url: "https://waterdim.buildwise.be"
   },
   {
     title: "BoilerRoom App",
     description: "boiler_room_rules",
-    image: "boiler_svg_notext_square.svg",
+    image: "img/boiler_svg_notext_square.svg",
     url: "https://boilerroomapp.buildwise.be/"
   },
   {
     title: "SilentHeatPump",
     description: "acoustic_heat_pump",
-    image: "silentheatpump_notext_square.svg",
+    image: "img/silentheatpump_notext_square.svg",
     url: "https://silentheatpump.buildwise.be/"
   },
   {
     title: "Optivent App",
     description: "reglage_debit",
-    image: "optivent_notext_square.svg",
+    image: "img/optivent_notext_square.svg",
     url: "https://silentheatpump.buildwise.be/"
   },
   {
     title: "PowerHeat",
     description: "radiateurs",
-    image: "powerheat_final_notext_square.svg",
+    image: "img/powerheat_final_notext_square.svg",
     url: "https://powerheat.buildwise.be/"
   }  
   
