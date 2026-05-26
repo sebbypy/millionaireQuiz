@@ -221,7 +221,7 @@
     const lifelineTitle = el("div", "lifeline-title", t("lifelineTitle"));
     lifelines.appendChild(lifelineTitle);
 
-    const ll5050 = createLifelineBtn("5050", "lifeline5050", "½", GameState.lifelines.fiftyFifty, () => {
+    const ll5050 = createLifelineBtn("5050", "lifeline5050", "<p style='font-size:13px'>50:50</p>", GameState.lifelines.fiftyFifty, () => {
       sfxReveal();
       const removed = applyFiftyFifty();
       removed.forEach((i) => {
