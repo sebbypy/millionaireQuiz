@@ -1,412 +1,742 @@
 window.HVAC_QUESTIONS = [
-   {
-    "id": 1,
-    "theme": "heating",
-    "difficulty": 1,
-    "question_fr": "Quelle est la température minimale recommandée pour l'eau d'un circuit de chauffage central en basse température ?",
-    "question_nl": "Wat is de aanbevolen minimumtemperatuur voor het water in een lagetemperatuur centrale verwarmingscircuit?",
-    "answers_fr": ["35°C", "45°C", "55°C", "65°C"],
-    "answers_nl": ["35°C", "45°C", "55°C", "65°C"],
-    "correct": 0
-  },
-  {
-    "id": 2,
-    "theme": "heating",
-    "difficulty": 2,
-    "question_fr": "Qu'est-ce que le COP d'une pompe à chaleur ?",
-    "question_nl": "Wat is de COP van een warmtepomp?",
-    "answers_fr": [
-      "Le Coefficient de Performance, rapport entre énergie produite et consommée",
-      "Le Coût de Pose, le prix d'installation de la pompe",
-      "Le Contrôle de Pression, mesure de la pression du circuit",
-      "Le Coefficient de Puissance, la puissance maximale nominale"
-    ],
-    "answers_nl": [
-      "De Coëfficiënt of Performance, verhouding tussen geproduceerde en verbruikte energie",
-      "De Kostprijs van Plaatsing, de installatieprijs van de pomp",
-      "De Controle van de Druk, meting van de druk in het circuit",
-      "De Coëfficiënt van het Vermogen, het maximale nominale vermogen"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 3,
-    "theme": "heating",
-    "difficulty": 3,
-    "question_fr": "Pour une chaudière à condensation, à partir de quelle température de retour le rendement de condensation est-il optimal ?",
-    "question_nl": "Voor een condensatieketel, vanaf welke retourtemperatuur is het condensatierendement optimaal?",
-    "answers_fr": ["Moins de 57°C", "Entre 60°C et 65°C", "Exactement 70°C", "Plus de 75°C"],
-    "answers_nl": ["Minder dan 57°C", "Tussen 60°C en 65°C", "Exact 70°C", "Meer dan 75°C"],
-    "correct": 0
-  },
-  {
-    "id": 4,
-    "theme": "heating",
-    "difficulty": 2,
-    "question_fr": "Quelle est la différence principale entre un circuit monotube et un circuit bitube pour le chauffage ?",
-    "question_nl": "Wat is het belangrijkste verschil tussen een éénpijps- en een tweepijpscircuit voor verwarming?",
-    "answers_fr": [
-      "En monotube, l'eau passe par tous les radiateurs en série ; en bitube, chaque radiateur a son aller et retour propre",
-      "En monotube, la pression est plus élevée qu'en bitube",
-      "En bitube, les radiateurs sont toujours en inox ; en monotube, ils sont en acier",
-      "Le monotube est réservé aux maisons, le bitube aux immeubles"
-    ],
-    "answers_nl": [
-      "In éénpijps stroomt water door alle radiatoren in serie; in tweepijps heeft elke radiator zijn eigen aan- en retourleiding",
-      "In éénpijps is de druk hoger dan in tweepijps",
-      "In tweepijps zijn de radiatoren altijd van roestvrij staal; in éénpijps van staal",
-      "Éénpijps is voor huizen, tweepijps voor appartementsgebouwen"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 5,
-    "theme": "heating",
-    "difficulty": 4,
-    "question_fr": "Quel est le rendement saisonnier minimal (SCOP) exigé par la réglementation européenne pour les pompes à chaleur air/eau résidentielles depuis 2021 ?",
-    "question_nl": "Wat is het minimale seizoensrendement (SCOP) dat door de Europese regelgeving wordt vereist voor residentiële lucht/water-warmtepompen sinds 2021?",
-    "answers_fr": ["SCOP ≥ 2,5", "SCOP ≥ 3,1", "SCOP ≥ 4,0", "SCOP ≥ 5,0"],
-    "answers_nl": ["SCOP ≥ 2,5", "SCOP ≥ 3,1", "SCOP ≥ 4,0", "SCOP ≥ 5,0"],
-    "correct": 1
-  },
-  {
-    "id": 6,
-    "theme": "ventilation",
-    "difficulty": 1,
-    "question_fr": "Que signifie l'acronyme VMC ?",
-    "question_nl": "Wat betekent de afkorting VMC?",
-    "answers_fr": [
-      "Ventilation Mécanique Contrôlée",
-      "Ventilateur Moteur Centrifuge",
-      "Vanne de Modulation Continue",
-      "Ventilation Modulaire Climatisée"
-    ],
-    "answers_nl": [
-      "Ventilation Mécanique Contrôlée (gecontroleerde mechanische ventilatie)",
-      "Ventilateur Moteur Centrifuge (centrifugale motorventilator)",
-      "Vanne de Modulation Continue (continue modulatieklep)",
-      "Ventilation Modulaire Climatisée (gemodulaeerde geklimatiseerde ventilatie)"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 7,
-    "theme": "ventilation",
-    "difficulty": 2,
-    "question_fr": "Quelle est la différence entre une VMC simple flux et une VMC double flux ?",
-    "question_nl": "Wat is het verschil tussen een enkelvoudige en een dubbelstrooms VMC?",
-    "answers_fr": [
-      "La double flux récupère la chaleur de l'air extrait pour préchauffer l'air entrant",
-      "La simple flux est plus puissante que la double flux",
-      "La double flux ne peut fonctionner qu'en été",
-      "La simple flux utilise deux moteurs au lieu d'un"
-    ],
-    "answers_nl": [
-      "De dubbelstrooms recupereert warmte uit de afgezogen lucht om de inkomende lucht voor te verwarmen",
-      "De enkelvoudige is krachtiger dan de dubbelstrooms",
-      "De dubbelstrooms kan alleen in de zomer werken",
-      "De enkelvoudige gebruikt twee motoren in plaats van één"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 8,
-    "theme": "ventilation",
-    "difficulty": 3,
-    "question_fr": "Quel débit minimal d'air neuf par personne est recommandé dans un bureau selon la norme EN 16798 ?",
-    "question_nl": "Welk minimaal debiet verse lucht per persoon wordt aanbevolen in een kantoor volgens norm EN 16798?",
-    "answers_fr": ["5 m³/h", "18 m³/h", "36 m³/h", "72 m³/h"],
-    "answers_nl": ["5 m³/h", "18 m³/h", "36 m³/h", "72 m³/h"],
-    "correct": 2
-  },
-  {
-    "id": 9,
-    "theme": "ventilation",
-    "difficulty": 2,
-    "question_fr": "Qu'est-ce que l'efficacité de récupération thermique d'un échangeur à contre-courant ?",
-    "question_nl": "Wat is de thermische terugwinningsefficiëntie van een tegenstroomwisselaar?",
-    "answers_fr": [
-      "Le rapport entre la chaleur récupérée et la chaleur maximale récupérable",
-      "Le rapport entre le débit d'air entrant et le débit d'air sortant",
-      "La différence de température entre l'air entrant et l'air sortant",
-      "La puissance totale consommée par le ventilateur"
-    ],
-    "answers_nl": [
-      "De verhouding tussen teruggewonnen warmte en maximaal terugwinbare warmte",
-      "De verhouding tussen inkomend en uitgaand luchtdebiet",
-      "Het temperatuurverschil tussen inkomende en uitgaande lucht",
-      "Het totale vermogen verbruikt door de ventilator"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 10,
-    "theme": "ventilation",
-    "difficulty": 4,
-    "question_fr": "Dans un système de ventilation hygroréglable, quel paramètre pilote principalement l'ouverture des bouches ?",
-    "question_nl": "In een hygroscopisch ventilatiesysteem, welke parameter stuurt hoofdzakelijk de opening van de mondstukken aan?",
-    "answers_fr": [
-      "L'humidité relative de l'air dans la pièce",
-      "La température de l'air extérieur",
-      "La concentration en CO2 de l'air intérieur",
-      "La vitesse du vent extérieur"
-    ],
-    "answers_nl": [
-      "De relatieve vochtigheid van de lucht in de ruimte",
-      "De temperatuur van de buitenlucht",
-      "De CO2-concentratie van de binnenlucht",
-      "De snelheid van de buitenwind"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 11,
-    "theme": "sanitaire",
-    "difficulty": 1,
-    "question_fr": "Quelle est la pression de service standard pour une installation d'eau froide sanitaire dans un immeuble résidentiel en Belgique ?",
-    "question_nl": "Wat is de standaard werkdruk voor een koud sanitair waterinstallatie in een residentieel gebouw in België?",
-    "answers_fr": ["1 à 2 bar", "3 à 4 bar", "5 à 6 bar", "7 à 8 bar"],
-    "answers_nl": ["1 tot 2 bar", "3 tot 4 bar", "5 tot 6 bar", "7 tot 8 bar"],
-    "correct": 1
-  },
-  {
-    "id": 12,
-    "theme": "sanitaire",
-    "difficulty": 2,
-    "question_fr": "À quelle température minimale doit être stockée l'eau chaude sanitaire pour éviter la prolifération des légionelles ?",
-    "question_nl": "Op welke minimumtemperatuur moet sanitair warm water worden opgeslagen om legionellagroei te voorkomen?",
-    "answers_fr": ["45°C", "55°C", "60°C", "70°C"],
-    "answers_nl": ["45°C", "55°C", "60°C", "70°C"],
-    "correct": 2
-  },
-  {
-    "id": 13,
-    "theme": "sanitaire",
-    "difficulty": 3,
-    "question_fr": "Qu'est-ce qu'un groupe de sécurité dans un circuit d'eau chaude sanitaire ?",
-    "question_nl": "Wat is een veiligheidsgroep in een sanitair warmwatercircuit?",
-    "answers_fr": [
-      "Un ensemble comprenant clapet anti-retour, soupape de sécurité et robinet d'arrêt",
-      "Un thermostat de sécurité qui coupe le chauffe-eau en cas de surchauffe",
-      "Un filtre anti-calcaire avec by-pass intégré",
-      "Un détecteur de fuite avec vanne d'arrêt automatique"
-    ],
-    "answers_nl": [
-      "Een geheel met terugslagklep, veiligheidsventiel en stopkraan",
-      "Een veiligheidsthermostat die de boiler uitschakelt bij oververhitting",
-      "Een antikalkfilter met geïntegreerde bypass",
-      "Een lekdetector met automatische stopkraan"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 14,
-    "theme": "sanitaire",
-    "difficulty": 2,
-    "question_fr": "Quelle est la pente minimale recommandée pour une canalisation d'évacuation des eaux usées ?",
-    "question_nl": "Wat is de aanbevolen minimale helling voor een afvoerleiding van afvalwater?",
-    "answers_fr": ["0,5%", "1%", "2%", "5%"],
-    "answers_nl": ["0,5%", "1%", "2%", "5%"],
-    "correct": 2
-  },
-  {
-    "id": 15,
-    "theme": "sanitaire",
-    "difficulty": 4,
-    "question_fr": "Selon la norme NBN EN 806, quelle est la vitesse maximale recommandée pour l'eau froide dans les conduites intérieures afin de limiter les nuisances sonores ?",
-    "question_nl": "Volgens norm NBN EN 806, wat is de maximaal aanbevolen snelheid voor koud water in binnenste leidingen om geluidsoverlast te beperken?",
-    "answers_fr": ["1 m/s", "2 m/s", "3 m/s", "5 m/s"],
-    "answers_nl": ["1 m/s", "2 m/s", "3 m/s", "5 m/s"],
-    "correct": 1
-  },
-  {
-    "id": 16,
-    "theme": "smart appliances",
-    "difficulty": 1,
-    "question_fr": "Qu'est-ce qu'un thermostat connecté ?",
-    "question_nl": "Wat is een slimme thermostaat?",
-    "answers_fr": [
-      "Un thermostat pilotable à distance via smartphone ou internet",
-      "Un thermostat avec affichage numérique intégré",
-      "Un thermostat alimenté par énergie solaire",
-      "Un thermostat avec capteur de CO2 intégré"
-    ],
-    "answers_nl": [
-      "Een thermostaat die op afstand te bedienen is via smartphone of internet",
-      "Een thermostaat met geïntegreerd digitaal display",
-      "Een thermostaat gevoed door zonne-energie",
-      "Een thermostaat met geïntegreerde CO2-sensor"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 17,
-    "theme": "smart appliances",
-    "difficulty": 2,
-    "question_fr": "Que signifie le protocole KNX dans le domaine de la domotique ?",
-    "question_nl": "Wat betekent het KNX-protocol in de domotica?",
-    "answers_fr": [
-      "Un standard international de bus de communication pour les bâtiments intelligents",
-      "Un logiciel de gestion de chantier pour les installateurs HVAC",
-      "Un protocole de certification énergétique des bâtiments",
-      "Un système de mesure de la qualité de l'air intérieur"
-    ],
-    "answers_nl": [
-      "Een internationale communicatiebusstandaard voor slimme gebouwen",
-      "Beheersoftware voor HVAC-installateurs",
-      "Een energiecertificeringsprotocol voor gebouwen",
-      "Een meetsysteem voor binnenluchtkwaliteit"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 18,
-    "theme": "smart appliances",
-    "difficulty": 3,
-    "question_fr": "Qu'est-ce que le 'demand response' (DR) pour une pompe à chaleur connectée au réseau ?",
-    "question_nl": "Wat is 'demand response' (DR) voor een warmtepomp die is aangesloten op het netwerk?",
-    "answers_fr": [
-      "La capacité à moduler la consommation en réponse aux signaux du gestionnaire de réseau",
-      "Le temps de réponse de la pompe lors d'un appel de chauffe",
-      "La demande de maintenance préventive envoyée au technicien",
-      "Le diagnostic à distance des pannes via internet"
-    ],
-    "answers_nl": [
-      "De mogelijkheid om het verbruik te moduleren als reactie op signalen van de netbeheerder",
-      "De reactietijd van de pomp bij een verwarmingsvraag",
-      "Het verzoek om preventief onderhoud gestuurd naar de technicus",
-      "De diagnosefunctie op afstand voor storingen via internet"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 19,
-    "theme": "smart appliances",
-    "difficulty": 2,
-    "question_fr": "Qu'est-ce qu'un BMS (Building Management System) ?",
-    "question_nl": "Wat is een BMS (Building Management System)?",
-    "answers_fr": [
-      "Un système centralisé de supervision et de contrôle des équipements techniques d'un bâtiment",
-      "Un logiciel de facturation pour les installateurs HVAC",
-      "Un système de détection d'incendie automatique",
-      "Une certification de performance énergétique délivrée par la région"
-    ],
-    "answers_nl": [
-      "Een gecentraliseerd supervisie- en controlesysteem voor technische installaties in een gebouw",
-      "Factureringssoftware voor HVAC-installateurs",
-      "Een automatisch branddetectiesysteem",
-      "Een energieprestatiecertificaat uitgereikt door de regio"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 20,
-    "theme": "smart appliances",
-    "difficulty": 4,
-    "question_fr": "Dans le cadre de la directive européenne sur l'efficacité énergétique des bâtiments (EPBD 2024), que prévoit le 'BACS rating' (Building Automation and Control Systems) ?",
-    "question_nl": "Wat bepaalt de 'BACS-rating' (Building Automation and Control Systems) in het kader van de Europese richtlijn energieprestatie gebouwen (EPBD 2024)?",
-    "answers_fr": [
-      "Une classification de A à D de la capacité d'automation d'un bâtiment à optimiser ses consommations",
-      "Le nombre maximal de capteurs IoT autorisés par bâtiment",
-      "La puissance totale de calcul nécessaire pour gérer un smart building",
-      "Le délai légal de garantie pour les systèmes domotiques installés"
-    ],
-    "answers_nl": [
-      "Een classificatie van A tot D van de automatiseringsgraad van een gebouw om zijn verbruik te optimaliseren",
-      "Het maximale aantal IoT-sensoren toegestaan per gebouw",
-      "Het totale rekenvermogen dat nodig is om een slim gebouw te beheren",
-      "De wettelijke garantietermijn voor geïnstalleerde domoticasystemen"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 21,
-    "theme": "general",
-    "difficulty": 1,
-    "question_fr": "Que signifie le label EPB ?",
-    "question_nl": "Wat betekent het EPB-label?",
-    "answers_fr": [
-      "Énergie, Performance des Bâtiments – une certification de la consommation énergétique",
-      "Équipement de Protection des Bâtiments – norme de sécurité incendie",
-      "Efficacité des Pompes et Brûleurs – certification des équipements",
-      "Étude de Performance du Bâti – rapport d'audit énergétique"
-    ],
-    "answers_nl": [
-      "Energieprestatie van Gebouwen – een certificering van het energieverbruik",
-      "Equipement de Protection des Bâtiments – brandveiligheidsnorm",
-      "Efficacité des Pompes et Brûleurs – certificering van apparatuur",
-      "Étude de Performance du Bâti – rapport van energieaudit"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 22,
-    "theme": "general",
-    "difficulty": 2,
-    "question_fr": "Quelle est la différence entre la puissance électrique active (W) et la puissance apparente (VA) ?",
-    "question_nl": "Wat is het verschil tussen het actief elektrisch vermogen (W) en het schijnbaar vermogen (VA)?",
-    "answers_fr": [
-      "La puissance active fait le travail utile ; la puissance apparente inclut aussi la puissance réactive due aux charges inductives",
-      "La puissance apparente est toujours supérieure à la puissance active d'un facteur 2",
-      "La puissance active est mesurée en triphasé, la puissance apparente en monophasé",
-      "Il n'y a aucune différence, ce sont deux unités pour la même grandeur"
-    ],
-    "answers_nl": [
-      "Het actief vermogen doet nuttig werk; het schijnbaar vermogen omvat ook het reactief vermogen door inductieve lasten",
-      "Het schijnbaar vermogen is altijd 2 keer groter dan het actief vermogen",
-      "Het actief vermogen wordt gemeten in driefase, het schijnbaar vermogen in eenfase",
-      "Er is geen verschil, het zijn twee eenheden voor dezelfde grootheid"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 23,
-    "theme": "general",
-    "difficulty": 3,
-    "question_fr": "Qu'est-ce que l'indice PER (Primary Energy Ratio) dans le contexte de la réglementation EPB belge ?",
-    "question_nl": "Wat is de PER (Primary Energy Ratio) in de context van de Belgische EPB-regelgeving?",
-    "answers_fr": [
-      "Le rapport entre l'énergie primaire utilisée et l'énergie finale consommée par un système",
-      "Le pourcentage d'énergie renouvelable dans le mix énergétique d'un bâtiment",
-      "La pression nominale d'un équipement hydraulique exprimée en bar",
-      "Le rendement de référence légal pour les chaudières à gaz en Wallonie"
-    ],
-    "answers_nl": [
-      "De verhouding tussen gebruikte primaire energie en verbruikte eindenergie door een systeem",
-      "Het percentage hernieuwbare energie in de energiemix van een gebouw",
-      "De nominale druk van een hydraulisch apparaat uitgedrukt in bar",
-      "Het wettelijke referentierendement voor gasketels in Wallonië"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 24,
-    "theme": "general",
-    "difficulty": 2,
-    "question_fr": "Quel est le rôle d'un vase d'expansion dans une installation de chauffage central fermée ?",
-    "question_nl": "Wat is de rol van een expansievat in een gesloten centrale verwarmingsinstallatie?",
-    "answers_fr": [
-      "Absorber les variations de volume de l'eau dues aux changements de température",
-      "Filtrer les impuretés dans le circuit hydraulique",
-      "Maintenir la pression d'eau à une valeur constante de 3 bar",
-      "Séparer l'eau chaude de l'eau froide dans le circuit"
-    ],
-    "answers_nl": [
-      "De volumevariaties van het water als gevolg van temperatuurveranderingen opvangen",
-      "Onzuiverheden in het hydraulisch circuit filteren",
-      "De waterdruk constant houden op 3 bar",
-      "Het warme water scheiden van het koude water in het circuit"
-    ],
-    "correct": 0
-  },
-  {
-    "id": 25,
-    "theme": "general",
-    "difficulty": 4,
-    "question_fr": "En Wallonie, quel est le niveau E-peil maximal autorisé pour une nouvelle construction résidentielle depuis le 1er janvier 2024 ?",
-    "question_nl": "Wat is het maximale E-peil toegestaan voor een nieuwe residentiële constructie in Wallonië sinds 1 januari 2024?",
-    "answers_fr": ["E30", "E45", "E60", "E80"],
-    "answers_nl": ["E30", "E45", "E60", "E80"],
-    "correct": 0
-  }
+    {
+        "id": 1,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Le chauffage basse temp\u00e9rature c'est...",
+        "question_nl": "nan",
+        "answers_fr": [
+            "Chauffer les locaux \u00e0 15\u00b0C",
+            "Diminuer la temp\u00e9rature dans le four pour cuire ses aliments",
+            "Utiliser de l'eau chaude \u00e0 moins de 45\u00b0C pour le chauffage central",
+            "Utiliser de l'eau chaude \u00e0 moins de 75\u00b0C pour le chauffage central"
+        ],
+        "answers_nl": [
+            "nan",
+            "nan",
+            "nan",
+            "nan"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 2,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Un vase d'expansion mal dimensionn\u00e9 ou mal r\u00e9gl\u00e9 c'est...",
+        "question_nl": "nan",
+        "answers_fr": [
+            "Vraiment pas grave",
+            "Un risque d'infiltration d'air et de corrosion",
+            "Un risque d'infiltration d'eau et de moisissure",
+            "Un risque d'infiltration de mazout et de pollution"
+        ],
+        "answers_nl": [
+            "nan",
+            "nan",
+            "nan",
+            "nan"
+        ],
+        "correct": 0
+    },
+    {
+        "id": 3,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Dans quelle unit\u00e9 se mesure la puissance d'une chaudi\u00e8re",
+        "question_nl": "nan",
+        "answers_fr": [
+            "Des kilowatt (kW)",
+            "Des kilowattheure (kWh)",
+            "Des degr\u00e9s-jour",
+            "des kilowatt par heure (kW/h)"
+        ],
+        "answers_nl": [
+            "nan",
+            "nan",
+            "nan",
+            "nan"
+        ],
+        "correct": 0
+    },
+    {
+        "id": 4,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Pour chauffer une pi\u00e8ce, j'utilise...",
+        "question_nl": "nan",
+        "answers_fr": [
+            "Un cong\u00e9lateur",
+            "Un ventilateur",
+            "Un radiateur",
+            "Un d\u00e9fibrilateur"
+        ],
+        "answers_nl": [
+            "nan",
+            "nan",
+            "nan",
+            "nan"
+        ],
+        "correct": 0
+    },
+    {
+        "id": 5,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Quel type de b\u00e2timent est id\u00e9al pour une pompe \u00e0 chaleur",
+        "question_nl": "nan",
+        "answers_fr": [
+            "Un b\u00e2timent bien isol\u00e9 et \u00e9quip\u00e9 d'un chauffage basse-temp\u00e9rature",
+            "Un b\u00e2timent bien isol\u00e9 \u00e9quip\u00e9 d'une batterie \u00e9lectrique",
+            "Un b\u00e2timent mal isol\u00e9 et \u00e9quip\u00e9 d'un chauffage haute temp\u00e9rature",
+            "Un abris de jardin"
+        ],
+        "answers_nl": [
+            "nan",
+            "nan",
+            "nan",
+            "nan"
+        ],
+        "correct": 0
+    },
+    {
+        "id": 6,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Une pompe \u00e0 chaleur g\u00e9othermique puise son \u00e9nergie...",
+        "question_nl": "nan",
+        "answers_fr": [
+            "dans l'eau",
+            "dans le sol",
+            "dans le soleil",
+            "dans le vent"
+        ],
+        "answers_nl": [
+            "nan",
+            "nan",
+            "nan",
+            "nan"
+        ],
+        "correct": 0
+    },
+    {
+        "id": 7,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Quel \u00e9metteur pr\u00e9sente la plus grande inertie",
+        "question_nl": "nan",
+        "answers_fr": [
+            "un radiateur en aluminium",
+            "un radiateur en fonte",
+            "un chauffage par le sol dans une dalle en b\u00e9ton",
+            "un ventilo-convecteur"
+        ],
+        "answers_nl": [
+            "nan",
+            "nan",
+            "nan",
+            "nan"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 8,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random1",
+        "question_nl": "random1",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 0
+    },
+    {
+        "id": 9,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random2",
+        "question_nl": "random2",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 10,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random3",
+        "question_nl": "random3",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 3
+    },
+    {
+        "id": 11,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random4",
+        "question_nl": "random4",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 12,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random5",
+        "question_nl": "random5",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 0
+    },
+    {
+        "id": 13,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random6",
+        "question_nl": "random6",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 14,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random7",
+        "question_nl": "random7",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 15,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random8",
+        "question_nl": "random8",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 3
+    },
+    {
+        "id": 16,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random9",
+        "question_nl": "random9",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 0
+    },
+    {
+        "id": 17,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random10",
+        "question_nl": "random10",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 18,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random11",
+        "question_nl": "random11",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 19,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random12",
+        "question_nl": "random12",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 3
+    },
+    {
+        "id": 20,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random13",
+        "question_nl": "random13",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 21,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random14",
+        "question_nl": "random14",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 3
+    },
+    {
+        "id": 22,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "random15",
+        "question_nl": "random15",
+        "answers_fr": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "answers_nl": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "correct": 0
+    },
+    {
+        "id": 23,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Quelle est la temp\u00e9rature recommand\u00e9e de l'eau chaude sanitaire au d\u00e9part de la boucle de distribution ?",
+        "question_nl": "Wat is de aanbevolen temperatuur van het sanitair warm water bij het begin van een circulatieleiding?",
+        "answers_fr": [
+            "50\u00b0C",
+            "60\u00b0C",
+            "45\u00b0C",
+            "65\u00b0C"
+        ],
+        "answers_nl": [
+            "50 \u00b0C",
+            "60 \u00b0C",
+            "45 \u00b0C",
+            "65 \u00b0C"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 24,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Quel mat\u00e9riau est d\u00e9conseill\u00e9 pour la distribution d'eau chaude sanitaire\u00a0?",
+        "question_nl": "Welk materiaal wordt afgeraden voor de distributie van sanitair warm water?",
+        "answers_fr": [
+            "L'acier galvanis\u00e9",
+            "Le tuyaux multicouche",
+            "Le cuivre",
+            "L'acier inoxydable"
+        ],
+        "answers_nl": [
+            "Gegalvaniseerd staal",
+            "De meerlaagse buis",
+            "Koper",
+            "Roestvrij staal"
+        ],
+        "correct": 0
+    },
+    {
+        "id": 25,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Que dois-je installer directement apr\u00e8s le compteur de la compagnie distributrice d\u2019eau publique ?",
+        "question_nl": "Wat moet ik direct na de meter van het watermaatschappij installeren?",
+        "answers_fr": [
+            "Un robinet double service",
+            "Un r\u00e9ducteur de pression",
+            "Une protection de type EA",
+            "Un adoucisseur"
+        ],
+        "answers_nl": [
+            "Een tweewegkraan",
+            "Een drukregelaar",
+            "Een EA-type bescherming",
+            "Een waterontharder"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 26,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Pour \u00e9viter des nuisances acoustiques, quelle est la vitesse maximale de l\u2019eau dans des conduites traversant des locaux habit\u00e9s ?",
+        "question_nl": "Wat is de maximale stroomsnelheid van het water in leidingen die door bewoonde ruimtes lopen om geluidsoverlast te voorkomen?",
+        "answers_fr": [
+            "0,5 m/s",
+            "1 m/s",
+            "2 m/s",
+            "2,5 m/s"
+        ],
+        "answers_nl": [
+            "0,5 m/s",
+            "1 m/s",
+            "2 m/s",
+            "2,5 m/s"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 27,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Quand se produit un coup de b\u00e9lier ?",
+        "question_nl": "Wanneer treedt een waterslag op?",
+        "answers_fr": [
+            "Quand le b\u00e2timent est haut",
+            "Lors d'une ouverture ou d'un arr\u00eat soudain du d\u00e9bit",
+            "Quand le b\u00e9lier n'est pas content",
+            "Lors d'une ouverture brusque d'un robinet"
+        ],
+        "answers_nl": [
+            "Bij hoge gebouwen",
+            "Door het abrupt openen of sluiten van het debiet",
+            "Als de ram niet tevreden is",
+            "Door het abrupt openen of sluiten van het debiet"
+        ],
+        "correct": null
+    },
+    {
+        "id": 28,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Avec une production d'eau chaude sanitaire, quel \u00e9quipement doit dans tous les cas \u00eatre install\u00e9 ?",
+        "question_nl": "Welke apparatuur moet bij de productie van sanitair warm water in alle gevallen worden ge\u00efnstalleerd?",
+        "answers_fr": [
+            "Un purgeur d'air",
+            "Une soupape anti-vide",
+            "Un vase d'expansion",
+            "Une soupape de d\u00e9charge"
+        ],
+        "answers_nl": [
+            "Een ontluchter",
+            "Een antivacu\u00fcmkleppen",
+            "Een expansievat",
+            "Een overdrukventiel"
+        ],
+        "correct": null
+    },
+    {
+        "id": 29,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Si le client veut utiliser simultan\u00e9ment une douche et un \u00e9vier de cuisine avec une production d'eau chaude sanitaire instantan\u00e9e, quelle est la puissance n\u00e9cessaire\u00a0?",
+        "question_nl": "Als de klant tegelijkertijd een douche en een gootsteen wil gebruiken met een doorstroomboiler, hoeveel vermogen is er dan nodig?",
+        "answers_fr": [
+            "16kW",
+            "24kW",
+            "36kW",
+            "42kW"
+        ],
+        "answers_nl": [
+            "16kW",
+            "24kW",
+            "36kW",
+            "42kW"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 30,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Dans un logement avec deux chambres, quel devrait-\u00eatre le volume de mon boiler thermodynamique ?",
+        "question_nl": "Hoe groot moet de warmtepompboiler zijn in een woning met twee slaapkamers?",
+        "answers_fr": [
+            "120l",
+            "160l",
+            "240l",
+            "360l"
+        ],
+        "answers_nl": [
+            "120l",
+            "160l",
+            "240l",
+            "360l"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 31,
+        "difficulty": 1,
+        "theme": "smart appliances",
+        "question_fr": "Quel est l\u2019objectif de la maintenance pr\u00e9ventive ?",
+        "question_nl": "Wat is het doel van preventief onderhoud?",
+        "answers_fr": [
+            "R\u00e9parer les \u00e9quipements apr\u00e8s une panne",
+            "R\u00e9duire les co\u00fbts d\u2019investissement initial",
+            "\u00c9viter les pannes et r\u00e9duire les arr\u00eats impr\u00e9vus",
+            "Augmenter la facture du client"
+        ],
+        "answers_nl": [
+            "Apparatuur herstellen na een storing",
+            "De initi\u00eble investeringskosten verlagen",
+            "Storingen voorkomen en ongeplande stilstanden verminderen",
+            "De rekening van de klant verhogen"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 32,
+        "difficulty": 1,
+        "theme": "smart appliances",
+        "question_fr": "Quel est le r\u00f4le principal d\u2019un Energy Management System (EMS) dans un b\u00e2timent ?",
+        "question_nl": "Wat is de belangrijkste rol van een Energy Management System (EMS) in een gebouw?",
+        "answers_fr": [
+            "Produire de l\u2019\u00e9nergie renouvelable",
+            "Surveiller, contr\u00f4ler et optimiser la consommation d\u2019\u00e9nergie",
+            "Assurer la maintenance corrective des \u00e9quipements",
+            "Augmenter la consommation pour am\u00e9liorer le confort"
+        ],
+        "answers_nl": [
+            "Hernieuwbare energie produceren",
+            "Het energieverbruik monitoren, controleren en optimaliseren",
+            "Correctief onderhoud van apparatuur uitvoeren",
+            "Het energieverbruik verhogen om het comfort te verbeteren"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 33,
+        "difficulty": 1,
+        "theme": "smart appliances",
+        "question_fr": "Quel est le principal avantage des capteurs de chaleur connect\u00e9s dans un syst\u00e8me de chauffage ?",
+        "question_nl": "Wat is het belangrijkste voordeel van verbonden warmtesensoren in een verwarmingssysteem?",
+        "answers_fr": [
+            "Produire directement de la chaleur",
+            "Mesurer et transmettre les donn\u00e9es de temp\u00e9rature en temps r\u00e9el",
+            "Supprimer le syst\u00e8me de r\u00e9gulation",
+            "Remplacer les syst\u00e8mes de chauffage"
+        ],
+        "answers_nl": [
+            "Rechtstreeks warmte produceren",
+            "Temperatuurgegevens in real time meten en doorsturen",
+            "De nood aan regeling elimineren",
+            "Verwarmingssystemen vervangen"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 34,
+        "difficulty": 1,
+        "theme": "smart appliances",
+        "question_fr": "Assurer la flexibilit\u00e9 \u00e9nerg\u00e9tique d\u2019un b\u00e2timent consiste principalement \u00e0 :",
+        "question_nl": "Om de energieflexibiliteit van een gebouw te waarborgen, komt het vooral neer op:",
+        "answers_fr": [
+            "Augmenter en permanence sa consommation d\u2019\u00e9nergie",
+            "Remplacer ses sources de production d\u2019\u00e9nergie renouvelable",
+            "Supprimer toute automatisation du b\u00e2timent",
+            "Adapter sa consommation d\u2019\u00e9nergie selon les besoins du r\u00e9seau et la disponibilit\u00e9 de l\u2019\u00e9nergie"
+        ],
+        "answers_nl": [
+            "Het energieverbruik voortdurend verhogen",
+            "De bronnen voor de opwekking van hernieuwbare energie vervangen",
+            "Alle automatisering in het gebouw verwijderen",
+            "Het energieverbruik afstemmen op de behoeften van het net en de beschikbaarheid van energie"
+        ],
+        "correct": 3
+    },
+    {
+        "id": 35,
+        "difficulty": 1,
+        "theme": "smart appliances",
+        "question_fr": "Le protocole sans fil LoRa (et LoRaWAN) est principalement utilis\u00e9 pour :",
+        "question_nl": "Het draadloze protocol LoRa (en LoRaWAN) wordt voornamelijk gebruikt om:",
+        "answers_fr": [
+            "Transmettre de grandes quantit\u00e9s de donn\u00e9es \u00e0 tr\u00e8s haute vitesse",
+            "Remplacer les r\u00e9seaux Wi\u2011Fi domestiques",
+            "Connecter des capteurs sur de longues distances avec une faible consommation d\u2019\u00e9nergie",
+            "Assurer des communications uniquement sur de tr\u00e8s courtes distances"
+        ],
+        "answers_nl": [
+            "Grote hoeveelheden data aan zeer hoge snelheid te verzenden",
+            "Wi\u2011Fi\u2011netwerken thuis te vervangen",
+            "Enkel communicatie over zeer korte afstand mogelijk te maken",
+            "Sensoren over lange afstand te verbinden met een laag energieverbruik"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 36,
+        "difficulty": 1,
+        "theme": "smart appliances",
+        "question_fr": "Quel est un objectif cl\u00e9 que doit remplir un b\u00e2timent \u00e9quip\u00e9 d'un syst\u00e8me d\u2019automatisation et de contr\u00f4le des b\u00e2timents (ou BACS - Building Automation Control Systems) ?",
+        "question_nl": "Wat is een belangrijke doelstelling waaraan een gebouw met een gebouwautomatiserings- en controlesysteem (of BACS \u2013 Building Automation Control Systems) moet voldoen?",
+        "answers_fr": [
+            "onctionner uniquement avec un contr\u00f4le manuel des installations",
+            "Afficher les consommations sans action possible",
+            "Mesurer, analyser et contr\u00f4ler automatiquement la consommation d\u2019\u00e9nergie",
+            "Isoler compl\u00e8tement les syst\u00e8mes techniques entre eux"
+        ],
+        "answers_nl": [
+            "Alleen functioneren met manuele bediening van de installaties",
+            "Het verbruik weergeven zonder acties uit te voeren",
+            "Technische systemen volledig van elkaar scheiden",
+            "Het energieverbruik meten, analyseren en automatisch regelen"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 37,
+        "difficulty": 1,
+        "theme": "smart appliances",
+        "question_fr": "Que signifie l\u2019acronyme BACS dans le domaine des b\u00e2timents intelligents ?",
+        "question_nl": "Wat betekent de afkorting BACS op het gebied van slimme gebouwen?",
+        "answers_fr": [
+            "Building Automation and Control Systems",
+            "Basic Architecture Construction Setup",
+            "Building Air Conditioning Solution",
+            "Building Advanced Cooling System"
+        ],
+        "answers_nl": [
+            "Building Automation and Control Systems",
+            "Basic Architecture Construction Setup",
+            "Building Air Conditioning Solution",
+            "Building Advanced Cooling System"
+        ],
+        "correct": 0
+    }
 ]

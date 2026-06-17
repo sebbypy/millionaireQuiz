@@ -99,12 +99,12 @@ const I18N = {
 // ─── EPB SCALE ───────────────────────────────────────────────
 // Questions 1–5 map to EPB levels E → A
 const EPB_LEVELS = [
-  { label: "F", color: "#DD974F"},
-  { label: "E", color: "#EAC24F"},
-  { label: "D", color: "#DDD95A"},
-  { label: "C", color: "#C5D45A"},
-  { label: "B", color: "#8ABD5A"},
-  { label: "A", color: "#49AF57"},
+  { label: "F", color: "#DD974F",width:"170px"},
+  { label: "E", color: "#EAC24F",width:"150px"},
+  { label: "D", color: "#DDD95A",width:"130px"},
+  { label: "C", color: "#C5D45A",width:"110px"},
+  { label: "B", color: "#8ABD5A",width:"90px"},
+  { label: "A", color: "#49AF57",width:"70px"},
 ];
 
 /*

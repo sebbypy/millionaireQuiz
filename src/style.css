@@ -8,25 +8,46 @@
 
 /* ── TOKENS ── */
 :root {
-  --bg-deep:      #05082e;
-  --bg-mid:       #0a1060;
+  /* ── Background layers — deep Buildwise navy, not electric blue ── */
+  --bg-deep:      #03072a;
+  --bg-mid:       #080f52;
   --bg-ring:      #1a2aaa;
-  --panel-dark:   #070b3a;
-  --panel-mid:    #0d1580;
-  --panel-edge:   #2040d0;
-  --panel-glow:   #3060ff;
-  --gold:         #00bcd4;
-  --gold-light:   #00bcd4;
+  --panel-dark:   #060a30;
+  --panel-mid:    #0b1268;
+  --panel-edge:   #1a3eaf;   /* Buildwise primary blue (replaces generic #2040d0) */
+  --panel-glow:   #2a5ce0;   /* slightly calmer than pure #3060ff */
+  
+  --bw-blue:  #0087b7;
+  --bw-darkblue: #0000b3;
+  --bw-green: #00bfb6;
+  --bw-black: #000000;
+  --bw-lightblack: #7d7d7d;
+
+
+  /* ── Accent — true gold (Millionaire DNA), naming fixed ── */
+  /* Previously --gold was wrongly set to cyan #00bcd4; corrected throughout */
+  --gold:         #f0a500;
+  --gold-light:   #ffd04a;
+
+  /* ── Buildwise brand blue — used for interactive highlights ── */
+  --bw-blue-dim:  #0e3a8a;   /* darker variant for hover states  */
+
+  /* ── Typography / neutral ── */
   --white:        #ffffff;
-  --text-dim:     #99aacc;
-  --answer-bg:    #0b1478;
-  --answer-hover: #162299;
-  --answer-edge:  #3355ee;
-  --correct:      #27ae60;   /* gold flash, like the show */
-  --correct-bg:   #27ae60;
+  --text-dim:     #7a96c8;   /* slightly cooler, less cyan-tinted  */
+
+  /* ── Answer buttons ── */
+  --answer-bg:    #080e48;   /* darker base, navy not blue-purple  */
+  --answer-hover: #0e1a70;
+  
+  /* ── Feedback states ── */
+  --correct:      #18a558;
+  --correct-bg:   #0b6e3a;
   --wrong:        #cc2222;
   --wrong-bg:     #2a0000;
-  --radius-pill:  6px;       /* the show uses slightly rounded rectangles */
+
+  /* ── Shape / type ── */
+  --radius-pill:  6px;
   --font-ui:      'Roboto Condensed', 'Arial Narrow', sans-serif;
   --font-head:    'Bebas Neue', sans-serif;
 }
@@ -45,14 +66,27 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Multi-layer radial replicating the studio look */
+/* Multi-layer radial replicating the studio look — Buildwise navy palette */
 body::before {
   content: "";
   position: fixed; inset: 0; z-index: 0;
   background:
-    radial-gradient(ellipse 120% 80% at 50% 40%,  #1535c8 0%,  #08128a 30%, #03072e 70%),
-    radial-gradient(ellipse 60%  60% at 20% 80%,  #0a1888 0%,  transparent 60%),
-    radial-gradient(ellipse 60%  60% at 80% 80%,  #0a1888 0%,  transparent 60%);
+    radial-gradient(
+      ellipse 120% 80% at 50% 40%,
+      var(--bw-blue) 10%,
+      var(--bw-black) 60%,
+      var(--bw-black) 70%
+      ),
+    radial-gradient(
+      ellipse 60% 60% at 20% 80%,
+      var(--bw-blue) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse 60% 60% at 80% 80%,
+      var(--bw-green) 0%,
+      transparent 40%
+    );
 }
 
 /* Subtle horizontal scan-lines for a TV feel */
@@ -117,7 +151,7 @@ body::after {
   border: 4px solid var(--gold);
   box-shadow: 0 0 0 2px var(--bg-deep), 0 0 32px rgba(240,165,0,.5);
   font-size: 52px;
-  background: radial-gradient(circle at 40% 35%, #1a2acc, #05082e);
+  background: radial-gradient(circle at 40% 35%, #122088, #03072a);
   margin-bottom: 14px;
 }
 
@@ -177,7 +211,7 @@ body::after {
   display: flex; flex-direction: column; align-items: center; gap: 10px;
   padding: 22px 44px;
   background: var(--answer-bg);
-  border: 2px solid var(--answer-edge);
+  border: 2px solid var(--bw-green);
   border-radius: var(--radius-pill);
   color: var(--white);
   font-family: var(--font-ui);
@@ -211,8 +245,8 @@ body::after {
 .theme-btn {
   display: flex; flex-direction: column; align-items: center; gap: 10px;
   padding: 18px 14px;
-  background: var(--answer-bg);
-  border: 2px solid var(--answer-edge);
+  background: var(--bw-blue);
+  border: 2px solid var(--bw-green);
   border-radius: var(--radius-pill);
   color: var(--white);
   font-family: var(--font-ui);
@@ -268,19 +302,40 @@ body::after {
 
 /* ── EPB LADDER ── */
 .epb-ladder {
-  display: flex; gap: 5px; align-items: flex-end;flex-direction:column;
+  display: flex; gap: 5px; flex-direction:column;
 }
 
 .epb-step {
   width: 38px; height: 38px;
   border-radius: 4px;
-  border: 2px solid #1a2aaa;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; 
+  align-items: center; 
+  /*justify-content: center;*/
   font-family: var(--font-head);
   font-size: 1.05rem;
   color: var(--text-dim);
   background: var(--panel-dark);
   transition: all 0.3s ease;
+}
+
+.epb-step {
+  height: 42px;
+  min-width: var(--epb-width);        /* variable width possible */
+  padding: 0 34px 0 18px; /* extra right padding for arrow */
+  display: flex;
+  align-items: center;
+  opacity:0.3;
+  background: var(--epb-color);
+  color: white;
+  font-weight: 700;
+ 
+  clip-path: polygon(
+    0 0,
+    calc(100% - 22px) 0,
+    100% 50%,
+    calc(100% - 22px) 100%,
+    0 100%
+  );
 }
 
 .epb-step.done {
@@ -292,11 +347,12 @@ body::after {
 
 .epb-step.current {
   background: var(--epb-color);
-  border-color: var(--gold-light);
   color: #fff;
   box-shadow: 0 0 14px var(--epb-color);
   transform: scale(1.2);
   z-index: 1;
+  opacity:1.0;
+
 }
 
 .epb-step .epb-label { font-family: var(--font-head); }
@@ -319,7 +375,7 @@ body::after {
   width:60px;
   padding: 6px 14px;
   background: black;
-  border: 2px solid var(--answer-edge);
+  border: 2px solid var(--bw-darkblue);
   border-radius: 30px;
   color: white;
   font-family: var(--font-ui);
@@ -337,6 +393,7 @@ body::after {
 .lifeline-btn:hover:not(:disabled) {
   background: rgba(240,165,0,.14);
   box-shadow: 0 0 12px rgba(240,165,0,.35);
+  border-color: var(--gold);
 }
 
 .lifeline-btn.used {
@@ -380,8 +437,7 @@ body::after {
     0% 50%
   );
   padding: 2px;
-  background: #3355ee;           /* border color */
-
+  background: var(--bw-blue);   /* Buildwise blue border */
 }
 .question-box {
   width: 100%;
@@ -396,7 +452,7 @@ body::after {
     calc(100% - 24px) 100%, 24px 100%,
     0% 50%
   );
-  box-shadow: 0 0 40px rgba(48,96,255,.35), inset 0 1px 0 rgba(255,255,255,.08);
+  box-shadow: 0 0 40px rgba(30,95,212,.3), inset 0 1px 0 rgba(255,255,255,.08);
 }
 
 /* top shimmer line */
@@ -433,7 +489,7 @@ body::after {
 }
 
 .answer-wrap{
-  background: #3355ee;           /* border color */
+  background: var(--bw-blue);    /* Buildwise blue border */
   clip-path: polygon(16px 0%, calc(100% - 16px) 0%, 100% 50%, calc(100% - 16px) 100%, 16px 100%, 0% 50%);
   padding: 2px;                  /* border thickness */
 }
@@ -475,7 +531,7 @@ body::after {
   letter-spacing: 0.04em;
   white-space: nowrap;
   /* Separator line like the show */
-  border-right: 1.5px solid rgba(80, 120, 255, 0.45);
+  border-right: 1.5px solid rgba(30, 95, 212, 0.5);
 }
 
 .answer-text {
@@ -485,14 +541,14 @@ body::after {
 }
 
 .answer-btn:hover:not(:disabled) {
-  background: linear-gradient(180deg, #1e30cc 0%, #0e1888 100%);
+  background: linear-gradient(180deg, #122688 0%, #081660 100%);
   border-color: var(--gold);
   box-shadow: 0 0 18px rgba(240,165,0,.3);
 }
 
 /* States */
 .answer-btn.selected {
-  background: linear-gradient(180deg, #2840e0 0%, #162099 100%);
+  background: linear-gradient(180deg, #1a3ab0 0%, #0c1e6e 100%);
   border-color: var(--gold-light);
   box-shadow: 0 0 20px rgba(255,224,102,.35);
 }
@@ -553,7 +609,8 @@ body::after {
 .result-level {
   display: flex; flex-direction: column; align-items: center; gap: 4px;
   padding: 22px 48px;
-  background: linear-gradient(180deg, #0d1888 0%, #060d5a 100%);
+  /*background: linear-gradient(135deg, var(--bw-blue) 0%, var(--bw-black) 100%);*/
+  background: var(--bw-blue);
   border: 2px solid var(--lvl-color, var(--gold));
   border-radius: var(--radius-pill);
   box-shadow: 0 0 28px rgba(240,165,0,.25);
@@ -573,24 +630,51 @@ body::after {
     padding-bottom: 5px;
     /* color: var(--lvl-color, var(--gold)); */
     background-color: var(--lvl-color);
+	width: var(--lvl-width);
     line-height: 1;
     /* text-shadow: 0 0 20px var(--lvl-color, var(--gold)); */
-    border-radius: 3px
+    border-radius: 3px;
+	text-align:left
+
 }
 
-.score-bar { display: flex; gap: 6px; }
+.big-label{
+  background: var(--epb-color);
+  font-weight: 700;
+ 
+  clip-path: polygon(
+    0 0,
+    calc(100% - 30px) 0,
+    100% 50%,
+    calc(100% - 30px) 100%,
+    0 100%
+  );
+}
+
+
+
+.score-bar { display: flex; gap: 6px; flex-direction:column}
 
 .score-seg {
   flex: 1;
   padding: 8px 4px;
+  padding-left: 20px;
   border-radius: 4px;
-  text-align: center;
+  text-align: left;
   font-family: var(--font-head);
   font-size: 1.05rem;
   background: var(--panel-dark);
-  border: 2px solid #1a2aaa;
   color: var(--text-dim);
+  width: var(--seg-width);
   transition: all 0.4s ease;
+    clip-path: polygon(
+    0 0,
+    calc(100% - 22px) 0,
+    100% 50%,
+    calc(100% - 22px) 100%,
+    0 100%
+  );
+
 }
 
 .score-seg.achieved {
@@ -644,14 +728,14 @@ body::after {
 }
 
 .modal-box {
-  background: linear-gradient(160deg, #0d1888 0%, #060d5a 100%);
+  background: linear-gradient(160deg, var(--bw-green) 0%, var(--bw-black) 100%);
   border: 2px solid var(--panel-edge);
   border-radius: var(--radius-pill);
   padding: 28px 32px;
   max-width: 540px;
   width: 100%;
   display: flex; flex-direction: column; gap: 18px;
-  box-shadow: 0 16px 48px rgba(0,0,0,.7), 0 0 40px rgba(48,96,255,.2);
+  box-shadow: 0 16px 48px rgba(0,0,0,.7), 0 0 40px rgba(30,95,212,.2);
 }
 
 .phone-header { display: flex; align-items: center; gap: 14px; }
@@ -794,19 +878,20 @@ align-items:center}
 .tool-card {
   display: block;
   text-decoration: none;
-   color:black;
+  color: var(--white);
 
-  border: 1px solid #ddd;
+  border: 1px solid var(--panel-edge);
   border-radius: 6px;
   overflow: hidden;
 
-  background: white;
-  transition: transform 0.2s, box-shadow 0.2s;
+  background: var(--panel-dark);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
 .tool-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 24px rgba(30,95,212,0.25);
+  border-color: var(--bw-blue);
 }
 
 .tool-card-img {
@@ -823,12 +908,14 @@ align-items:center}
 .tool-card-body h3 {
   margin: 0 0 8px;
   font-size: 20px;
+  color: var(--white);
 }
 
 .tool-card-body p {
   margin: 0;
   font-size: 14px;
   line-height: 1.5;
+  color: var(--text-dim);
 }
 
 @media (max-width: 800px) {
@@ -836,6 +923,18 @@ align-items:center}
     grid-template-columns: 1fr;
   }
 }
+
+.bw-logo{
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 10000;
+
+ display: flex;
+  gap: 6px;
+}
+
+
 
 
 .language-selector {

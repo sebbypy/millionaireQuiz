@@ -123,6 +123,8 @@
     const wrap = el("div", "screen theme-screen");
 	addLanguageSelector(wrap);
 
+	addBWLogo(document.getElementById('app'));
+
     const header = el("div", "screen-header");
 	header.innerHTML = `
 	  <img style="width:300px" src="${getLogoSrc()}">
@@ -178,6 +180,7 @@
 
     const wrap = el("div", "screen game-screen");
 	//addLanguageSelector(wrap);
+	addBWLogo(document.getElementById('app'))
 	
 	const twocols = el("div","twocols")
 	wrap.appendChild(twocols)
@@ -210,6 +213,7 @@
 
 		  step.innerHTML = `<span class="epb-label">${lvl.label}</span>`;
 		  step.style.setProperty("--epb-color", lvl.color);
+		  step.style.setProperty("--epb-width", lvl.width);
 
 		  ladder.appendChild(step);
 		});
@@ -329,7 +333,7 @@
           // Won the game!
           setTimeout(() => renderResultScreen(true), 1200);
         } else {
-          setTimeout(() => { renderGameScreen(); }, 1400);
+          setTimeout(() => { renderGameScreen(); }, 3400);
         }
       } else {
         clickedBtn.classList.remove("selected");
@@ -342,7 +346,7 @@
         const correctBtn = grid.querySelector(`.answer-btn[data-index="${result.correctIndex}"]`);
         if (correctBtn) { correctBtn.classList.add("correct"); }
         sfxWrong();
-        setTimeout(() => renderResultScreen(false), 1800);
+        setTimeout(() => renderResultScreen(false), 3400);
       }
     }, 700);
   }
@@ -352,6 +356,8 @@
     clearRoot();
     const wrap = el("div", "screen result-screen");
 	addLanguageSelector(wrap);
+
+	addBWLogo(document.getElementById("app"))
 
     const correctAnswers = GameState.score;
     const maxLevel = correctAnswers > 0 ? EPB_LEVELS[correctAnswers - 1] : null;
@@ -365,6 +371,7 @@
     if (maxLevel) {
       const levelEl = el("div", "result-level");
       levelEl.style.setProperty("--lvl-color", maxLevel.color);
+      levelEl.style.setProperty("--lvl-width", maxLevel.width);
       levelEl.innerHTML = `<span>${t("finalScore")}</span><span class="big-label"> ${maxLevel.label}</span>`;
       wrap.appendChild(levelEl);
     } else {
@@ -374,15 +381,18 @@
     }
 
     // Score bar
-    const scoreBar = el("div", "score-bar");
-    EPB_LEVELS.forEach((lvl, i) => {
+    /*const scoreBar = el("div", "score-bar");
+    [...EPB_LEVELS].reverse().forEach((lvl, reversedIndex) => {
+	  const i = EPB_LEVELS.length - 1 - reversedIndex;
+
       const seg = el("div", `score-seg${i < correctAnswers ? " achieved" : ""}`);
       seg.style.setProperty("--seg-color", lvl.color);
+      seg.style.setProperty("--seg-width", lvl.width);
       seg.textContent = lvl.label;
       scoreBar.appendChild(seg);
     });
     wrap.appendChild(scoreBar);
-
+	*/
     const actions = el("div", "result-actions");
 
     const replayBtn = el("button", "primary-btn", t("playAgain"));
@@ -488,37 +498,37 @@ function showPhoneModal(initialText, loading, url = "https://tooli.be/c/new") {
 const tools = [
   {
     title: "Heatload",
-    description: "heatload_description",
+    description: {'fr':"Déperditions thermiques des bâtiments",'nl':'Warmteverliezen van gebouwen'},
     image: "img/heatload_notext_square.svg",
     url: "https://heatload.buildwise.be/"
   },
   {
     title: "Waterdim",
-    description: "Application rendant les modèles BIM accessibles.",
+    description: {'fr':"Dimensionnement des installations ECS pour le logement individuel ou collectiff",'nl':'SWW dimensionering'},
     image: "img/sww2_01_notext_square.svg",
     url: "https://waterdim.buildwise.be"
   },
   {
     title: "BoilerRoom App",
-    description: "boiler_room_rules",
+    description: {'fr':"Réglementations et normes sur les chaufferies",'nl':'Stookplaatsen normen en regelgeving'},
     image: "img/boiler_svg_notext_square.svg",
     url: "https://boilerroomapp.buildwise.be/"
   },
   {
     title: "SilentHeatPump",
-    description: "acoustic_heat_pump",
+    description: {'fr':"Acoustique des pompes à chaleur",'nl':'Akoestiek van Warmtepompen'},
     image: "img/silentheatpump_notext_square.svg",
     url: "https://silentheatpump.buildwise.be/"
   },
   {
     title: "Optivent App",
-    description: "reglage_debit",
+    description: {'fr':"Réglage des débits de ventilation",'nl':'Afstelling van ventilatiedebieten'},
     image: "img/optivent_notext_square.svg",
     url: "https://silentheatpump.buildwise.be/"
   },
   {
     title: "PowerHeat",
-    description: "radiateurs",
+    description: {'fr':"Estimer la puissance des radiateurs existants pour différents régimes de température",'nl':'Schatting van bestaande radiatoren vermogen'},
     image: "img/powerheat_final_notext_square.svg",
     url: "https://powerheat.buildwise.be/"
   }  
@@ -530,6 +540,8 @@ function showToolModal(lltool) {
   const overlay = el("div", "modal-overlay");
   const box = el("div", "modal-box tool-modal");
 
+  
+  
   box.innerHTML = `
     <div class="tool-header">🔧 ${t("toolCallTitle")}</div>
     <p>${t("toolCallDesc")}</p>
@@ -547,7 +559,7 @@ function showToolModal(lltool) {
 
           <div class="tool-card-body">
             <h3>${tool.title}</h3>
-            <p>${tool.description}</p>
+            <p>${tool.description[GameState.lang]}</p>
           </div>
 
         </div>
@@ -605,6 +617,14 @@ function showToolModal(lltool) {
   }
 
   document.addEventListener("DOMContentLoaded", init);
+
+function addBWLogo(container){
+	
+	const div = el("div","bw-logo")
+	div.innerHTML=`<img id="company-logo" alt="No Image" class="company-logo-image" src="data:image/png;base64,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" width="86" height="48">`
+	container.appendChild(div);
+	
+}
 
 
 function addLanguageSelector(container) {
