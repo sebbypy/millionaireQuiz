@@ -135,7 +135,7 @@
     wrap.appendChild(label);
 
     const grid = el("div", "theme-grid");
-    const themes = ["all", "heating", "ventilation", "sanitaire", "smart appliances"];
+    const themes = ["heating", "ventilation", "sanitaire", "smart appliances"];
 
     themes.forEach((theme) => {
       const btn = el("button", "theme-btn");
