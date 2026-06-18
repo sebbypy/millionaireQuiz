@@ -210,6 +210,7 @@ function prepareSession() {
     question: lang === "fr" ? q.question_fr : q.question_nl,
     answers: lang === "fr" ? q.answers_fr : q.answers_nl,
     correct: q.correct,
+	explanation: lang ==="fr" ? q.explanation_fr: q.explanation_nl
   }));
 
   GameState.currentIndex = 0;
@@ -223,6 +224,11 @@ function prepareSession() {
 function currentQuestion() {
   return GameState.sessionQuestions[GameState.currentIndex];
 }
+
+function currentExplanation() {
+  return GameState.sessionQuestions[GameState.currentIndex]["explanation"];
+}
+
 
 // ─── LIFELINE: 50/50 ─────────────────────────────────────────
 function applyFiftyFifty() {

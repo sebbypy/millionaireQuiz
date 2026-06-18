@@ -370,7 +370,7 @@ body::after {
   color: var(--text-dim);
 }
 
-.lifeline-btn {
+.next-btn, .lifeline-btn {
   align-items: center; 
   height:60px;
   width:60px;
@@ -963,4 +963,25 @@ align-items:center}
 .lang-switch.active {
   background: #169CD6;
   color: white;
+}
+
+
+
+.lifeline-description {
+    display: flex;
+    align-items: center; /* vertical alignment */
+    gap: 12px;           /* space between button and h3 */
+	
+}
+
+.footerdiv{
+  position: absolute;
+  top:100%;
+  /*right: 16px;*/
+  z-index: 10000;
+  text-align: center;
+  padding:20px;
+
+  gap: 6px;
+
 }

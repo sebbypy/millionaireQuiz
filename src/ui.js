@@ -156,6 +156,9 @@
         }
         GameState.phase = "playing";
         renderGameScreen();
+		//GameState.phase = "rules";
+        //renderRules();
+		
       });
       grid.appendChild(btn);
     });
@@ -170,6 +173,73 @@
     root.appendChild(wrap);
     fadeIn(wrap);
   }
+  
+  // ─── SCREEN : RULES 
+  
+  function renderRules(){
+	  
+	  clearRoot()
+	  const wrap = el("div", "screen rules-screen");
+	  addBWLogo(document.getElementById('app'))
+
+	  var heading = el("h1")
+	  heading.innerHTML = "Rules of the game"
+	  wrap.appendChild(heading)
+	  
+	  var rules = [
+		{'id':1,'rule':'there are 5 questions to get label A'},
+		{'id':2,'rule':'only 1 correct answer'},
+		{'id':3,'rule':'you have 3 jokers'}
+		]
+	
+	rules.forEach(rule => {
+		var elem = el('h2')
+		elem.innerText = rule.rule
+		wrap.appendChild(elem)
+	
+	})
+	 
+ 	const llPhone = createLifelineBtn("", "", "📞", null, ()=>{})
+    const llTool = createLifelineBtn("", "", "🔧", null,  ()=>{} )
+	const ll5050 = createLifelineBtn("", "", "<p style='font-size:13px'>50:50</p>", null,  ()=>{})
+
+  var jokers = [
+	{'id':3,'rule':'50/50 will remove two incorrect answers','btn':ll5050},
+	{'id':4,'rule':'The friend you can call is Tooli, the Belgian construction sector AI platform','btn':llPhone},
+	{'id':5,'rule':'No public, but you can use our Buildwise tools to help you answer','btn':llTool}
+	];
+
+	 
+	jokers.forEach(rule => {
+		var item = el('span')
+		item.classList.add("lifeline-description")
+		
+		var elem = el('h3')
+		elem.innerText = rule.rule
+		item.appendChild(rule.btn)
+		item.appendChild(elem)
+		
+		wrap.appendChild(item)
+		
+		
+	
+	})
+	  
+	  
+	var btn = el("btn","start-button")
+	btn.innerHTML = "Start"
+	btn.addEventListener("click",() => {
+	  GameState.phase = "playing";
+	  renderGameScreen();
+
+	})
+	wrap.appendChild(btn)
+    root.appendChild(wrap);
+    fadeIn(wrap);
+
+	  
+  }
+  
 
   // ─── SCREEN: GAME ────────────────────────────────────────
   function renderGameScreen() {
@@ -293,6 +363,26 @@
     lockBtn.style.display = "none";
     leftSide.appendChild(lockBtn);
 
+
+	const footerDiv = el("div","footerdiv","")
+	footerDiv.id = "footer_div"
+
+	const explainDiv = el("div","explanation-div","")
+	explainDiv.id = "explain_div"
+	
+	const nextBtn = el("button","next-btn",'&rarr;')
+	nextBtn.addEventListener("click",() => {pushNext()})
+	nextBtn.id = "nextbtn"
+	
+	
+	
+	footerDiv.appendChild(nextBtn);
+	footerDiv.appendChild(explainDiv);
+	footerDiv.style.display = "none"
+
+	wrap.append(footerDiv)
+
+
     root.appendChild(wrap);
     fadeIn(wrap);
     sfxReveal();
@@ -308,6 +398,23 @@
     return btn;
   }
 
+	function pushNext(){
+
+		var nextbtn = document.getElementById("nextbtn")
+
+		if (nextbtn.classList.contains("lost")){
+			console.log("LOST")
+	      renderResultScreen(false);
+		  return
+		}
+		if (GameState.phase === "result") {
+          // Won the game!
+          renderResultScreen(true);
+        } else {
+           renderGameScreen(); 
+        }
+	}
+
   // ─── ANSWER HANDLING ──────────────────────────────────────
   function handleAnswer(index, q, grid, clickedBtn, clickedWrap) {
     // Disable all buttons
@@ -320,7 +427,15 @@
     setTimeout(() => {
       const result = submitAnswer(index);
 
+	  var explanation = document.getElementById("explain_div")
+	  explanation.innerHTML = currentExplanation()
+
+
       if (result.correct) {
+		var nextbtn = document.getElementById("nextbtn")
+		nextbtn.classList.remove("lost")
+
+		  
         clickedBtn.classList.remove("selected");
         clickedBtn.classList.add("correct");
 
@@ -329,13 +444,17 @@
 
         sfxCorrect();
 
+		var footer = document.getElementById("footer_div")
+		setTimeout(() => { footer.style.display = "" }, 1400);
+
         if (GameState.phase === "result") {
           // Won the game!
           setTimeout(() => renderResultScreen(true), 1200);
         } else {
-          setTimeout(() => { renderGameScreen(); }, 3400);
+          //setTimeout(() => { renderGameScreen(); }, 3400);
         }
-      } else {
+      } 
+	  else {
         clickedBtn.classList.remove("selected");
         clickedBtn.classList.add("wrong");
 
@@ -345,9 +464,14 @@
         // Show the correct answer
         const correctBtn = grid.querySelector(`.answer-btn[data-index="${result.correctIndex}"]`);
         if (correctBtn) { correctBtn.classList.add("correct"); }
-        sfxWrong();
-        setTimeout(() => renderResultScreen(false), 3400);
-      }
+
+		var footer = document.getElementById("footer_div")
+		var nextbtn = document.getElementById("nextbtn")
+		nextbtn.classList.add("lost")
+		setTimeout(() => { footer.style.display = "" }, 1400);
+	}
+		
+
     }, 700);
   }
 
