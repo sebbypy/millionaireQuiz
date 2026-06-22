@@ -3,6 +3,50 @@ window.HVAC_QUESTIONS = [
         "id": 1,
         "difficulty": 1,
         "theme": "heating",
+        "question_fr": "Sur une saison compl\u00e8te, quel type pompe \u00e0 chaleur a normalement le meilleur COP pour le chauffage?",
+        "question_nl": "nan",
+        "explanation_fr": "En p\u00e9riode froide, la temp\u00e9rature du sol sera sup\u00e9rieure \u00e0 celle de l'air ext\u00e9rieur. La consommation d'\u00e9nergie de la pompe \u00e0 chaleur sera moindre pour amener l'eau \u00e0 la bonne temp\u00e9rature",
+        "explanation_nl": "nan",
+        "answers_fr": [
+            "PAC air/air",
+            "PAR sol/eau",
+            "PAC air/eau",
+            "Elles sont \u00e9quivalentes"
+        ],
+        "answers_nl": [
+            "nan",
+            "nan",
+            "nan",
+            "nan"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 2,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "J'ai consomm\u00e9 1500 m\u00b3 de gaz pour le chauffage entre le 01/01/2024 et le 01/01/2025. Quelle est la puissance de la PAC que je devrais installer pour remplacer ma chaudi\u00e8re?",
+        "question_nl": "nan",
+        "explanation_fr": "L'application \"Heatload\" permet d'estimer la puissance sur base de calculs th\u00e9oriques ou de consommations pass\u00e9es",
+        "explanation_nl": "nan",
+        "answers_fr": [
+            "Environ 4kW",
+            "Envirion 8 kW",
+            "Envirion 12 kW",
+            "Environ 16kW"
+        ],
+        "answers_nl": [
+            "nan",
+            "nan",
+            "nan",
+            "nan"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 3,
+        "difficulty": 1,
+        "theme": "heating",
         "question_fr": "Le chauffage basse temp\u00e9rature c'est...",
         "question_nl": "nan",
         "explanation_fr": "texte",
@@ -22,7 +66,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 2,
+        "id": 4,
         "difficulty": 1,
         "theme": "heating",
         "question_fr": "Un vase d'expansion mal dimensionn\u00e9 ou mal r\u00e9gl\u00e9 c'est...",
@@ -44,7 +88,7 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 3,
+        "id": 5,
         "difficulty": 1,
         "theme": "heating",
         "question_fr": "Dans quelle unit\u00e9 se mesure la puissance d'une chaudi\u00e8re",
@@ -66,7 +110,7 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 4,
+        "id": 6,
         "difficulty": 1,
         "theme": "heating",
         "question_fr": "Pour chauffer une pi\u00e8ce, j'utilise...",
@@ -88,7 +132,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 5,
+        "id": 7,
         "difficulty": 1,
         "theme": "heating",
         "question_fr": "Quel type de b\u00e2timent est id\u00e9al pour une pompe \u00e0 chaleur",
@@ -110,7 +154,7 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 6,
+        "id": 8,
         "difficulty": 1,
         "theme": "heating",
         "question_fr": "Une pompe \u00e0 chaleur g\u00e9othermique puise son \u00e9nergie...",
@@ -132,7 +176,7 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 7,
+        "id": 9,
         "difficulty": 1,
         "theme": "heating",
         "question_fr": "Quel \u00e9metteur pr\u00e9sente la plus grande inertie",
@@ -154,200 +198,156 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 8,
-        "difficulty": 1,
-        "theme": "ventilation",
-        "question_fr": "random1",
-        "question_nl": "random1",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "correct": 0
-    },
-    {
-        "id": 9,
-        "difficulty": 1,
-        "theme": "ventilation",
-        "question_fr": "random2",
-        "question_nl": "random2",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "correct": 1
-    },
-    {
         "id": 10,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random3",
-        "question_nl": "random3",
+        "question_fr": "Quelle est la diff\u00e9rence entre le d\u00e9bit minimal requis et le d\u00e9bit de conception ?",
+        "question_nl": "Wat is het verschil tussen het minimaal ge\u00ebiste debiet en het ontwerpdebiet?",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Le d\u00e9bit minimal requis est identique au d\u00e9bit de conception",
+            "Le d\u00e9bit minimal requis d\u00e9coule des exigences, le d\u00e9bit de conception est fix\u00e9 par le concepteur/installateur et respecte au moins les exigences",
+            "Le d\u00e9bit de conception est le d\u00e9bit en fonction du taux d\u2019occupation dans les b\u00e2timents non r\u00e9sidentiels",
+            "Le d\u00e9bit de conception est le d\u00e9bit r\u00e9ellement obtenu apr\u00e8s la mise en service"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Het minimaal ge\u00ebiste debiet is hetzelfde als het ontwerpdebiet",
+            "Het minimaal ge\u00ebiste debiet volgt uit de eisen, het ontwerpdebiet wordt vastgelegd door de ontwerper/installateur en voldoet minstens aan de eisen ",
+            "Het ontwerpdebiet is het debiet ifv de bezettingsgraad in niet-resident\u00eble gebouwen",
+            "Het ontwerpdebiet is het gerealiseerde debiet na indienststelling "
         ],
-        "correct": 3
+        "correct": 1
     },
     {
         "id": 11,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random4",
-        "question_nl": "random4",
+        "question_fr": "Pourquoi l\u2019\u00e9quilibre entre le d\u00e9bit de soufflage et d\u2019extraction est-il important lors de la conception ?",
+        "question_nl": "Waarom is de balans tussen het toevoer- en afvoerdebiet belangrijk bij het ontwerp?",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Pour \u00e9viter les nuisances sonores",
+            "Risque d\u2019une mauvaise qualit\u00e9 de l\u2019air",
+            "Non int\u00e9grable dans la PEB",
+            "Aucun risque"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Om geluidshinder te voorkomen ",
+            "Om het risico op een slechte luchtkwaliteit te berperken",
+            "Een systeem met een onbalns is niet invoerbaar in EPB",
+            "Er is geen risico"
         ],
-        "correct": 2
+        "correct": 1
     },
     {
         "id": 12,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random5",
-        "question_nl": "random5",
+        "question_fr": "Pourquoi est-il important de limiter les pertes de pression du r\u00e9seau ?",
+        "question_nl": "Waarom is het belangrijk om de drukverliezen in het netwerk te beperken?",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Ce n\u2019est pas si important, tant que le d\u00e9bit est atteint",
+            "Pour limiter la consommation \u00e9lectrique et r\u00e9duire le bruit du ventilateur",
+            "Pour limiter uniquement la consommation \u00e9lectrique",
+            "Pour faciliter la mesure des d\u00e9bits"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Het is niet zo belangrijk, zolang het debiet wordt bereikt",
+            "Om het elektriciteitsverbruik te beperken en de geluidsproductie van de ventilator te verminderen",
+            "Om enkel het elektriciteitsverbruik te beperken",
+            "Om de debieten gemakkelijker te kunnen meten"
         ],
-        "correct": 0
+        "correct": 1
     },
     {
         "id": 13,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random6",
-        "question_nl": "random6",
+        "question_fr": "Quelle norme traite de la ventilation dans les b\u00e2timents r\u00e9sidentiels ?",
+        "question_nl": "Welke norm behandelt ventilatie in residenti\u00eble gebouwen?",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "NBN D 50-001",
+            "NBN EN 16798-3",
+            "NBN EN ISO 16890",
+            "NBN EN 15780"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "NBN D 50-001",
+            "NBN EN 16798-3",
+            "NBN EN ISO 16890",
+            "NBN EN 15780"
         ],
-        "correct": 1
+        "correct": 0
     },
     {
         "id": 14,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random7",
-        "question_nl": "random7",
+        "question_fr": "Ouvrez l\u2019application web Optivent. Que peut-on y faire directement ?",
+        "question_nl": "Open de Optivent web-app. Wat kan je er rechtstreeks mee doen?",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Calculer les pertes de chaleur et s\u00e9lectionner les radiateurs",
+            "R\u00e9gler les d\u00e9bits et planifier un entretien",
+            "Dimensionnement du r\u00e9seau de conduits et r\u00e9glage des d\u00e9bits",
+            "R\u00e9gler les d\u00e9bits et g\u00e9n\u00e9rer un rapport"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Warmteverlies berekenen en radiatoren selecteren",
+            " Debieten afstellen en een onderhoud plannen",
+            "dimensionering van het kanalennetwerk en afstellen van de debieten ",
+            "Debieten afstellen en een rapport maken"
         ],
-        "correct": 2
+        "correct": 3
     },
     {
         "id": 15,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random8",
-        "question_nl": "random8",
+        "question_fr": "Dans quel ordre faut-il r\u00e9gler les vannes suivantes ((d\u00e9bits requis 1 : 250 m\u00b3/h, 2 : 50 m\u00b3/h, 75 m\u00b3/h ; d\u00e9bits mesur\u00e9s 1, 2, 3 : 60 m\u00b3/h)) ?",
+        "question_nl": "In welke volgorde moet je volgende ventielen afstellen (ge\u00ebist 1: 250m\u00b3/h, 2: 50 m\u00b3/h, 75 m\u00b3/h; gemeten 1,2,3: 60 m\u00b3/h)",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "1,2,3",
+            "2,1,3",
+            "3,2,1",
+            "1,3,2"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "1,2,3",
+            "2,1,3",
+            "3,2,1",
+            "1,3,2"
         ],
-        "correct": 3
+        "correct": 2
     },
     {
         "id": 16,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random9",
-        "question_nl": "random9",
+        "question_fr": "Quels conduits faut-il isoler dans un syst\u00e8me D ?",
+        "question_nl": "Welke leidingen moeten ge\u00efsoleerd worden bij een systeem D?",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Entre le groupe et l\u2019enveloppe isol\u00e9e (volume prot\u00e9g\u00e9 du b\u00e2timent)",
+            "Toujours tous les conduits vers l\u2019ext\u00e9rieur",
+            "Uniquement les conduits d\u2019alimentation vers les pi\u00e8ces",
+            "Aucun conduit ne doit \u00eatre isol\u00e9"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Tussen de groep en de ge\u00efsoleerde schil (beschermd volume van het gebouw)",
+            "Altijd alle leidingen naar buiten",
+            "Enkel de toevoerleidingen naar de ruimtes",
+            "Geen enkele leiding moet ge\u00efsoleerd worden"
         ],
         "correct": 0
     },
@@ -355,21 +355,21 @@ window.HVAC_QUESTIONS = [
         "id": 17,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random10",
-        "question_nl": "random10",
+        "question_fr": "Laquelle des affirmations suivantes est correcte selon la r\u00e9glementation PEB ?",
+        "question_nl": "Welk van volgende uitspraken is van toepassing volgens de EPB-regelgeving?",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Une cuisine avec une machine \u00e0 laver doit r\u00e9pondre aux exigences d\u2019une cuisine et d\u2019une buanderie",
+            "Un local de rangement avec une machine \u00e0 laver doit r\u00e9pondre aux exigences d\u2019une buanderie",
+            "Un local de rangement avec un s\u00e8che-linge doit r\u00e9pondre aux exigences d\u2019une buanderie",
+            "Toutes les affirmations ci-dessus sont correctes"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Een keuken met een wasmachine moet voldoen aan de eisen van een keuken en een wasplaats",
+            "Een bergruimte met een wasmachine moet voldoen aan de eisen van een wasplaats",
+            "Een bergruimte met een droogkast moet voldoen aan de eisen van een wasplaats",
+            "Alle bovenstaande uitspraken gelden"
         ],
         "correct": 1
     },
@@ -377,65 +377,65 @@ window.HVAC_QUESTIONS = [
         "id": 18,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random11",
-        "question_nl": "random11",
+        "question_fr": "Dans quel syst\u00e8me de ventilation n\u2019y a-t-il pas d\u2019entr\u00e9es d\u2019air r\u00e9glables ?",
+        "question_nl": "In welk ventilatiesysteem komen er geen regelbare toevoeropeningen voor? ",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Syst\u00e8me A",
+            "Syst\u00e8me C",
+            "Syst\u00e8me C avec r\u00e9gulation \u00e0 la demande",
+            "Syst\u00e8me D"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Systeem A",
+            "Systeem C",
+            "Systeem C met vraagsturing",
+            "Systeem D"
         ],
-        "correct": 2
+        "correct": 3
     },
     {
         "id": 19,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random12",
-        "question_nl": "random12",
+        "question_fr": "Quel est le d\u00e9bit minimal d\u2019extraction requis pour une salle de bain de 10 m\u00b2 ?",
+        "question_nl": "Hoeveel bedraagt het minimaal ge\u00ebiste afvoerdebiet in een badkamer van 10 m\u00b2?",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "50 m\u00b3/h",
+            "25 m\u00b3/h",
+            "21,6 m\u00b3/h",
+            "Aucune des r\u00e9ponses ci-dessus"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "50 m\u00b3/h",
+            "25 m\u00b3/h",
+            "21,6 m\u00b3/h",
+            "Geen van bovenstaande antwoorden"
         ],
-        "correct": 3
+        "correct": 0
     },
     {
         "id": 20,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random13",
-        "question_nl": "random13",
+        "question_fr": "Quelle est la vitesse de l\u2019air pour un d\u00e9bit de 90 m\u00b3/h dans un conduit de 125 mm ?",
+        "question_nl": "Wat is de luchtsnelheid bij een debiet van 90 m\u00b3/u in een leiding van 125 mm?",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Cela d\u00e9pend d\u2019autres param\u00e8tres",
+            "1,5 m/s",
+            "2 m/s",
+            "3 m/s"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Dat hangt af van andere parameters",
+            "1,5 m/s",
+            "2 m/s",
+            "3 m/s"
         ],
         "correct": 2
     },
@@ -443,48 +443,136 @@ window.HVAC_QUESTIONS = [
         "id": 21,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random14",
-        "question_nl": "random14",
+        "question_fr": "La fonction principale d\u2019un filtre \u00e0 air dans un syst\u00e8me D est :",
+        "question_nl": "De primaire functie van een luchtfilter in een systeem D is ",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "L\u2019am\u00e9lioration de la qualit\u00e9 de l\u2019air",
+            "Filtrer les condensats de l\u2019\u00e9vacuation",
+            "Prot\u00e9ger le syst\u00e8me de ventilation",
+            "D\u00e9shumidifier l\u2019air de soufflage"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Het verbeteren van de luchtkwaliteit ",
+            "Het filteren van het condenswater van de condensafvoer ",
+            "Het beschermen van het ventilatiesysteem ",
+            "Het ontvochtigen van de toevoerlucht"
         ],
-        "correct": 3
+        "correct": 2
     },
     {
         "id": 22,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "random15",
-        "question_nl": "random15",
+        "question_fr": "Quelle est la fonction principale de la mise en service ?",
+        "question_nl": "Wat is de belangrijkste functie van de indienststelling?",
         "explanation_fr": "texte",
         "explanation_nl": "tekst",
         "answers_fr": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Contr\u00f4ler le co\u00fbt de l\u2019installation",
+            "R\u00e9gler les d\u00e9bits d\u2019air par pi\u00e8ce",
+            "Installation des bouches",
+            "Isoler les conduits de ventilation"
         ],
         "answers_nl": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Controleren van de installatiekost ",
+            "Afstellen van de luchtdebieten per ruimte ",
+            "Plaatsen van ventielen",
+            "Isoleren van de ventilatiekanalen "
         ],
-        "correct": 0
+        "correct": 1
     },
     {
         "id": 23,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "Sur quoi se concentre l\u2019Innovation Paper 41 ?",
+        "question_nl": "Waar focust Innovation Paper 41 op?",
+        "explanation_fr": "texte",
+        "explanation_nl": "tekst",
+        "answers_fr": [
+            "Ventilation en nouvelle construction",
+            "Ventilation non r\u00e9sidentielle",
+            "Ventilation en r\u00e9novation",
+            "Climatisation"
+        ],
+        "answers_nl": [
+            "Nieuwbouwventilatie",
+            "Niet-residenti\u00eble ventilatie ",
+            "Ventilatie in renovatie ",
+            "Klimatisatie "
+        ],
+        "correct": 2
+    },
+    {
+        "id": 24,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "Pourquoi faut-il remplacer les filtres \u00e0 air dans un syst\u00e8me de ventilation ?",
+        "question_nl": "Waarom dienen luchtfilters in een ventilatiesysteem vervangen te worden?",
+        "explanation_fr": "texte",
+        "explanation_nl": "tekst",
+        "answers_fr": [
+            "Parce qu\u2019ils commencent \u00e0 provoquer des probl\u00e8mes d\u2019odeur",
+            "Parce que les filtres deviennent moins efficaces pour capter la poussi\u00e8re avec le temps",
+            "Parce que la perte de charge \u00e0 travers le filtre augmente, ce qui entra\u00eene une consommation d\u2019\u00e9nergie plus \u00e9lev\u00e9e ou une diminution du d\u00e9bit de ventilation",
+            "Les deux r\u00e9ponses pr\u00e9c\u00e9dentes sont correctes"
+        ],
+        "answers_nl": [
+            "Omdat ze geurproblemen beginnen te veroorzaken.",
+            "Omdat filters  na verloop van tijd minder effici\u00ebnt worden in het afvangen van stof.",
+            "Omdat de drukval over de filter toeneemt en dit resulteert in meer energieverbruik of een vermindering van het ventilatiedebiet",
+            "Beide voorgaande antwoorden zijn correct"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 25,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "Que peut-on notamment faire avec la version desktop d\u2019Optivent ?",
+        "question_nl": "Wat kan je onder andere doen met de Optivent desktop-versie?",
+        "explanation_fr": "texte",
+        "explanation_nl": "tekst",
+        "answers_fr": [
+            "Calculer les d\u00e9bits requis et fixer les d\u00e9bits de conception",
+            "Calculer les pertes de pression et dimensionner le r\u00e9seau m\u00e9canique (syst\u00e8mes B, C et D)",
+            "Calculer le niveau sonore dans chaque pi\u00e8ce",
+            "Toutes les r\u00e9ponses ci-dessus"
+        ],
+        "answers_nl": [
+            "Berekenen ge\u00ebiste debieten en vastleggen ontwerpdebieten",
+            "Berekenen drukverliezen en dimensioneren mechanische netwerk (systemen B, C en D)",
+            "Berekenen geluidsniveau in elke ruimte",
+            "Alle voorgaande antwoorden"
+        ],
+        "correct": 3
+    },
+    {
+        "id": 26,
+        "difficulty": 1,
+        "theme": "ventilation",
+        "question_fr": "L\u2019installation d\u2019un filtre \u00e0 poches ePM2,5 70 % pour un groupe de ventilation double flux\u2026",
+        "question_nl": "De installatie van een fijne ePM2,5 70% zakkenfilter voor de balansventilatiegroep\u2026",
+        "explanation_fr": "texte",
+        "explanation_nl": "tekst",
+        "answers_fr": [
+            "Assure uniquement la protection du syst\u00e8me de ventilation",
+            "Combine la protection du syst\u00e8me avec une am\u00e9lioration de la qualit\u00e9 de l\u2019air ext\u00e9rieur insuffl\u00e9",
+            "Emp\u00eache l\u2019entr\u00e9e des odeurs provenant de l\u2019ext\u00e9rieur",
+            "N\u00e9cessite plus d\u2019entretien qu\u2019un filtre fin plac\u00e9 directement dans le groupe de ventilation"
+        ],
+        "answers_nl": [
+            "Zorgt alleen voor de bescherming van het ventilatiesysteem",
+            "Combineert systeembescherming met een verbetering van de kwaliteit van de aangevoerde buitenlucht",
+            "Voorkomt heb binnendringen van geuren uit de buitenomgeving ",
+            "Vereist meer onderhoud dan een fijnfilter die direct in de ventilatiegroep geplaatst wordt"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 27,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Quelle est la temp\u00e9rature recommand\u00e9e de l'eau chaude sanitaire au d\u00e9part de la boucle de distribution ?",
@@ -506,7 +594,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 24,
+        "id": 28,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Quel mat\u00e9riau est d\u00e9conseill\u00e9 pour la distribution d'eau chaude sanitaire\u00a0?",
@@ -528,7 +616,7 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 25,
+        "id": 29,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Que dois-je installer directement apr\u00e8s le compteur de la compagnie distributrice d\u2019eau publique ?",
@@ -550,7 +638,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 26,
+        "id": 30,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Pour \u00e9viter des nuisances acoustiques, quelle est la vitesse maximale de l\u2019eau dans des conduites traversant des locaux habit\u00e9s ?",
@@ -572,7 +660,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 27,
+        "id": 31,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Quand se produit un coup de b\u00e9lier ?",
@@ -594,7 +682,7 @@ window.HVAC_QUESTIONS = [
         "correct": null
     },
     {
-        "id": 28,
+        "id": 32,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Avec une production d'eau chaude sanitaire, quel \u00e9quipement doit dans tous les cas \u00eatre install\u00e9 ?",
@@ -616,7 +704,7 @@ window.HVAC_QUESTIONS = [
         "correct": null
     },
     {
-        "id": 29,
+        "id": 33,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Si le client veut utiliser simultan\u00e9ment une douche et un \u00e9vier de cuisine avec une production d'eau chaude sanitaire instantan\u00e9e, quelle est la puissance n\u00e9cessaire\u00a0?",
@@ -638,7 +726,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 30,
+        "id": 34,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Dans un logement avec deux chambres, quel devrait-\u00eatre le volume de mon boiler thermodynamique ?",
@@ -660,7 +748,117 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 31,
+        "id": 35,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Que faut-il faire en cas de risque de refoulement dans l\u2019\u00e9gout public lorsque l\u2019installation d\u2019\u00e9vacuation priv\u00e9e (collecteur d\u2019\u00e9gouttage priv\u00e9) se situe sous le niveau de refoulement de la rue ?",
+        "question_nl": "Wat moet gebeuren bij gevaar voor terugstuwing in de openbare riolering en wanneer de huisriolering (collector private riolering) zich onder het terugstuwniveau van de straat bevindt?",
+        "explanation_fr": "TV 265, \u00a7 4.1.1.10",
+        "explanation_nl": "Zie TV 265, \u00a7 4.1.1.10",
+        "answers_fr": [
+            "Dans ce cas, il faut toujours installer une station de pompage pour \u00e9vacuer les eaux us\u00e9es.",
+            "Un clapet anti-retour peut \u00eatre install\u00e9 et tous les appareils de d\u00e9versement situ\u00e9s au-dessus du niveau de refoulement doivent \u00eatre raccord\u00e9s en aval de ce clapet anti-retour.",
+            "Un clapet anti-retour peut \u00eatre install\u00e9 et tous les appareils de d\u00e9versement situ\u00e9s au-dessus du niveau de refoulement doivent \u00eatre raccord\u00e9s en amont de ce clapet anti-retour.",
+            "Aucune solution satisfaisante n\u2019est possible, l\u2019ex\u00e9cution n\u2019est pas conforme au code de bonne pratique."
+        ],
+        "answers_nl": [
+            "Er moet in dit geval altijd een pompput geplaatst worden om het afvalwater te kunnen afvoeren. ",
+            "Er mag een terugslagklep geplaatst worden en alle lozingstoestellen boven terugstuwniveau moeten stroomafwaarts van deze terugslagklep aangesloten worden. ",
+            "Er mag een terugslagklep geplaatst worden en alle lozingstoestellen boven terugstuwniveau moeten stroomopwaarts van deze terugslagklep aangesloten worden. ",
+            "Er is geen goede oplossing mogelijk, de uitvoering is niet volgens code van goede praktijk. "
+        ],
+        "correct": 1
+    },
+    {
+        "id": 36,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Quelle est la pente minimale recommand\u00e9e des conduites horizontales d\u2019\u00e9vacuation des eaux us\u00e9es ?",
+        "question_nl": "Wat is de aanbevolen minimale helling van afvalwaterafvoerleidingen met horizontaal verloop? ",
+        "explanation_fr": "TV 265, \u00a7 4.3.1, \u00a7 4.3.2, \u00a7 4.5.1",
+        "explanation_nl": "Zie TV 265, \u00a7 4.3.1, \u00a7 4.3.2, \u00a7 4.5.1. ",
+        "answers_fr": [
+            "0.05",
+            "0.02",
+            "0.01",
+            "0,50 %"
+        ],
+        "answers_nl": [
+            "0.05",
+            "0.02",
+            "0.01",
+            "0.005"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 37,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Quelle est la pente maximale recommand\u00e9e d\u2019une goutti\u00e8re ?",
+        "question_nl": "Wat is de aanbevolen maximale helling van een dakgoot? ",
+        "explanation_fr": "TV 270, \u00a7 4.3.2.2",
+        "explanation_nl": "Zie TV 270, \u00a7 4.3.2.2",
+        "answers_fr": [
+            "0.1",
+            "0.05",
+            "0.02",
+            "0.01"
+        ],
+        "answers_nl": [
+            "0.1",
+            "0.05",
+            "0.02",
+            "0.01"
+        ],
+        "correct": 3
+    },
+    {
+        "id": 38,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Quel \u00e9l\u00e9ment d\u2019une installation d\u2019\u00e9vacuation des eaux pluviales ne peut pas \u00eatre calcul\u00e9 et n\u2019est connu qu\u2019\u00e0 partir de r\u00e9sultats d\u2019essais ?",
+        "question_nl": "Welk onderdeel van een afvoerinstallatie voor hemelwater kan niet berekend worden en is enkel gekend op basis van testresultaten? ",
+        "explanation_fr": "TV 270, \u00a7 5.3.2",
+        "explanation_nl": "Zie TV 270, \u00a7 5.3.2",
+        "answers_fr": [
+            "Avaloir de toiture pr\u00e9fabriqu\u00e9",
+            "Goutti\u00e8re \u00e0 section triangulaire",
+            "Colonne de chute \u00e0 section carr\u00e9e",
+            "\u00c9vacuation en rive de toiture \u00e0 section rectangulaire"
+        ],
+        "answers_nl": [
+            "geprefabriceerde dakkolk",
+            "goot met driehoekige doorsnede",
+            "standleiding met vierkante doorsnede",
+            "dakrandafvoer met rechthoekige doorsnede"
+        ],
+        "correct": 0
+    },
+    {
+        "id": 39,
+        "difficulty": 1,
+        "theme": "sanitaire",
+        "question_fr": "Qu\u2019est-ce que la ventilation primaire dans une installation d\u2019\u00e9vacuation ?",
+        "question_nl": "Wat is primaire verluchting  in een afvoerinstallatie? ",
+        "explanation_fr": "TV 265, d\u00e9finition p. 10",
+        "explanation_nl": "Zie TV 265, definitie op p. 10",
+        "answers_fr": [
+            "La ventilation primaire est une conduite qui relie le tuyau de raccordement d\u2019un appareil sanitaire \u00e0 une colonne de ventilation.",
+            "La ventilation primaire est assur\u00e9e par le clapet a\u00e9rateur plac\u00e9 le plus haut dans l\u2019installation d\u2019\u00e9vacuation.",
+            "La ventilation primaire est la partie de la colonne de chute qui est prolong\u00e9e au-dessus du raccordement le plus \u00e9lev\u00e9 jusqu\u2019au-dessus de la toiture ou jusqu\u2019\u00e0 un clapet a\u00e9rateur.",
+            "La ventilation primaire concerne la ventilation via une \u00e9vacuation sans siphon, puisqu\u2019elle reste ouverte \u00e0 l\u2019air libre, comme par exemple une \u00e9vacuation de toiture ou de balcon."
+        ],
+        "answers_nl": [
+            "Primaire verluchting is een leiding die de aansluitleiding van een lozingstoestel verbindt met een verluchtingsstandleiding",
+            "Primaire verluchting is de verluchting via de hoogst geplaatste beluchtingsklep in de afvoerinstallatie",
+            "Primaire verluchting is het gedeelte van de afvoerstandleiding dat boven de hoogste aansluiting verlengd wordt tot boven het dak of tot aan een beluchtingsklep",
+            "Primaire verluchting heeft betrekking op de verluchting via een afvoer zonder sifon aangezien bij deze afvoer een open verbinding blijft met de buitenlucht, zoals bij bv. een dakafvoer of balkonafvoer.  "
+        ],
+        "correct": 2
+    },
+    {
+        "id": 40,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Quel est l\u2019objectif de la maintenance pr\u00e9ventive ?",
@@ -682,7 +880,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 32,
+        "id": 41,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Quel est le r\u00f4le principal d\u2019un Energy Management System (EMS) dans un b\u00e2timent ?",
@@ -704,7 +902,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 33,
+        "id": 42,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Quel est le principal avantage des capteurs de chaleur connect\u00e9s dans un syst\u00e8me de chauffage ?",
@@ -726,7 +924,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 34,
+        "id": 43,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Assurer la flexibilit\u00e9 \u00e9nerg\u00e9tique d\u2019un b\u00e2timent consiste principalement \u00e0 :",
@@ -748,7 +946,7 @@ window.HVAC_QUESTIONS = [
         "correct": 3
     },
     {
-        "id": 35,
+        "id": 44,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Le protocole sans fil LoRa (et LoRaWAN) est principalement utilis\u00e9 pour :",
@@ -770,7 +968,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 36,
+        "id": 45,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Quel est un objectif cl\u00e9 que doit remplir un b\u00e2timent \u00e9quip\u00e9 d'un syst\u00e8me d\u2019automatisation et de contr\u00f4le des b\u00e2timents (ou BACS - Building Automation Control Systems) ?",
@@ -792,7 +990,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 37,
+        "id": 46,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Que signifie l\u2019acronyme BACS dans le domaine des b\u00e2timents intelligents ?",
@@ -812,5 +1010,27 @@ window.HVAC_QUESTIONS = [
             "Building Advanced Cooling System"
         ],
         "correct": 0
+    },
+    {
+        "id": 47,
+        "difficulty": 1,
+        "theme": "smart appliances",
+        "question_fr": "Que sont BACnet et KNX ?",
+        "question_nl": "Wat zijn BACnet en KNX?",
+        "explanation_fr": "Ces protocoles sont les plus courant pour la gestion technique des grands b\u00e2timents. BACnet est tr\u00e8s utilis\u00e9 en am\u00e9rique, et KNX est plus courant en europe. ",
+        "explanation_nl": "Deze protocollen zijn de meest gebruikte voor het technisch beheer van grote gebouwen. BACnet wordt veel gebruikt in Noord-Amerika, terwijl KNX vaker voorkomt in Europa.",
+        "answers_fr": [
+            "Des syst\u00e8mes de gestion technique centralis\u00e9e (GTC)",
+            "Des applications /logiciels pour le suivi \u00e0 distance des installations",
+            "Des protocoles de communication pour les syst\u00e8mes des b\u00e2timents",
+            "Des entreprises qui vendent des produits pour la gestion et le contr\u00f4le des batiments"
+        ],
+        "answers_nl": [
+            "Gecentraliseerde technische beheersystemen (GBS)",
+            "Toepassingen/software voor de opvolging van installaties op afstand",
+            "Communicatieprotocollen voor gebouwsystemen",
+            "Bedrijven die producten verkopen voor het beheer en de controle van gebouwen"
+        ],
+        "correct": 2
     }
 ]

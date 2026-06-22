@@ -226,7 +226,13 @@ function currentQuestion() {
 }
 
 function currentExplanation() {
+  
+  try{
   return GameState.sessionQuestions[GameState.currentIndex]["explanation"];
+  }
+	catch(e){
+	return null
+	}
 }
 
 
