@@ -648,7 +648,7 @@ const tools = [
     title: "Optivent App",
     description: {'fr':"Réglage des débits de ventilation",'nl':'Afstelling van ventilatiedebieten'},
     image: "img/optivent_notext_square.svg",
-    url: "https://silentheatpump.buildwise.be/"
+    url: "https://optivent-app.buildwise.be/home"
   },
   {
     title: "PowerHeat",
