@@ -370,7 +370,8 @@
 	const explainDiv = el("div","explanation-div","")
 	explainDiv.id = "explain_div"
 	
-	const nextBtn = el("button","next-btn",'&rarr;')
+	const nextBtn = el("button","next-btn",'')
+	nextBtn.innerHTML = `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>`
 	nextBtn.addEventListener("click",() => {pushNext()})
 	nextBtn.id = "nextbtn"
 	
@@ -575,7 +576,6 @@ function showPhoneModal(initialText, loading, url = "https://tooli.be/c/new") {
         </div>
       </div>
 
-      <button class="modal-close-x">✕</button>
     </div>
 
 
@@ -591,8 +591,11 @@ function showPhoneModal(initialText, loading, url = "https://tooli.be/c/new") {
     </div>
     `;
 
+  const closeBtn = el("button", "modal-close-btn", t("close"));
+  box.appendChild(closeBtn)
+
   // Close modal
-  box.querySelector(".modal-close-x")
+  box.querySelector(".modal-close-btn")
     .addEventListener("click", () => {
       overlay.remove();
     });
@@ -604,6 +607,7 @@ function showPhoneModal(initialText, loading, url = "https://tooli.be/c/new") {
     });
 
   overlay.appendChild(box);
+
   document.body.appendChild(overlay);
 
   fadeIn(box);
