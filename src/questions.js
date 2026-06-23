@@ -710,7 +710,7 @@ window.HVAC_QUESTIONS = [
         "question_fr": "Quelle est la temp\u00e9rature recommand\u00e9e de l'eau chaude sanitaire au d\u00e9part de la boucle de distribution ?",
         "question_nl": "Wat is de aanbevolen temperatuur van het sanitair warm water bij het begin van een circulatieleiding?",
         "explanation_fr": "Il s'agit de la temp\u00e9rature minimale n\u00e9cessaire pour r\u00e9duire la concentration d\u00e8s que colonies de Legionella. Voir https://www.buildwise.be/fr/publications/innovation-paper/31/",
-        "explanation_nl": "Il s'agit de la temp\u00e9rature minimale n\u00e9cessaire pour r\u00e9duire la concentration d\u00e8s que colonies de Legionella.\nZie : https://www.buildwise.be/nl/publicaties/innovation-papers/31/",
+        "explanation_nl": "Dit is de minimale temperatuur die nodig is om de concentratie van Legionellakolonies te verminderen.\nZie : https://www.buildwise.be/nl/publicaties/innovation-papers/31/",
         "answers_fr": [
             "50\u00b0C",
             "60\u00b0C",
@@ -866,16 +866,16 @@ window.HVAC_QUESTIONS = [
         "explanation_fr": "TV 265, \u00a7 4.3.1, \u00a7 4.3.2, \u00a7 4.5.1",
         "explanation_nl": "Zie TV 265, \u00a7 4.3.1, \u00a7 4.3.2, \u00a7 4.5.1. ",
         "answers_fr": [
-            "0.05",
-            "0.02",
-            "0.01",
+            "5%",
+            "2%",
+            "1%",
             "0,50 %"
         ],
         "answers_nl": [
-            "0.05",
-            "0.02",
-            "0.01",
-            "0.005"
+            "5%",
+            "2%",
+            "1%",
+            "0,50 %"
         ],
         "correct": 2
     },
@@ -888,16 +888,16 @@ window.HVAC_QUESTIONS = [
         "explanation_fr": "TV 270, \u00a7 4.3.2.2",
         "explanation_nl": "Zie TV 270, \u00a7 4.3.2.2",
         "answers_fr": [
-            "0.1",
-            "0.05",
-            "0.02",
-            "0.01"
+            "10%",
+            "5%",
+            "2%",
+            "1%"
         ],
         "answers_nl": [
-            "0.1",
-            "0.05",
-            "0.02",
-            "0.01"
+            "10%",
+            "5%",
+            "2%",
+            "1%"
         ],
         "correct": 3
     },
@@ -913,7 +913,7 @@ window.HVAC_QUESTIONS = [
             "Avaloir de toiture pr\u00e9fabriqu\u00e9",
             "Goutti\u00e8re \u00e0 section triangulaire",
             "Colonne de chute \u00e0 section carr\u00e9e",
-            "\u00c9vacuation en rive de toiture \u00e0 section rectangulaire"
+            "\u00c9vacuation en rive de toiture (exutoire lat\u00e9ral) \u00e0 section rectangulaire"
         ],
         "answers_nl": [
             "geprefabriceerde dakkolk",

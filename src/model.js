@@ -228,7 +228,7 @@ function currentQuestion() {
 function currentExplanation() {
   
   try{
-  return GameState.sessionQuestions[GameState.currentIndex]["explanation"];
+  return GameState.sessionQuestions[GameState.currentIndex-1]["explanation"];
   }
 	catch(e){
 	return null
