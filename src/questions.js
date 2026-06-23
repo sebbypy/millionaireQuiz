@@ -4,9 +4,9 @@ window.HVAC_QUESTIONS = [
         "difficulty": 1,
         "theme": "heating",
         "question_fr": "Sur une saison compl\u00e8te, quel type pompe \u00e0 chaleur a normalement le meilleur COP pour le chauffage?",
-        "question_nl": "nan",
+        "question_nl": "Over een volledig stookseizoen heeft welk type warmtepomp normaal gezien de hoogste COP voor verwarming?",
         "explanation_fr": "En p\u00e9riode froide, la temp\u00e9rature du sol sera sup\u00e9rieure \u00e0 celle de l'air ext\u00e9rieur. La consommation d'\u00e9nergie de la pompe \u00e0 chaleur sera moindre pour amener l'eau \u00e0 la bonne temp\u00e9rature",
-        "explanation_nl": "nan",
+        "explanation_nl": "tbd",
         "answers_fr": [
             "PAC air/air",
             "PAR sol/eau",
@@ -14,10 +14,10 @@ window.HVAC_QUESTIONS = [
             "Elles sont \u00e9quivalentes"
         ],
         "answers_nl": [
-            "nan",
-            "nan",
-            "nan",
-            "nan"
+            "Lucht/lucht-warmtepomp",
+            "Bodem/water-warmtepomp",
+            "Lucht/water-warmtepomp",
+            "Ze zijn gelijkwaardig"
         ],
         "correct": 1
     },
@@ -26,20 +26,20 @@ window.HVAC_QUESTIONS = [
         "difficulty": 1,
         "theme": "heating",
         "question_fr": "J'ai consomm\u00e9 1500 m\u00b3 de gaz pour le chauffage entre le 01/01/2024 et le 01/01/2025. Quelle est la puissance de la PAC que je devrais installer pour remplacer ma chaudi\u00e8re?",
-        "question_nl": "nan",
+        "question_nl": "Ik heb tussen 01/01/2024 en 01/01/2025 1500 m\u00b3 aardgas verbruikt voor verwarming. Welk vermogen van warmtepomp zou ik moeten installeren om mijn ketel te vervangen?",
         "explanation_fr": "L'application \"Heatload\" permet d'estimer la puissance sur base de calculs th\u00e9oriques ou de consommations pass\u00e9es",
-        "explanation_nl": "nan",
+        "explanation_nl": "tbd",
         "answers_fr": [
             "Environ 4kW",
-            "Envirion 8 kW",
+            "Environ 8 kW",
             "Envirion 12 kW",
             "Environ 16kW"
         ],
         "answers_nl": [
-            "nan",
-            "nan",
-            "nan",
-            "nan"
+            "Ongeveer 4 kW",
+            "Ongeveer 8 kW",
+            "Ongeveer 12 kW",
+            "Ongeveer 16 kW"
         ],
         "correct": 2
     },
@@ -48,20 +48,20 @@ window.HVAC_QUESTIONS = [
         "difficulty": 1,
         "theme": "heating",
         "question_fr": "Le chauffage basse temp\u00e9rature c'est...",
-        "question_nl": "nan",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
+        "question_nl": "Lage-temperatuurverwarming is...",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
         "answers_fr": [
             "Chauffer les locaux \u00e0 15\u00b0C",
-            "Diminuer la temp\u00e9rature dans le four pour cuire ses aliments",
+            "Uniquement adapt\u00e9 pour un chauffage par le sol",
             "Utiliser de l'eau chaude \u00e0 moins de 45\u00b0C pour le chauffage central",
             "Utiliser de l'eau chaude \u00e0 moins de 75\u00b0C pour le chauffage central"
         ],
         "answers_nl": [
-            "nan",
-            "nan",
-            "nan",
-            "nan"
+            "Lokalen verwarmen tot 15\u00b0C",
+            "Alleen geschikt voor vloerverwarming",
+            "Warm water van minder dan 45\u00b0C gebruiken voor de centrale verwarming",
+            "Warm water van minder dan 75\u00b0C gebruiken voor de centrale verwarming"
         ],
         "correct": 2
     },
@@ -70,9 +70,9 @@ window.HVAC_QUESTIONS = [
         "difficulty": 1,
         "theme": "heating",
         "question_fr": "Un vase d'expansion mal dimensionn\u00e9 ou mal r\u00e9gl\u00e9 c'est...",
-        "question_nl": "nan",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
+        "question_nl": "Een verkeerd gedimensioneerd of verkeerd afgesteld expansievat is...",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
         "answers_fr": [
             "Vraiment pas grave",
             "Un risque d'infiltration d'air et de corrosion",
@@ -80,10 +80,10 @@ window.HVAC_QUESTIONS = [
             "Un risque d'infiltration de mazout et de pollution"
         ],
         "answers_nl": [
-            "nan",
-            "nan",
-            "nan",
-            "nan"
+            "Helemaal niet erg",
+            "Een risico op luchtinsijpeling en corrosie",
+            "Een risico op waterinsijpeling en schimmelvorming",
+            "Een risico op stookolie-insijpeling en vervuiling"
         ],
         "correct": 0
     },
@@ -92,20 +92,20 @@ window.HVAC_QUESTIONS = [
         "difficulty": 1,
         "theme": "heating",
         "question_fr": "Dans quelle unit\u00e9 se mesure la puissance d'une chaudi\u00e8re",
-        "question_nl": "nan",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
+        "question_nl": "In welke eenheid wordt het vermogen van een verwarmingsketel uitgedrukt?",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
         "answers_fr": [
             "Des kilowatt (kW)",
             "Des kilowattheure (kWh)",
             "Des degr\u00e9s-jour",
-            "des kilowatt par heure (kW/h)"
+            "Des kilowatt par heure (kW/h)"
         ],
         "answers_nl": [
-            "nan",
-            "nan",
-            "nan",
-            "nan"
+            "Kilowatt (kW)",
+            "Kilowattuur (kWh)",
+            "Graaddagen",
+            "Kilowatt per uur (kW/u)"
         ],
         "correct": 0
     },
@@ -113,43 +113,43 @@ window.HVAC_QUESTIONS = [
         "id": 6,
         "difficulty": 1,
         "theme": "heating",
-        "question_fr": "Pour chauffer une pi\u00e8ce, j'utilise...",
-        "question_nl": "nan",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
+        "question_fr": "Quel type de b\u00e2timent est id\u00e9al pour une pompe \u00e0 chaleur",
+        "question_nl": "Welk type gebouw is ideaal voor een warmtepomp?",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
         "answers_fr": [
-            "Un cong\u00e9lateur",
-            "Un ventilateur",
-            "Un radiateur",
-            "Un d\u00e9fibrilateur"
+            "Un b\u00e2timent bien isol\u00e9 et \u00e9quip\u00e9 d'un chauffage basse-temp\u00e9rature",
+            "Un b\u00e2timent bien isol\u00e9 \u00e9quip\u00e9 des radiateurs",
+            "Un b\u00e2timent mal isol\u00e9 et \u00e9quip\u00e9 d'un chauffage haute temp\u00e9rature",
+            "Un b\u00e2timent \u00e9quip\u00e9 de panneaux solaires photovolta\u00efques"
         ],
         "answers_nl": [
-            "nan",
-            "nan",
-            "nan",
-            "nan"
+            "Een goed ge\u00efsoleerd gebouw met lage-temperatuurverwarming",
+            "Een goed ge\u00efsoleerd gebouw met radiatoren",
+            "Een slecht ge\u00efsoleerd gebouw met hoge-temperatuurverwarming",
+            "Een gebouw uitgerust met fotovolta\u00efsche zonnepanelen"
         ],
-        "correct": 2
+        "correct": 0
     },
     {
         "id": 7,
         "difficulty": 1,
         "theme": "heating",
-        "question_fr": "Quel type de b\u00e2timent est id\u00e9al pour une pompe \u00e0 chaleur",
-        "question_nl": "nan",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
+        "question_fr": "Une pompe \u00e0 chaleur g\u00e9othermique puise son \u00e9nergie...",
+        "question_nl": "Een geothermische warmtepomp haalt haar energie...",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
         "answers_fr": [
-            "Un b\u00e2timent bien isol\u00e9 et \u00e9quip\u00e9 d'un chauffage basse-temp\u00e9rature",
-            "Un b\u00e2timent bien isol\u00e9 \u00e9quip\u00e9 d'une batterie \u00e9lectrique",
-            "Un b\u00e2timent mal isol\u00e9 et \u00e9quip\u00e9 d'un chauffage haute temp\u00e9rature",
-            "Un abris de jardin"
+            "dans l'eau",
+            "dans le sol",
+            "dans l'air",
+            "dans le vent"
         ],
         "answers_nl": [
-            "nan",
-            "nan",
-            "nan",
-            "nan"
+            "uit water",
+            "uit de bodem",
+            "uit de lucht",
+            "uit de wind"
         ],
         "correct": 0
     },
@@ -157,32 +157,10 @@ window.HVAC_QUESTIONS = [
         "id": 8,
         "difficulty": 1,
         "theme": "heating",
-        "question_fr": "Une pompe \u00e0 chaleur g\u00e9othermique puise son \u00e9nergie...",
-        "question_nl": "nan",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "answers_fr": [
-            "dans l'eau",
-            "dans le sol",
-            "dans le soleil",
-            "dans le vent"
-        ],
-        "answers_nl": [
-            "nan",
-            "nan",
-            "nan",
-            "nan"
-        ],
-        "correct": 0
-    },
-    {
-        "id": 9,
-        "difficulty": 1,
-        "theme": "heating",
         "question_fr": "Quel \u00e9metteur pr\u00e9sente la plus grande inertie",
-        "question_nl": "nan",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
+        "question_nl": "Welke warmteafgever heeft de grootste thermische inertie?",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
         "answers_fr": [
             "un radiateur en aluminium",
             "un radiateur en fonte",
@@ -190,15 +168,169 @@ window.HVAC_QUESTIONS = [
             "un ventilo-convecteur"
         ],
         "answers_nl": [
-            "nan",
-            "nan",
-            "nan",
+            "Een aluminium radiator",
+            "Een gietijzeren radiator",
+            "Vloerverwarming in een betonnen vloerplaat",
+            "Een ventiloconvector"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 9,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Quel rev\u00eatement de sol est le mieux adapt\u00e9 pour du chauffage par le sol",
+        "question_nl": "Welke vloerafwerking is het meest geschikt voor vloerverwarming?",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
+        "answers_fr": [
+            "une moquette bien \u00e9paisse",
+            "des carrelages en terre cuite",
+            "un plancher en bois",
+            "un vinyle"
+        ],
+        "answers_nl": [
+            "Een dik tapijt",
+            "Terracottategels",
+            "Een houten vloer",
+            "Vinyl"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 10,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Quel est le d\u00e9fi principal pour rendre les PAC compatibles en r\u00e9novation",
+        "question_nl": "Wat is de belangrijkste uitdaging om warmtepompen geschikt te maken voor renovatieprojecten?",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
+        "answers_fr": [
+            "une bonne isolation du b\u00e2timent",
+            "suffisamment de puissance \u00e9lectrique",
+            "un chauffage basse temp\u00e9rature",
+            "des protections solaires"
+        ],
+        "answers_nl": [
+            "Een goede isolatie van het gebouw",
+            "Voldoende elektrisch vermogen",
+            "Lage-temperatuurverwarming",
+            "Zonwering"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 11,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "une pompe \u00e0 chaleur hybride",
+        "question_nl": "Een hybride warmtepomp...",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
+        "answers_fr": [
+            "permet de produire de la chaleur et de l'\u00e9lectricit\u00e9",
+            "peut fonctionner au gaz ou \u00e0 l'\u00e9lectricit\u00e9",
+            "est associ\u00e9e \u00e0 une chaudi\u00e8re pour chauffer un b\u00e2timent",
+            "peut produire de la chaleur et du froid"
+        ],
+        "answers_nl": [
+            "Kan warmte en elektriciteit produceren",
+            "Kan op gas of elektriciteit werken",
+            "Wordt gecombineerd met een ketel om een gebouw te verwarmen",
+            "Kan warmte en koude produceren"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 12,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Une pompe \u00e0 chaleur affiche un COP de 4,5 dans les conditions A7/W35, qu'est ce que \u00e7a signifie",
+        "question_nl": "Een warmtepomp heeft een COP van 4,5 onder de voorwaarden A7/W35. Wat betekent dat?",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
+        "answers_fr": [
+            "que la PAC produit 4,5 kW de chaleur pour 1kW d'\u00e9lectricit\u00e9 consomm\u00e9e toute l'ann\u00e9e",
+            "que la PAC produit 1kW de chaleur pour 4,5 kW d'\u00e9lectricit\u00e9 consomm\u00e9e toute l'ann\u00e9e",
+            "que la PAC produit 4,5 kW de chaleur pour 1 kW d'\u00e9lectricit\u00e9 consomm\u00e9e lorsque la temp\u00e9rature de l'air ext\u00e9rieur vaut 7\u00b0C et la temp\u00e9rature de l'eau de chauffage vaut 35\u00b0C",
+            "nan"
+        ],
+        "answers_nl": [
+            "Dat de warmtepomp het hele jaar door 4,5 kW warmte produceert voor 1 kW verbruikte elektriciteit",
+            "Dat de warmtepomp het hele jaar door 1 kW warmte produceert voor 4,5 kW verbruikte elektriciteit",
+            "Dat de warmtepomp 4,5 kW warmte produceert voor 1 kW verbruikte elektriciteit wanneer de buitentemperatuur 7\u00b0C bedraagt en de temperatuur van het verwarmingswater 35\u00b0C bedraagt",
             "nan"
         ],
         "correct": 2
     },
     {
-        "id": 10,
+        "id": 13,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Je connais les dimensions d'un radiateur existant et son mod\u00e8le mais je ne retrouve plus les donn\u00e9es techniques du fabricant pour connaitre la puissance",
+        "question_nl": "Ik ken de afmetingen en het type van een bestaande radiator, maar ik vind de technische gegevens van de fabrikant niet meer terug om het vermogen te bepalen.",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
+        "answers_fr": [
+            "Tant pis, il est certainement assez puissant",
+            "je peux regarder sur l'app powerheat",
+            "je mesure la surface frontale du radiateur en cm\u00b2 et je multiplie par 0,6",
+            "je mesure la surface frontale du radiateur en cm\u00b2 et je multiplie par 0,48"
+        ],
+        "answers_nl": [
+            "Jammer, hij is waarschijnlijk krachtig genoeg",
+            "Ik kan kijken in de Powerheat-app",
+            "Ik meet de voorzijde van de radiator in cm\u00b2 en vermenigvuldig met 0,6",
+            "Ik meet de voorzijde van de radiator in cm\u00b2 en vermenigvuldig met 0,48"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 14,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Un radiateur a panneaux mod\u00e8le 22, de 90 cm de haut et 120 cm de long, \u00e0 une puissance de 3750 W au r\u00e9gime 90/70\u00b0C. Quelle est sa puissance au r\u00e9gime 45/40\u00b0C",
+        "question_nl": "Een paneelradiator type 22 van 90 cm hoog en 120 cm lang heeft een vermogen van 3750 W bij een regime van 90/70\u00b0C. Wat is zijn vermogen bij een regime van 45/40\u00b0C?",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
+        "answers_fr": [
+            "3750 W, le radiateur n'a pas chang\u00e9",
+            "3200 W, c'est vrai que \u00e7a diminue un peu avec le r\u00e9gime de temp\u00e9rature",
+            "2800 W, \u00e7a chauffe moins fort on dirait",
+            "1050 W, on perd vraiment beaucoup de puissance"
+        ],
+        "answers_nl": [
+            "3750 W, de radiator is niet veranderd",
+            "3200 W, het vermogen daalt inderdaad wat bij een lagere temperatuur",
+            "2800 W, het lijkt minder sterk te verwarmen",
+            "1050 W, er gaat echt veel vermogen verloren"
+        ],
+        "correct": 3
+    },
+    {
+        "id": 15,
+        "difficulty": 1,
+        "theme": "heating",
+        "question_fr": "Est-ce que je peux installer une chaudi\u00e8re au gaz naturel dans un chambre \u00e0 coucher ?",
+        "question_nl": "Mag ik een aardgasketel installeren in een slaapkamer?",
+        "explanation_fr": "tbd",
+        "explanation_nl": "tbd",
+        "answers_fr": [
+            "non, jamais",
+            "oui, si elle est \u00e9tanche",
+            "oui, si elle est \u00e9tanche et qu'elle fait moins de 70 kW",
+            "oui, si elle est \u00e9tanche et qu'elle fait moins de 30 kW"
+        ],
+        "answers_nl": [
+            "Nee, nooit",
+            "Ja, als ze gesloten is uitgevoerd",
+            "Ja, als ze gesloten is uitgevoerd en minder dan 70 kW bedraagt",
+            "Ja, als ze gesloten is uitgevoerd en minder dan 30 kW bedraagt"
+        ],
+        "correct": 3
+    },
+    {
+        "id": 16,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Quelle est la diff\u00e9rence entre le d\u00e9bit minimal requis et le d\u00e9bit de conception ?",
@@ -220,7 +352,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 11,
+        "id": 17,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Pourquoi l\u2019\u00e9quilibre entre le d\u00e9bit de soufflage et d\u2019extraction est-il important lors de la conception ?",
@@ -242,7 +374,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 12,
+        "id": 18,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Pourquoi est-il important de limiter les pertes de pression du r\u00e9seau ?",
@@ -264,7 +396,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 13,
+        "id": 19,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Quelle norme traite de la ventilation dans les b\u00e2timents r\u00e9sidentiels ?",
@@ -286,7 +418,7 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 14,
+        "id": 20,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Ouvrez l\u2019application web Optivent. Que peut-on y faire directement ?",
@@ -308,7 +440,7 @@ window.HVAC_QUESTIONS = [
         "correct": 3
     },
     {
-        "id": 15,
+        "id": 21,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Dans quel ordre faut-il r\u00e9gler les vannes suivantes ((d\u00e9bits requis 1 : 250 m\u00b3/h, 2 : 50 m\u00b3/h, 75 m\u00b3/h ; d\u00e9bits mesur\u00e9s 1, 2, 3 : 60 m\u00b3/h)) ?",
@@ -330,7 +462,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 16,
+        "id": 22,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Quels conduits faut-il isoler dans un syst\u00e8me D ?",
@@ -352,7 +484,7 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 17,
+        "id": 23,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Laquelle des affirmations suivantes est correcte selon la r\u00e9glementation PEB ?",
@@ -374,7 +506,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 18,
+        "id": 24,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Dans quel syst\u00e8me de ventilation n\u2019y a-t-il pas d\u2019entr\u00e9es d\u2019air r\u00e9glables ?",
@@ -396,7 +528,7 @@ window.HVAC_QUESTIONS = [
         "correct": 3
     },
     {
-        "id": 19,
+        "id": 25,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Quel est le d\u00e9bit minimal d\u2019extraction requis pour une salle de bain de 10 m\u00b2 ?",
@@ -418,7 +550,7 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 20,
+        "id": 26,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Quelle est la vitesse de l\u2019air pour un d\u00e9bit de 90 m\u00b3/h dans un conduit de 125 mm ?",
@@ -440,7 +572,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 21,
+        "id": 27,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "La fonction principale d\u2019un filtre \u00e0 air dans un syst\u00e8me D est :",
@@ -462,7 +594,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 22,
+        "id": 28,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Quelle est la fonction principale de la mise en service ?",
@@ -484,7 +616,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 23,
+        "id": 29,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Sur quoi se concentre l\u2019Innovation Paper 41 ?",
@@ -506,7 +638,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 24,
+        "id": 30,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Pourquoi faut-il remplacer les filtres \u00e0 air dans un syst\u00e8me de ventilation ?",
@@ -528,7 +660,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 25,
+        "id": 31,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Que peut-on notamment faire avec la version desktop d\u2019Optivent ?",
@@ -550,7 +682,7 @@ window.HVAC_QUESTIONS = [
         "correct": 3
     },
     {
-        "id": 26,
+        "id": 32,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "L\u2019installation d\u2019un filtre \u00e0 poches ePM2,5 70 % pour un groupe de ventilation double flux\u2026",
@@ -572,7 +704,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 27,
+        "id": 33,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Quelle est la temp\u00e9rature recommand\u00e9e de l'eau chaude sanitaire au d\u00e9part de la boucle de distribution ?",
@@ -594,7 +726,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 28,
+        "id": 34,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Quel mat\u00e9riau est d\u00e9conseill\u00e9 pour la distribution d'eau chaude sanitaire\u00a0?",
@@ -616,7 +748,7 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 29,
+        "id": 35,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Que dois-je installer directement apr\u00e8s le compteur de la compagnie distributrice d\u2019eau publique ?",
@@ -638,7 +770,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 30,
+        "id": 36,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Pour \u00e9viter des nuisances acoustiques, quelle est la vitesse maximale de l\u2019eau dans des conduites traversant des locaux habit\u00e9s ?",
@@ -660,51 +792,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 31,
-        "difficulty": 1,
-        "theme": "sanitaire",
-        "question_fr": "Quand se produit un coup de b\u00e9lier ?",
-        "question_nl": "Wanneer treedt een waterslag op?",
-        "explanation_fr": "nan",
-        "explanation_nl": "nan",
-        "answers_fr": [
-            "Quand le b\u00e2timent est haut",
-            "Lors d'une ouverture ou d'un arr\u00eat soudain du d\u00e9bit",
-            "Quand le b\u00e9lier n'est pas content",
-            "Lors d'une ouverture brusque d'un robinet"
-        ],
-        "answers_nl": [
-            "Bij hoge gebouwen",
-            "Door het abrupt openen of sluiten van het debiet",
-            "Als de ram niet tevreden is",
-            "Door het abrupt openen of sluiten van het debiet"
-        ],
-        "correct": null
-    },
-    {
-        "id": 32,
-        "difficulty": 1,
-        "theme": "sanitaire",
-        "question_fr": "Avec une production d'eau chaude sanitaire, quel \u00e9quipement doit dans tous les cas \u00eatre install\u00e9 ?",
-        "question_nl": "Welke apparatuur moet bij de productie van sanitair warm water in alle gevallen worden ge\u00efnstalleerd?",
-        "explanation_fr": "nan",
-        "explanation_nl": "nan",
-        "answers_fr": [
-            "Un purgeur d'air",
-            "Une soupape anti-vide",
-            "Un vase d'expansion",
-            "Une soupape de d\u00e9charge"
-        ],
-        "answers_nl": [
-            "Een ontluchter",
-            "Een antivacu\u00fcmkleppen",
-            "Een expansievat",
-            "Een overdrukventiel"
-        ],
-        "correct": null
-    },
-    {
-        "id": 33,
+        "id": 37,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Si le client veut utiliser simultan\u00e9ment une douche et un \u00e9vier de cuisine avec une production d'eau chaude sanitaire instantan\u00e9e, quelle est la puissance n\u00e9cessaire\u00a0?",
@@ -726,7 +814,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 34,
+        "id": 38,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Dans un logement avec deux chambres, quel devrait-\u00eatre le volume de mon boiler thermodynamique ?",
@@ -748,7 +836,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 35,
+        "id": 39,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Que faut-il faire en cas de risque de refoulement dans l\u2019\u00e9gout public lorsque l\u2019installation d\u2019\u00e9vacuation priv\u00e9e (collecteur d\u2019\u00e9gouttage priv\u00e9) se situe sous le niveau de refoulement de la rue ?",
@@ -770,7 +858,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 36,
+        "id": 40,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Quelle est la pente minimale recommand\u00e9e des conduites horizontales d\u2019\u00e9vacuation des eaux us\u00e9es ?",
@@ -792,7 +880,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 37,
+        "id": 41,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Quelle est la pente maximale recommand\u00e9e d\u2019une goutti\u00e8re ?",
@@ -814,7 +902,7 @@ window.HVAC_QUESTIONS = [
         "correct": 3
     },
     {
-        "id": 38,
+        "id": 42,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Quel \u00e9l\u00e9ment d\u2019une installation d\u2019\u00e9vacuation des eaux pluviales ne peut pas \u00eatre calcul\u00e9 et n\u2019est connu qu\u2019\u00e0 partir de r\u00e9sultats d\u2019essais ?",
@@ -836,7 +924,7 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 39,
+        "id": 43,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Qu\u2019est-ce que la ventilation primaire dans une installation d\u2019\u00e9vacuation ?",
@@ -858,7 +946,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 40,
+        "id": 44,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Quel est l\u2019objectif de la maintenance pr\u00e9ventive ?",
@@ -880,7 +968,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 41,
+        "id": 45,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Quel est le r\u00f4le principal d\u2019un Energy Management System (EMS) dans un b\u00e2timent ?",
@@ -902,7 +990,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 42,
+        "id": 46,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Quel est le principal avantage des capteurs de chaleur connect\u00e9s dans un syst\u00e8me de chauffage ?",
@@ -924,7 +1012,7 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 43,
+        "id": 47,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Assurer la flexibilit\u00e9 \u00e9nerg\u00e9tique d\u2019un b\u00e2timent consiste principalement \u00e0 :",
@@ -946,7 +1034,7 @@ window.HVAC_QUESTIONS = [
         "correct": 3
     },
     {
-        "id": 44,
+        "id": 48,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Le protocole sans fil LoRa (et LoRaWAN) est principalement utilis\u00e9 pour :",
@@ -968,7 +1056,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 45,
+        "id": 49,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Quel est un objectif cl\u00e9 que doit remplir un b\u00e2timent \u00e9quip\u00e9 d'un syst\u00e8me d\u2019automatisation et de contr\u00f4le des b\u00e2timents (ou BACS - Building Automation Control Systems) ?",
@@ -990,7 +1078,7 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 46,
+        "id": 50,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Que signifie l\u2019acronyme BACS dans le domaine des b\u00e2timents intelligents ?",
@@ -1012,7 +1100,7 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 47,
+        "id": 51,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Que sont BACnet et KNX ?",
