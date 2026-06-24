@@ -981,7 +981,48 @@ align-items:center}
   z-index: 10000;
   text-align: center;
   padding:20px;
+  width:100%;
 
   gap: 6px;
 
+}
+
+
+.explanation-div, .reference-div{
+	
+	margin-top:20px;
+	margin: 10px;
+	padding:10px;
+    font-size: clamp(1rem, 2.4vw, 1.25rem);
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, .6);
+
+	background: rgba(0,0,0,.55);
+	border: 2px solid var(--bw-green);
+
+	box-shadow:
+		0 0 8px rgba(0,212,255,.5),
+		0 0 20px rgba(0,212,255,.2);
+
+	border-radius: 10px;
+	
+}
+
+.explanation-div{width:60%}
+.reference-div{width:40%}
+
+
+.footer-wrapper-div{
+	display: flex;
+flex-direction:row;
+width:100%;
+}
+
+.know-more-style{
+   font-style: italic;
+   text-decoration: underline;
 }

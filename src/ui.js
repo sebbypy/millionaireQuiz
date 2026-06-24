@@ -367,18 +367,28 @@
 	const footerDiv = el("div","footerdiv","")
 	footerDiv.id = "footer_div"
 
+	var wrapper = el("div","footer-wrapper-div","")
+
 	const explainDiv = el("div","explanation-div","")
 	explainDiv.id = "explain_div"
+
+	const referenceDiv = el("div","reference-div","")
+	referenceDiv.id = "reference_div"
+	
+
+
 	
 	const nextBtn = el("button","next-btn",'')
 	nextBtn.innerHTML = `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>`
 	nextBtn.addEventListener("click",() => {pushNext()})
 	nextBtn.id = "nextbtn"
 	
+	wrapper.appendChild(explainDiv)
+	wrapper.appendChild(referenceDiv)
 	
 	
 	footerDiv.appendChild(nextBtn);
-	footerDiv.appendChild(explainDiv);
+	footerDiv.appendChild(wrapper);
 	footerDiv.style.display = "none"
 
 	wrap.append(footerDiv)
@@ -430,6 +440,13 @@
 
 	  var explanation = document.getElementById("explain_div")
 	  explanation.innerHTML = currentExplanation()
+	  console.log(currentExplanation())
+	  var reference = document.getElementById("reference_div")
+	
+	  var header = el("p","know-more-style",t("want_to_know_more"))
+	
+	  reference.appendChild(header)
+	  reference.appendChild(el('p','',currentReference()))
 
 
       if (result.correct) {

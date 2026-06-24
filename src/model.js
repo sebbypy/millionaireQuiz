@@ -47,7 +47,8 @@ const I18N = {
 	ask_tooli_you_question_is_copied: "Ouvrez Tooli grâce au bouton ci-dessous. La question est déja copiée, plus qu'à la coller!",
 	i_have_this_question:"Je joue à qui sera millionnaire. J'ai cette question : ",
 	here_are_the_proposals:"Voici les propositions",
-	what_is_the_right_answer:"Quelle est la bonne réponse, et quelle est la source chez Buildwise ? "
+	what_is_the_right_answer:"Quelle est la bonne réponse, et quelle est la source chez Buildwise ? ",
+	want_to_know_more:"En savoir plus ?"
   },
   nl: {
     appTitle: "Wie Wil EPB-label A Winnen?",
@@ -91,7 +92,9 @@ const I18N = {
 	ask_tooli_you_question_is_copied: "Gebruik Tooli dankzij de knop hieronder. De vraag and antwoorden zijn al gekopieerd, je moet gewoon in de chat plakken!",
 	i_have_this_question:"I speek wie wordt milljonair. Hier is een vraag : ",
 	here_are_the_proposals:"Hier zijn de mogelijke antwoorden",
-	what_is_the_right_answer:"Wat is de correcte antwoord, en kan je naar Buildwise bronnen verwijzen? "
+	what_is_the_right_answer:"Wat is de correcte antwoord, en kan je naar Buildwise bronnen verwijzen? ",
+	want_to_know_more:"Meer weten ?"
+
 
   },
 };
@@ -210,7 +213,8 @@ function prepareSession() {
     question: lang === "fr" ? q.question_fr : q.question_nl,
     answers: lang === "fr" ? q.answers_fr : q.answers_nl,
     correct: q.correct,
-	explanation: lang ==="fr" ? q.explanation_fr: q.explanation_nl
+	explanation: lang ==="fr" ? q.explanation_fr: q.explanation_nl,
+	reference: lang ==="fr" ? q.reference_fr: q.reference_nl
   }));
 
   GameState.currentIndex = 0;
@@ -229,6 +233,15 @@ function currentExplanation() {
   
   try{
   return GameState.sessionQuestions[GameState.currentIndex-1]["explanation"];
+  }
+	catch(e){
+	return null
+	}
+}
+function currentReference() {
+  
+  try{
+  return GameState.sessionQuestions[GameState.currentIndex-1]["reference"];
   }
 	catch(e){
 	return null
@@ -297,6 +310,8 @@ function submitAnswer(answerIndex) {
       GameState.gameOver = true;
     }
   } else {
+	  GameState.currentIndex++;
+
     GameState.phase = "result";
     GameState.gameOver = true;
   }
