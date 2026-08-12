@@ -292,7 +292,11 @@ body::after {
 /* ══════════════════════════════════════════════
    GAME SCREEN — TOP BAR
 ══════════════════════════════════════════════ */
-.game-screen { gap: 14px; }
+.game-screen { 
+gap: 14px; 
+transform: translateY(-50px)
+
+}
 
 .top-bar {
   width: 100%;
@@ -1012,17 +1016,43 @@ align-items:center}
 	
 }
 
-.explanation-div{width:60%}
-.reference-div{width:40%}
+.explanation-div{
+	width:60%;
+    white-space: pre-line;
+	text-align:left;
+	display:flex;
+	flex-direction:column;
+	font-size: clamp(0.88rem, 1.8vw, 1rem);
+
+}
+.reference-div{
+	width:40%;
+	font-size: clamp(0.88rem, 1.8vw, 1rem);
+	text-align:left;
+
+}
+.img-explanation{
+	width:70%;
+	margin-top:5px;
+	align-self:center
+}
 
 
 .footer-wrapper-div{
 	display: flex;
-flex-direction:row;
-width:100%;
+	flex-direction:row;
+	width:120%;
+	margin-left:-10%
 }
 
 .know-more-style{
    font-style: italic;
    text-decoration: underline;
+   
+}
+
+.reference strong,
+.reference em,
+.reference span {
+    display: block;
 }

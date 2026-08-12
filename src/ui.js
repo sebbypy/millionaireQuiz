@@ -49,11 +49,11 @@
 
   function fadeIn(element) {
     element.style.opacity = "0";
-    element.style.transform = "translateY(18px)";
+    //element.style.transform = "translateY(0px)";
     requestAnimationFrame(() => {
       element.style.transition = "opacity 0.5s ease, transform 0.5s ease";
       element.style.opacity = "1";
-      element.style.transform = "translateY(0)";
+      //element.style.transform = "translateY(0px)";
     });
   }
 
@@ -85,7 +85,7 @@
 
     const logo = el("div", "logo-area");
 	logo.innerHTML = `
-	  <img style="width:300px" src="${getLogoSrc()}">
+	  <img style="width:200px" src="${getLogoSrc()}">
 	`;    
 	wrap.appendChild(logo);
 
@@ -127,7 +127,7 @@
 
     const header = el("div", "screen-header");
 	header.innerHTML = `
-	  <img style="width:300px" src="${getLogoSrc()}">
+	  <img style="width:200px" src="${getLogoSrc()}">
 	`;    
     wrap.appendChild(header);
 
@@ -426,6 +426,43 @@
         }
 	}
 
+	function structureReferences() {
+		const refs = document.createElement('div');
+
+		const lines = currentReference().split('\n');
+
+		lines.forEach(line => {
+			const words = line.split(' - ');
+			console.log(words)
+
+			if (words.length >= 2) {
+				const reference = document.createElement('div');
+
+				const bold = document.createElement('strong');
+				bold.textContent = words[0];
+
+				const italic = document.createElement('em');
+				italic.textContent = words[1];
+
+				const normal = document.createElement('span');
+				normal.textContent = words[2];
+
+				reference.append(bold, italic, normal);
+				refs.appendChild(reference);
+			}
+			else{
+				refs.appendChild(el('p','',line))
+			}
+			
+		});
+		console.log(refs)
+		return refs;
+	}
+
+
+
+
+
   // ─── ANSWER HANDLING ──────────────────────────────────────
   function handleAnswer(index, q, grid, clickedBtn, clickedWrap) {
     // Disable all buttons
@@ -439,15 +476,23 @@
       const result = submitAnswer(index);
 
 	  var explanation = document.getElementById("explain_div")
-	  explanation.innerHTML = currentExplanation()
-	  console.log(currentExplanation())
+	  //explanation.innerHTML = currentExplanation()
+	  explanation.textContent = currentExplanation()
+	  appendImage(explanation,currentExplanationImage())
+	  
+	  
+	  //console.log(currentExplanation())
 	  var reference = document.getElementById("reference_div")
 	
 	  var header = el("p","know-more-style",t("want_to_know_more"))
 	
 	  reference.appendChild(header)
-	  reference.appendChild(el('p','',currentReference()))
-
+	  
+	  //var refp = el('p','','')
+	  //refp.innerText = currentReference()
+	  //reference.appendChild(el('p','',currentReference()))
+	  reference.appendChild(structureReferences())
+	  reference.classList.add('reference');
 
       if (result.correct) {
 		var nextbtn = document.getElementById("nextbtn")
@@ -467,7 +512,7 @@
 
         if (GameState.phase === "result") {
           // Won the game!
-          setTimeout(() => renderResultScreen(true), 1200);
+          //setTimeout(() => renderResultScreen(true), 3500);
         } else {
           //setTimeout(() => { renderGameScreen(); }, 3400);
         }
@@ -492,6 +537,24 @@
 
     }, 700);
   }
+
+
+   function appendImage(el,url){
+	   console.log("image url",url)
+	   
+	   if (url){
+			const img = document.createElement("img");
+			img.src = 'img/'+url;
+			img.classList.add("img-explanation")
+			//img.alt = "THIS IS ALT";
+			el.appendChild(img);		   
+		   
+	   }
+	   else{
+		   console.log("no image")
+	   }
+	   
+   }
 
   // ─── SCREEN: RESULT ───────────────────────────────────────
   function renderResultScreen(won) {
@@ -574,7 +637,7 @@
     return overlay;
   }
 
-function showPhoneModal(initialText, loading, url = "https://tooli.be/c/new") {
+function showPhoneModal(initialText, loading, url = "https://tooli.be/c/new?spec=spec-oraaglzqjtpy") {
 
 	buildQuizPrompt()
 

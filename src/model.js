@@ -203,7 +203,8 @@ function prepareSession() {
 
   // Exactly 5 questions (trim if somehow we have more)
   chosen = chosen.slice(0, 5);
-
+  chosen.sort((a, b) => a.difficulty - b.difficulty); //sort again by increasing difficulty
+  
   // Build session objects with localised text
   GameState.sessionQuestions = chosen.map((q, i) => ({
     id: q.id,
@@ -214,7 +215,8 @@ function prepareSession() {
     answers: lang === "fr" ? q.answers_fr : q.answers_nl,
     correct: q.correct,
 	explanation: lang ==="fr" ? q.explanation_fr: q.explanation_nl,
-	reference: lang ==="fr" ? q.reference_fr: q.reference_nl
+	reference: lang ==="fr" ? q.reference_fr: q.reference_nl,
+	explanationImage: lang ==="fr" ? q.explanationImage: q.explanationImage,
   }));
 
   GameState.currentIndex = 0;
@@ -242,6 +244,15 @@ function currentReference() {
   
   try{
   return GameState.sessionQuestions[GameState.currentIndex-1]["reference"];
+  }
+	catch(e){
+	return null
+	}
+}
+function currentExplanationImage() {
+  
+  try{
+  return GameState.sessionQuestions[GameState.currentIndex-1]["explanationImage"];
   }
 	catch(e){
 	return null

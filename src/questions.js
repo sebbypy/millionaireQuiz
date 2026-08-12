@@ -1,17 +1,18 @@
 window.HVAC_QUESTIONS = [
     {
         "id": 1,
-        "difficulty": 1,
+        "difficulty": 2,
         "theme": "heating",
         "question_fr": "Sur une saison compl\u00e8te, quel type pompe \u00e0 chaleur a normalement le meilleur COP pour le chauffage?",
         "question_nl": "Over een volledig stookseizoen heeft welk type warmtepomp normaal gezien de hoogste COP voor verwarming?",
         "explanation_fr": "En p\u00e9riode froide, la temp\u00e9rature du sol sera sup\u00e9rieure \u00e0 celle de l'air ext\u00e9rieur. La consommation d'\u00e9nergie de la pompe \u00e0 chaleur sera moindre pour amener l'eau \u00e0 la bonne temp\u00e9rature",
         "explanation_nl": "tbd",
-        "reference_fr": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
+        "explanationImage": null,
+        "reference_fr": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation\nNote d\u2019information technique 259 - G\u00e9othermie peu profonde. Conception et mise en oeuvre de syst\u00e8mes avec \u00e9changeurs en forme de U",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
             "PAC air/air",
-            "PAR sol/eau",
+            "PAC sol/eau",
             "PAC air/eau",
             "Elles sont \u00e9quivalentes"
         ],
@@ -25,12 +26,13 @@ window.HVAC_QUESTIONS = [
     },
     {
         "id": 2,
-        "difficulty": 1,
+        "difficulty": 3,
         "theme": "heating",
         "question_fr": "J'ai consomm\u00e9 1500 m\u00b3 de gaz pour le chauffage entre le 01/01/2024 et le 01/01/2025. Quelle est la puissance de la PAC que je devrais installer pour remplacer ma chaudi\u00e8re?",
         "question_nl": "Ik heb tussen 01/01/2024 en 01/01/2025 1500 m\u00b3 aardgas verbruikt voor verwarming. Welk vermogen van warmtepomp zou ik moeten installeren om mijn ketel te vervangen?",
-        "explanation_fr": "L'application \"Heatload\" permet d'estimer la puissance sur base de calculs th\u00e9oriques ou de consommations pass\u00e9es",
+        "explanation_fr": "L'application \"Heatload\" permet d'estimer la puissance sur base de calculs th\u00e9oriques ou de consommations pass\u00e9es\nhttps://heatload.buildwise.be/",
         "explanation_nl": "tbd",
+        "explanationImage": null,
         "reference_fr": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
@@ -53,9 +55,10 @@ window.HVAC_QUESTIONS = [
         "theme": "heating",
         "question_fr": "Le chauffage basse temp\u00e9rature c'est...",
         "question_nl": "Lage-temperatuurverwarming is...",
-        "explanation_fr": "explaination 4",
+        "explanation_fr": "Par basse temp\u00e9rature, on entend g\u00e9n\u00e9ralement une temp\u00e9rature de d\u00e9part < 45\u00b0C. Cela peut \u00eatre r\u00e9alis\u00e9 tant par le sol, que par des (ventilo-)convecteurs, ou avec des radiateurs traditionnels surdimensionn\u00e9s",
         "explanation_nl": "tbd",
-        "reference_fr": "ref4",
+        "explanationImage": null,
+        "reference_fr": "M\u00e9thode de dimensionnement 25  - Conception et dimensionnement des syst\u00e8mes d'\u00e9mission de chaleur et de froid \u00e0 base d'eau",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
             "Chauffer les locaux \u00e0 15\u00b0C",
@@ -73,13 +76,14 @@ window.HVAC_QUESTIONS = [
     },
     {
         "id": 4,
-        "difficulty": 1,
+        "difficulty": 2,
         "theme": "heating",
         "question_fr": "Un vase d'expansion mal dimensionn\u00e9 ou mal r\u00e9gl\u00e9 c'est...",
         "question_nl": "Een verkeerd gedimensioneerd of verkeerd afgesteld expansievat is...",
-        "explanation_fr": "explaination 5",
+        "explanation_fr": "L'entr\u00e9e d'air dans le circuit d'eau peut mener \u00e0 de la corrosion et une d\u00e9gradation de l'installation",
         "explanation_nl": "tbd",
-        "reference_fr": "ref5",
+        "explanationImage": null,
+        "reference_fr": "M\u00e9thode de dimensionnemnet 14 - Conception et dimensionnement des installations de chauffage central \u00e0 eau chaude",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
             "Vraiment pas grave",
@@ -99,11 +103,12 @@ window.HVAC_QUESTIONS = [
         "id": 5,
         "difficulty": 1,
         "theme": "heating",
-        "question_fr": "Dans quelle unit\u00e9 se mesure la puissance d'une chaudi\u00e8re",
+        "question_fr": "Dans quelle unit\u00e9 se mesure la puissance d'une chaudi\u00e8re ou d'une pompe \u00e0 chaleur?",
         "question_nl": "In welke eenheid wordt het vermogen van een verwarmingsketel uitgedrukt?",
-        "explanation_fr": "explaination 6",
+        "explanation_fr": "W et kW = puissance\nkWh, J, MJ = \u00e9nergie (puissance x temps)",
         "explanation_nl": "tbd",
-        "reference_fr": "ref6",
+        "explanationImage": null,
+        "reference_fr": "M\u00e9thode de dimensionnemnet 14 - Conception et dimensionnement des installations de chauffage central \u00e0 eau chaude",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
             "Des kilowatt (kW)",
@@ -123,11 +128,12 @@ window.HVAC_QUESTIONS = [
         "id": 6,
         "difficulty": 1,
         "theme": "heating",
-        "question_fr": "Quel type de b\u00e2timent est id\u00e9al pour une pompe \u00e0 chaleur",
+        "question_fr": "Quel type de b\u00e2timent est id\u00e9al pour une pompe \u00e0 chaleur?",
         "question_nl": "Welk type gebouw is ideaal voor een warmtepomp?",
-        "explanation_fr": "explaination 7",
+        "explanation_fr": "Chauffage basse temp\u00e9rature = meilleur COP de la PAC\nBien isol\u00e9 = demande (et consommation \u00e9lectrique) faible",
         "explanation_nl": "tbd",
-        "reference_fr": "ref7",
+        "explanationImage": null,
+        "reference_fr": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
             "Un b\u00e2timent bien isol\u00e9 et \u00e9quip\u00e9 d'un chauffage basse-temp\u00e9rature",
@@ -145,13 +151,14 @@ window.HVAC_QUESTIONS = [
     },
     {
         "id": 7,
-        "difficulty": 1,
+        "difficulty": 2,
         "theme": "heating",
         "question_fr": "Une pompe \u00e0 chaleur g\u00e9othermique puise son \u00e9nergie...",
         "question_nl": "Een geothermische warmtepomp haalt haar energie...",
-        "explanation_fr": "explaination 8",
+        "explanation_fr": "La temp\u00e9rature dans le sol est stable \u00e0 10\u00b0C-12\u00b0C pour des profondeurs entre 15 et 30m, ce qui est avantageux pour le COP d'une PAC",
         "explanation_nl": "tbd",
-        "reference_fr": "ref8",
+        "explanationImage": null,
+        "reference_fr": "Note d\u2019information technique 259 - G\u00e9othermie peu profonde. Conception et mise en oeuvre de syst\u00e8mes avec \u00e9changeurs en forme de U\n",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
             "dans l'eau",
@@ -169,16 +176,17 @@ window.HVAC_QUESTIONS = [
     },
     {
         "id": 8,
-        "difficulty": 1,
+        "difficulty": 2,
         "theme": "heating",
         "question_fr": "Quel \u00e9metteur pr\u00e9sente la plus grande inertie",
         "question_nl": "Welke warmteafgever heeft de grootste thermische inertie?",
-        "explanation_fr": "explaination 9",
+        "explanation_fr": "L'inertie peut amener plus de confort et est aussi utile pour r\u00e9duire les cycles de marche/arr\u00eat",
         "explanation_nl": "tbd",
-        "reference_fr": "ref9",
+        "explanationImage": null,
+        "reference_fr": "M\u00e9thode de dimensionnement 25  - Conception et dimensionnement des syst\u00e8mes d'\u00e9mission de chaleur et de froid \u00e0 base d'eau\nInnovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
-            "un radiateur en aluminium",
+            "Un radiateur en aluminium",
             "un radiateur en fonte",
             "un chauffage par le sol dans une dalle en b\u00e9ton",
             "un ventilo-convecteur"
@@ -193,19 +201,20 @@ window.HVAC_QUESTIONS = [
     },
     {
         "id": 9,
-        "difficulty": 1,
+        "difficulty": 2,
         "theme": "heating",
-        "question_fr": "Quel rev\u00eatement de sol est le mieux adapt\u00e9 pour du chauffage par le sol",
+        "question_fr": "Quel rev\u00eatement de sol est le mieux adapt\u00e9 pour du chauffage par le sol?",
         "question_nl": "Welke vloerafwerking is het meest geschikt voor vloerverwarming?",
-        "explanation_fr": "explaination 10",
+        "explanation_fr": "Un carrelage va mieux transmettre la chaleur des tuyaux vers la pi\u00e8ce. L'utilisation d'autres rev\u00eatements avec un chauffage sol est possible, mais cela doit \u00eatre soigneusement calcul\u00e9",
         "explanation_nl": "tbd",
-        "reference_fr": "ref10",
+        "explanationImage": null,
+        "reference_fr": "M\u00e9thode de dimensionnement 18 - Dimensionnement des syst\u00e8mes de chauffage par le sol \u00e0 eau chaude.",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
-            "une moquette bien \u00e9paisse",
-            "des carrelages en terre cuite",
-            "un plancher en bois",
-            "un vinyle"
+            "Une moquette bien \u00e9paisse",
+            "Des carrelages en terre cuite",
+            "Un plancher en bois",
+            "Un vinyle"
         ],
         "answers_nl": [
             "Een dik tapijt",
@@ -217,19 +226,20 @@ window.HVAC_QUESTIONS = [
     },
     {
         "id": 10,
-        "difficulty": 1,
+        "difficulty": 3,
         "theme": "heating",
-        "question_fr": "Quel est le d\u00e9fi principal pour rendre les PAC compatibles en r\u00e9novation",
+        "question_fr": "Quel est le d\u00e9fi principal pour rendre les PAC compatibles en r\u00e9novation?",
         "question_nl": "Wat is de belangrijkste uitdaging om warmtepompen geschikt te maken voor renovatieprojecten?",
-        "explanation_fr": "explaination 11",
+        "explanation_fr": "L'isolation est importante, mais m\u00eame un b\u00e2timent pas parfaitement isol\u00e9 est compatible avec une PAC si le syst\u00e8me d'\u00e9mission est dimensionn\u00e9 \u00e0 basse temp\u00e9rature",
         "explanation_nl": "tbd",
-        "reference_fr": "ref11",
+        "explanationImage": null,
+        "reference_fr": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
-            "une bonne isolation du b\u00e2timent",
-            "suffisamment de puissance \u00e9lectrique",
-            "un chauffage basse temp\u00e9rature",
-            "des protections solaires"
+            "Une bonne isolation du b\u00e2timent",
+            "Suffisamment de puissance \u00e9lectrique",
+            "Un chauffage basse temp\u00e9rature",
+            "Des protections solaires"
         ],
         "answers_nl": [
             "Een goede isolatie van het gebouw",
@@ -241,18 +251,19 @@ window.HVAC_QUESTIONS = [
     },
     {
         "id": 11,
-        "difficulty": 1,
+        "difficulty": 2,
         "theme": "heating",
-        "question_fr": "une pompe \u00e0 chaleur hybride",
+        "question_fr": "Une pompe \u00e0 chaleur hybride\u2026",
         "question_nl": "Een hybride warmtepomp...",
-        "explanation_fr": "explaination 12",
+        "explanation_fr": "Il existe des appareils combin\u00e9s, mais il est aussi possible d'avoir une installation hybride avec une PAC et une chaudi\u00e8re existante. Le dimensionnement et la r\u00e9gulation sont la cl\u00e9!",
         "explanation_nl": "tbd",
-        "reference_fr": "ref12",
+        "explanationImage": null,
+        "reference_fr": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
             "permet de produire de la chaleur et de l'\u00e9lectricit\u00e9",
             "peut fonctionner au gaz ou \u00e0 l'\u00e9lectricit\u00e9",
-            "est associ\u00e9e \u00e0 une chaudi\u00e8re pour chauffer un b\u00e2timent",
+            "est la combinaison d'une pompe \u00e0 chaleur et d'une chaudi\u00e8re gaz",
             "peut produire de la chaleur et du froid"
         ],
         "answers_nl": [
@@ -265,19 +276,20 @@ window.HVAC_QUESTIONS = [
     },
     {
         "id": 12,
-        "difficulty": 1,
+        "difficulty": 3,
         "theme": "heating",
-        "question_fr": "Une pompe \u00e0 chaleur affiche un COP de 4,5 dans les conditions A7/W35, qu'est ce que \u00e7a signifie",
+        "question_fr": "Une pompe \u00e0 chaleur affiche un COP de 4,5 dans les conditions A7/W35, qu'est ce que \u00e7a signifie ?",
         "question_nl": "Een warmtepomp heeft een COP van 4,5 onder de voorwaarden A7/W35. Wat betekent dat?",
-        "explanation_fr": "explaination 13",
+        "explanation_fr": "A = temperature de l'air\nW = temp\u00e9rature de l'eau (Water)\nLe COP donn\u00e9 est valable dans ces conditions, mais varie pour d'autres temp\u00e9ratures",
         "explanation_nl": "tbd",
-        "reference_fr": "ref13",
+        "explanationImage": null,
+        "reference_fr": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
-            "que la PAC produit 4,5 kW de chaleur pour 1kW d'\u00e9lectricit\u00e9 consomm\u00e9e toute l'ann\u00e9e",
-            "que la PAC produit 1kW de chaleur pour 4,5 kW d'\u00e9lectricit\u00e9 consomm\u00e9e toute l'ann\u00e9e",
-            "que la PAC produit 4,5 kW de chaleur pour 1 kW d'\u00e9lectricit\u00e9 consomm\u00e9e lorsque la temp\u00e9rature de l'air ext\u00e9rieur vaut 7\u00b0C et la temp\u00e9rature de l'eau de chauffage vaut 35\u00b0C",
-            "nan"
+            "Que la PAC produit 4,5 kW de chaleur pour 1kW d'\u00e9lectricit\u00e9 consomm\u00e9e toute l'ann\u00e9e",
+            "Que la PAC produit 1kW de chaleur pour 4,5 kW d'\u00e9lectricit\u00e9 consomm\u00e9e toute l'ann\u00e9e",
+            "Que la PAC produit 4,5 kW de chaleur pour 1 kW d'\u00e9lectricit\u00e9 consomm\u00e9e lorsque la temp\u00e9rature de l'air ext\u00e9rieur vaut 7\u00b0C et la temp\u00e9rature de l'eau de chauffage vaut 35\u00b0C",
+            "Que la PAC peut refroidir l'eau \u00e0 7\u00b0C lorsqu'il fait 35\u00b0C dehors."
         ],
         "answers_nl": [
             "Dat de warmtepomp het hele jaar door 4,5 kW warmte produceert voor 1 kW verbruikte elektriciteit",
@@ -293,15 +305,16 @@ window.HVAC_QUESTIONS = [
         "theme": "heating",
         "question_fr": "Je connais les dimensions d'un radiateur existant et son mod\u00e8le mais je ne retrouve plus les donn\u00e9es techniques du fabricant pour connaitre la puissance",
         "question_nl": "Ik ken de afmetingen en het type van een bestaande radiator, maar ik vind de technische gegevens van de fabrikant niet meer terug om het vermogen te bepalen.",
-        "explanation_fr": "explaination 14",
+        "explanation_fr": "L'application \"Powerheat\" de Buildwise a \u00e9t\u00e9 construite sur base de multiples catalogues de fabricants. Il est possible de retrouver la puissance des radiateurs sur base de leur type et de leurs dimensions",
         "explanation_nl": "tbd",
-        "reference_fr": "ref14",
+        "explanationImage": null,
+        "reference_fr": "https://powerheat.buildwise.be/",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
             "Tant pis, il est certainement assez puissant",
-            "je peux regarder sur l'app powerheat",
-            "je mesure la surface frontale du radiateur en cm\u00b2 et je multiplie par 0,6",
-            "je mesure la surface frontale du radiateur en cm\u00b2 et je multiplie par 0,48"
+            "Buildwise a certainement un outil pour m'aider",
+            "Je mesure la surface frontale du radiateur en cm\u00b2 et je multiplie par 0,6",
+            "Je mesure la surface frontale du radiateur en cm\u00b2 et je multiplie par 0,48"
         ],
         "answers_nl": [
             "Jammer, hij is waarschijnlijk krachtig genoeg",
@@ -317,9 +330,10 @@ window.HVAC_QUESTIONS = [
         "theme": "heating",
         "question_fr": "Un radiateur a panneaux mod\u00e8le 22, de 90 cm de haut et 120 cm de long, \u00e0 une puissance de 3750 W au r\u00e9gime 90/70\u00b0C. Quelle est sa puissance au r\u00e9gime 45/40\u00b0C",
         "question_nl": "Een paneelradiator type 22 van 90 cm hoog en 120 cm lang heeft een vermogen van 3750 W bij een regime van 90/70\u00b0C. Wat is zijn vermogen bij een regime van 45/40\u00b0C?",
-        "explanation_fr": "explaination 15",
+        "explanation_fr": "La puissance d'un radiateur classique diminue \u00e9norm\u00e9ment avec la temp\u00e9rature de l'eau",
         "explanation_nl": "tbd",
-        "reference_fr": "ref15",
+        "explanationImage": null,
+        "reference_fr": "M\u00e9thode de dimensionnement 25  - Conception et dimensionnement des syst\u00e8mes d'\u00e9mission de chaleur et de froid \u00e0 base d'eau\nhttps://powerheat.buildwise.be/",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
             "3750 W, le radiateur n'a pas chang\u00e9",
@@ -337,19 +351,20 @@ window.HVAC_QUESTIONS = [
     },
     {
         "id": 15,
-        "difficulty": 1,
+        "difficulty": 3,
         "theme": "heating",
-        "question_fr": "Est-ce que je peux installer une chaudi\u00e8re au gaz naturel dans un chambre \u00e0 coucher ?",
+        "question_fr": "Est-ce que je peux installer une chaudi\u00e8re de moins de 30 kW au gaz naturel dans un chambre \u00e0 coucher ?",
         "question_nl": "Mag ik een aardgasketel installeren in een slaapkamer?",
-        "explanation_fr": "explaination 16",
+        "explanation_fr": "Simple, il suffit de connaitre la norme NBN/DTD B 61-002. \nOu d'utiliser notre application BoilerRoomApp\u2026",
         "explanation_nl": "tbd",
-        "reference_fr": "ref16",
+        "explanationImage": null,
+        "reference_fr": "https://boilerroomapp.buildwise.be/",
         "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
         "answers_fr": [
-            "non, jamais",
-            "oui, si elle est \u00e9tanche",
-            "oui, si elle est \u00e9tanche et qu'elle fait moins de 70 kW",
-            "oui, si elle est \u00e9tanche et qu'elle fait moins de 30 kW"
+            "Non, jamais",
+            "Oui, si elle est \u00e9tanche",
+            "Oui, dans tous les cas",
+            "Oui, s'il y a une ouverture naturelle"
         ],
         "answers_nl": [
             "Nee, nooit",
@@ -362,61 +377,39 @@ window.HVAC_QUESTIONS = [
     {
         "id": 16,
         "difficulty": 1,
-        "theme": "heating",
-        "question_fr": "nan",
-        "question_nl": "nan",
-        "explanation_fr": "nan",
-        "explanation_nl": "nan",
-        "reference_fr": "nan",
-        "reference_nl": "Innovation Paper 53 - Le d\u00e9fi des pompes \u00e0 chaleur en r\u00e9novation",
-        "answers_fr": [
-            "nan",
-            "nan",
-            "nan",
-            "nan"
-        ],
-        "answers_nl": [
-            "nan",
-            "nan",
-            "nan",
-            "nan"
-        ],
-        "correct": null
-    },
-    {
-        "id": 17,
-        "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "Quelle est la diff\u00e9rence entre le d\u00e9bit minimal requis et le d\u00e9bit de conception ?",
-        "question_nl": "Wat is het verschil tussen het minimaal ge\u00ebiste debiet en het ontwerpdebiet?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "question_fr": "Quel est le d\u00e9bit de conception d\u2019un syst\u00e8me de ventilation ?",
+        "question_nl": "Wat is het ontwerpdebiet van een ventilatiesysteem? ",
+        "explanation_fr": "D\u00e9bit minimum = le d\u00e9bit impos\u00e9 par la r\u00e9glementation\nD\u00e9bit de conception = d\u00e9bit apr\u00e8s dimensionnement (e.g. \u00e9qulibrage)\nD\u00e9bit r\u00e9alis\u00e9= le d\u00e9bit effectivement mesur\u00e9 apr\u00e8s r\u00e9glage",
+        "explanation_nl": "Het minimaal ge\u00ebiste debiet = het debiet volgens de geldende regelgeving(en). Het ontwerpdebiet = de basis voor het gedetailleerde ontwerp van het ventilatiesysteem. Het gerealiseerde debiet = het debiet in de ruimte na indienststelling van het systeem.\nleerde ontwerp van het ventilatiesysteem",
+        "explanationImage": null,
+        "reference_fr": "Note d'Information Technique 258 - Guide pratique des syst\u00e8mes de ventilation de base des logements\nNote d'Information Technique 258.1 - Exemple de conception d\u2019un syst\u00e8me de ventilation pour un logement",
+        "reference_nl": "Technische Voorlichting 258 en 258.1",
         "answers_fr": [
-            "Le d\u00e9bit minimal requis est identique au d\u00e9bit de conception",
-            "Le d\u00e9bit minimal requis d\u00e9coule des exigences, le d\u00e9bit de conception est fix\u00e9 par le concepteur/installateur et respecte au moins les exigences",
-            "Le d\u00e9bit de conception est le d\u00e9bit en fonction du taux d\u2019occupation dans les b\u00e2timents non r\u00e9sidentiels",
+            "Le d\u00e9bit de conception est le d\u00e9bit minimum exig\u00e9 par la r\u00e9glementation.",
+            " Le d\u00e9bit de conception est fix\u00e9 par le concepteur/l\u2019installateur et satisfait au moins au d\u00e9bit minimum exig\u00e9.",
+            "Le d\u00e9bit de conception est le d\u00e9bit en fonction du taux d\u2019occupation dans les b\u00e2timents non-r\u00e9sidentiels",
             "Le d\u00e9bit de conception est le d\u00e9bit r\u00e9ellement obtenu apr\u00e8s la mise en service"
         ],
         "answers_nl": [
-            "Het minimaal ge\u00ebiste debiet is hetzelfde als het ontwerpdebiet",
-            "Het minimaal ge\u00ebiste debiet volgt uit de eisen, het ontwerpdebiet wordt vastgelegd door de ontwerper/installateur en voldoet minstens aan de eisen ",
+            "Het ontwerpdebiet is het minimaal ge\u00ebist debiet van de regelgeving",
+            "Het ontwerpdebiet wordt vastgelegd door de ontwerper/installateur en voldoet minstens aan het minimaal ge\u00ebiste debiet",
             "Het ontwerpdebiet is het debiet ifv de bezettingsgraad in niet-resident\u00eble gebouwen",
             "Het ontwerpdebiet is het gerealiseerde debiet na indienststelling "
         ],
         "correct": 1
     },
     {
-        "id": 18,
-        "difficulty": 1,
+        "id": 17,
+        "difficulty": 2,
         "theme": "ventilation",
-        "question_fr": "Pourquoi l\u2019\u00e9quilibre entre le d\u00e9bit de soufflage et d\u2019extraction est-il important lors de la conception ?",
+        "question_fr": "Pourquoi l\u2019\u00e9quilibre entre le d\u00e9bit d'allimentation et d\u2019extraction est-il important lors de la conception ?",
         "question_nl": "Waarom is de balans tussen het toevoer- en afvoerdebiet belangrijk bij het ontwerp?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "D\u00e9s\u00e9quilibre = infiltration ou exfiltrations suppl\u00e9mentaires et moins de r\u00e9cup\u00e9ration de chaleur! ",
+        "explanation_nl": "Een goede balans tussen toevoer en afvoer is essentieel voor een correcte werking van het ventilatiesysteem. Bij een onbalans kunnen ongewenste infiltraties of exfiltraties optreden, waardoor de ventilatieprestaties en eventueel de warmteterugwinning -en/of filtratie verminderen. Bovendien kunnen de werkelijke luchtdebieten afwijken van de ontworpen waarden, waardoor de ventilatie minder doeltreffend wordt.",
+        "explanationImage": null,
+        "reference_fr": "Note d'Information Technique 258 - Guide pratique des syst\u00e8mes de ventilation de base des logements\nNote d'Information Technique 258.1 - Exemple de conception d\u2019un syst\u00e8me de ventilation pour un logement",
+        "reference_nl": "Technische Voorlichting 258 en 258.1",
         "answers_fr": [
             "Pour \u00e9viter les nuisances sonores",
             "Risque d\u2019une mauvaise qualit\u00e9 de l\u2019air",
@@ -425,46 +418,48 @@ window.HVAC_QUESTIONS = [
         ],
         "answers_nl": [
             "Om geluidshinder te voorkomen ",
-            "Om het risico op een slechte luchtkwaliteit te berperken",
-            "Een systeem met een onbalns is niet invoerbaar in EPB",
+            "Om het risico op een slechte luchtkwaliteit te beperken",
+            "Een systeem met een onbalans is niet invoerbaar in EPB",
             "Er is geen risico"
         ],
         "correct": 1
     },
     {
-        "id": 19,
-        "difficulty": 1,
+        "id": 18,
+        "difficulty": 2,
         "theme": "ventilation",
         "question_fr": "Pourquoi est-il important de limiter les pertes de pression du r\u00e9seau ?",
         "question_nl": "Waarom is het belangrijk om de drukverliezen in het netwerk te beperken?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Les pertes de charge obligent le ventilateur \u00e0 fournir un effort suppl\u00e9mentaire pour assurer le d\u00e9bit d\u2019air requis. Plus les pertes de charge sont \u00e9lev\u00e9es, plus la consommation \u00e9lectrique augmente et plus le ventilateur risque de g\u00e9n\u00e9rer du bruit. L\u2019outil Optivent peut \u00eatre utilis\u00e9 pour le dimensionnement du syst\u00e8me et le calcul des pertes de charge.",
+        "explanation_nl": "Drukverliezen zorgen ervoor dat de ventilator harder moet werken om het gewenste luchtdebiet te leveren. Hoe hoger de drukverliezen, hoe hoger het elektriciteitsverbruik en hoe meer geluid de ventilator kan produceren. .De Optivent tool kan worden ingezet voor de dimensionering en de berekening van de \ndrukverliezen ",
+        "explanationImage": null,
+        "reference_fr": "Note d'Information Technique 258 - Guide pratique des syst\u00e8mes de ventilation de base des logements\nNote d'Information Technique 258.1 - Exemple de conception d\u2019un syst\u00e8me de ventilation pour un logement",
+        "reference_nl": "Technische Voorlichting 258 en 258.1",
         "answers_fr": [
             "Ce n\u2019est pas si important, tant que le d\u00e9bit est atteint",
+            " Pour faciliter la mesure des d\u00e9bits",
             "Pour limiter la consommation \u00e9lectrique et r\u00e9duire le bruit du ventilateur",
-            "Pour limiter uniquement la consommation \u00e9lectrique",
-            "Pour faciliter la mesure des d\u00e9bits"
+            "Pour limiter uniquement la consommation \u00e9lectrique"
         ],
         "answers_nl": [
-            "Het is niet zo belangrijk, zolang het debiet wordt bereikt",
-            "Om het elektriciteitsverbruik te beperken en de geluidsproductie van de ventilator te verminderen",
-            "Om enkel het elektriciteitsverbruik te beperken",
-            "Om de debieten gemakkelijker te kunnen meten"
+            "Het is niet zo belangrijk, zolang het gewenste debiet wordt bereikt",
+            "Om de debieten gemakkelijker te kunnen meten",
+            "Om het elektriciteitsverbruik te beperken en de geluidsproductie van de ventilator te verminderen ",
+            "Om enkel het elektriciteitsverbruik te beperken"
         ],
-        "correct": 1
+        "correct": 2
     },
     {
-        "id": 20,
+        "id": 19,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Quelle norme traite de la ventilation dans les b\u00e2timents r\u00e9sidentiels ?",
-        "question_nl": "Welke norm behandelt ventilatie in residenti\u00eble gebouwen?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "question_nl": "Welke Belgische norm behandelt ventilatie in residenti\u00eble gebouwen?",
+        "explanation_fr": "NBN D 50-001: norme belge pour la ventilation des b\u00e2timents r\u00e9sidentiels. \nNBN EN 16798-3: exigences de conception et de performance applicables aux syst\u00e8mes de ventilation et de climatisation dans les b\u00e2timents non r\u00e9sidentiels. \nNBN EN ISO 16890: classification des filtres \u00e0 air.\nNBN EN 15780: nettoyage et de l\u2019entretien des syst\u00e8mes de ventilation",
+        "explanation_nl": "NBN D 50-001 is de Belgische norm die de ventilatie van residenti\u00eble gebouwen  behandelt. NBN EN 16798-3 bepaalt de ontwerp- en prestatie-eisen voor ventilatie- en klimaatregelingssystemen in niet-residenti\u00eble gebouwen.NBN EN ISO 16890 classificeert luchtfilters. NBN EN 15780 behandelt onderhoud van ventilatiesystemen.  ",
+        "explanationImage": null,
+        "reference_fr": "Note d'Information Technique 258 - Guide pratique des syst\u00e8mes de ventilation de base des logements\nNote d'Information Technique 258.1 - Exemple de conception d\u2019un syst\u00e8me de ventilation pour un logement",
+        "reference_nl": "Technische Voorlichting 258 en 258.1",
         "answers_fr": [
             "NBN D 50-001",
             "NBN EN 16798-3",
@@ -480,15 +475,16 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 21,
-        "difficulty": 1,
+        "id": 20,
+        "difficulty": 2,
         "theme": "ventilation",
         "question_fr": "Ouvrez l\u2019application web Optivent. Que peut-on y faire directement ?",
-        "question_nl": "Open de Optivent web-app. Wat kan je er rechtstreeks mee doen?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "question_nl": "Open de Optivent web-app door onderaan op het sleutelsymbool te klikken. Wat kan je er rechtstreeks mee doen?",
+        "explanation_fr": "Application Optivent: une aide pour le r\u00e9glage lors de la mise en service. \nVous pouvez l'utiliser sur smartphone, tablette ou PC pour \u00e9quilibrer les d\u00e9bits d\u2019air et g\u00e9n\u00e9rer automatiquement un rapport. ",
+        "explanation_nl": "De Optivent web-app ondersteunt installateurs bij de indienststelling en het afstellen van ventilatiesystemen op de werf. De applicatie kan rechtstreeks gebruikt worden op een smartphone, tablet of pc om luchtdebieten af te regelen en automatisch een verslag op te maken. Ze vormt een praktische aanvulling op de Optivent-desktoptool, die voornamelijk gebruikt wordt voor het ontwerp en de dimensionering van ventilatie-installaties",
+        "explanationImage": null,
+        "reference_fr": "Optivent web-app: https://optivent-app.buildwise.be/home?locale=fr",
+        "reference_nl": "Optivent web-app: https://optivent-app.buildwise.be/home?locale=fr",
         "answers_fr": [
             "Calculer les pertes de chaleur et s\u00e9lectionner les radiateurs",
             "R\u00e9gler les d\u00e9bits et planifier un entretien",
@@ -498,21 +494,22 @@ window.HVAC_QUESTIONS = [
         "answers_nl": [
             "Warmteverlies berekenen en radiatoren selecteren",
             " Debieten afstellen en een onderhoud plannen",
-            "dimensionering van het kanalennetwerk en afstellen van de debieten ",
+            "Dimensionering van het kanalennetwerk en afstellen van de debieten ",
             "Debieten afstellen en een rapport maken"
         ],
         "correct": 3
     },
     {
-        "id": 22,
-        "difficulty": 1,
+        "id": 21,
+        "difficulty": 2,
         "theme": "ventilation",
-        "question_fr": "Dans quel ordre faut-il r\u00e9gler les vannes suivantes ((d\u00e9bits requis 1 : 250 m\u00b3/h, 2 : 50 m\u00b3/h, 75 m\u00b3/h ; d\u00e9bits mesur\u00e9s 1, 2, 3 : 60 m\u00b3/h)) ?",
-        "question_nl": "In welke volgorde moet je volgende ventielen afstellen (ge\u00ebist 1: 250m\u00b3/h, 2: 50 m\u00b3/h, 75 m\u00b3/h; gemeten 1,2,3: 60 m\u00b3/h)",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "question_fr": "Dans quel ordre faut-il r\u00e9gler les bouches suivantes (d\u00e9bits exig\u00e9s : local 1 = 250 m\u00b3/h, local 2 = 50 m\u00b3/h, local 3 = 75 m\u00b3/h ; d\u00e9bits mesur\u00e9s dans les locaux 1, 2 et 3 : 60 m\u00b3/h) ?\nConseil : utilisez l\u2019application Optivent.",
+        "question_nl": "In welke volgorde moet je volgende ventielen afstellen (ge\u00ebiste debieten in ruimte 1:  250m\u00b3/h, ruimte 2: 50 m\u00b3/h, ruimte 3: 75 m\u00b3/h; gemeten debieten in ruimten 1,2 en 3: 60 m\u00b3/h). Tip: gebruik de Optivent app. ",
+        "explanation_fr": "Le r\u00e9glage d\u2019une bouche modifie la pression dans le syst\u00e8me et modifie le d\u00e9bit de toute les autres bouches. \nL'application optivent calcule \u00e0 l'avance ces variations, et vous aider \u00e0 r\u00e9gler les bouches dans le bon ordre ",
+        "explanation_nl": "Door het regelen van 1 ventiel wijzigt de drukverdeling in het netwerk en be\u00efnvloedt dit de debieten aan de andere ventielen.De Optivent-app helpt automatisch bij het bepalen van de juiste afstelvolgorde en de nodige correcties tijdens de inregeling. ",
+        "explanationImage": null,
+        "reference_fr": "Optivent web-app: https://optivent-app.buildwise.be/home?locale=fr",
+        "reference_nl": "Optivent web-app: https://optivent-app.buildwise.be/home?locale=fr",
         "answers_fr": [
             "1,2,3",
             "2,1,3",
@@ -528,39 +525,41 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 23,
-        "difficulty": 1,
+        "id": 22,
+        "difficulty": 2,
         "theme": "ventilation",
         "question_fr": "Quels conduits faut-il isoler dans un syst\u00e8me D ?",
-        "question_nl": "Welke leidingen moeten ge\u00efsoleerd worden bij een systeem D?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "question_nl": "Welke ventilatiekanalen worden zijn aanbevolen te isoleren bij een systeem D?",
+        "explanation_fr": " ",
+        "explanation_nl": "In het geval van een systeem D met warmteterugwinning \nmoeten alle kanalen die gelegen zijn tussen de v-\ngroep en de grens van het beschermde volume ge\u00efso\nleerd worden en dit, om warmteverliezen te vermijden, een maximale wamteterugwinning en het \nrisico op condensatie te beperken. ",
+        "explanationImage": "CT Quiz_Ventilatie_Vraag 7_Figuur bij uitleg.png",
+        "reference_fr": "Note d'Information Technique 258 - Guide pratique des syst\u00e8mes de ventilation de base des logements",
+        "reference_nl": "Technische Voorlichting 258 ",
         "answers_fr": [
-            "Entre le groupe et l\u2019enveloppe isol\u00e9e (volume prot\u00e9g\u00e9 du b\u00e2timent)",
+            "Les conduits entre le groupe et l\u2019enveloppe isol\u00e9e (volume prot\u00e9g\u00e9 du b\u00e2timent)",
             "Toujours tous les conduits vers l\u2019ext\u00e9rieur",
             "Uniquement les conduits d\u2019alimentation vers les pi\u00e8ces",
             "Aucun conduit ne doit \u00eatre isol\u00e9"
         ],
         "answers_nl": [
-            "Tussen de groep en de ge\u00efsoleerde schil (beschermd volume van het gebouw)",
-            "Altijd alle leidingen naar buiten",
-            "Enkel de toevoerleidingen naar de ruimtes",
-            "Geen enkele leiding moet ge\u00efsoleerd worden"
+            "De kanalen tussen de V-groep en de ge\u00efsoleerde schil (beschermd volume van het gebouw)",
+            "Altijd alle kanalen naar buiten",
+            "Enkel de toevoerkanalen naar de ruimtes",
+            "Geen enkel kanaal"
         ],
         "correct": 0
     },
     {
-        "id": 24,
-        "difficulty": 1,
+        "id": 23,
+        "difficulty": 2,
         "theme": "ventilation",
         "question_fr": "Laquelle des affirmations suivantes est correcte selon la r\u00e9glementation PEB ?",
         "question_nl": "Welk van volgende uitspraken is van toepassing volgens de EPB-regelgeving?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Selon la r\u00e9glementation PEB: pr\u00e9sence d\u2019une machine \u00e0 laver (ou d\u2019un s\u00e8che-linge) = buanderie. \nCuisine avec machine \u00e0 laver = Cuisine",
+        "explanation_nl": "De aanwezigheid van een wasmachine (of droogkast) in een ruimte zonder ventilatie-eisen, zoals een berging, maakt dat die ruimte volgens de EPB-regelgeving als wasplaats wordt beschouwd. Voor een keuken gelden enkel de ventilatie-eisen van een keuken, ook als er een wasmachine aanwezig is",
+        "explanationImage": null,
+        "reference_fr": "La r\u00e9glementation PEB",
+        "reference_nl": "EPB-regelgeving",
         "answers_fr": [
             "Une cuisine avec une machine \u00e0 laver doit r\u00e9pondre aux exigences d\u2019une cuisine et d\u2019une buanderie",
             "Un local de rangement avec une machine \u00e0 laver doit r\u00e9pondre aux exigences d\u2019une buanderie",
@@ -576,15 +575,16 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 25,
+        "id": 24,
         "difficulty": 1,
         "theme": "ventilation",
-        "question_fr": "Dans quel syst\u00e8me de ventilation n\u2019y a-t-il pas d\u2019entr\u00e9es d\u2019air r\u00e9glables ?",
+        "question_fr": "Dans quel syst\u00e8me de ventilation n\u2019y a-t-il pas d\u2019ouvertures d'allimentation naturelle?",
         "question_nl": "In welk ventilatiesysteem komen er geen regelbare toevoeropeningen voor? ",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Syst\u00e8me D = alimentation et extraction d'air par des bouches de pulsion et d'extraction. Il n'y a pas d'ouvertures naturelles",
+        "explanation_nl": "Bij een systeem D gebeurt zowel de toevoer als de afvoer van lucht mechanischvia ventielen in de ruimten. Hierdoor zijn er geen regelbare toevoeropeningen in ramen of gevels nodig, in tegenstelling tot systemen A en C waar de verse lucht natuurlijk wordt aangevoerd.",
+        "explanationImage": null,
+        "reference_fr": "Note d'Information Technique 258 - Guide pratique des syst\u00e8mes de ventilation de base des logements\nNote d'Information Technique 258.1 - Exemple de conception d\u2019un syst\u00e8me de ventilation pour un logement",
+        "reference_nl": "Technische Voorlichting 258 en 258.1",
         "answers_fr": [
             "Syst\u00e8me A",
             "Syst\u00e8me C",
@@ -600,15 +600,16 @@ window.HVAC_QUESTIONS = [
         "correct": 3
     },
     {
-        "id": 26,
+        "id": 25,
         "difficulty": 1,
         "theme": "ventilation",
         "question_fr": "Quel est le d\u00e9bit minimal d\u2019extraction requis pour une salle de bain de 10 m\u00b2 ?",
         "question_nl": "Hoeveel bedraagt het minimaal ge\u00ebiste afvoerdebiet in een badkamer van 10 m\u00b2?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Selon NBN D 50-001, d\u00e9bit 3,6 m\u00b3/h par m\u00b2 de surface au sol, avec un minimum de 50 m\u00b3/h. Pour une salle de bains de 10 m\u00b2, le calcul donne 36 m\u00b3/h, mais c\u2019est le d\u00e9bit minimal r\u00e9glementaire de 50 m\u00b3/h qui doit \u00eatre appliqu\u00e9.",
+        "explanation_nl": "Volgens de norm NBN D 50-001 bedraagt het minimaal afvoerdebiet voor een badkamer 3,6 m\u00b3/h per m\u00b2 vloeroppervlakte, met een minimum van 50 m\u00b3/h. Voor een badkamer van 10 m\u00b2 geeft dit 36 m\u00b3/h, maar omdat dit lager is dan het vereiste minimum, moet het afvoerdebiet 50 m\u00b3/h bedragen.",
+        "explanationImage": null,
+        "reference_fr": "Note d'Information Technique 258 - Guide pratique des syst\u00e8mes de ventilation de base des logements\nNote d'Information Technique 258.1 - Exemple de conception d\u2019un syst\u00e8me de ventilation pour un logement",
+        "reference_nl": "Technische Voorlichting 258 ",
         "answers_fr": [
             "50 m\u00b3/h",
             "25 m\u00b3/h",
@@ -624,15 +625,16 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 27,
-        "difficulty": 1,
+        "id": 26,
+        "difficulty": 3,
         "theme": "ventilation",
         "question_fr": "Quelle est la vitesse de l\u2019air pour un d\u00e9bit de 90 m\u00b3/h dans un conduit de 125 mm ?",
         "question_nl": "Wat is de luchtsnelheid bij een debiet van 90 m\u00b3/u in een leiding van 125 mm?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Attention \u00e0 l'acoustique!",
+        "explanation_nl": "De luchtsnelheid kan berekend worden uit het debiet en de doorsnede van de leiding. De luchtsnelheid in de kanalen speelt een cruciale factor voor \nhet akoestische comfort en moet zo laag mogelijk zijn",
+        "explanationImage": "CT Quiz_Ventilatie_Vraag 11_Figuur bij uitleg.png",
+        "reference_fr": "Note d'Information Technique 258 - Guide pratique des syst\u00e8mes de ventilation de base des logements",
+        "reference_nl": "Technische Voorlichting 258 ",
         "answers_fr": [
             "Cela d\u00e9pend d\u2019autres param\u00e8tres",
             "1,5 m/s",
@@ -648,15 +650,16 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 28,
-        "difficulty": 1,
+        "id": 27,
+        "difficulty": 3,
         "theme": "ventilation",
         "question_fr": "La fonction principale d\u2019un filtre \u00e0 air dans un syst\u00e8me D est :",
         "question_nl": "De primaire functie van een luchtfilter in een systeem D is ",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "R\u00f4le principal du filtre: prot\u00e9ger l'\u00e9changeur de chaleur de la poussi\u00e8re et autres particules\nL'am\u00e9lioration de la qualit\u00e9 de l'air avec un filtre fin est aussi possible, mais c'est un bonus",
+        "explanation_nl": "Een luchtfilter in een systeem D heeft in de eerste plaats als doel om stof, pollen en andere deeltjes tegen te houden zodat deze zich niet kunnen afzetten op componenten zoals kanalen, ventilatoren en de warmtewisselaar. Hierdoor blijven de prestaties en de levensduur van het ventilatiesysteem behouden. Het verbeteren van de luchtkwaliteit is een mogelijke bijkomende functie, maar niet de primaire.",
+        "explanationImage": null,
+        "reference_fr": "Note d'Information Technique 258 - Guide pratique des syst\u00e8mes de ventilation de base des logements",
+        "reference_nl": "Coming soon ",
         "answers_fr": [
             "L\u2019am\u00e9lioration de la qualit\u00e9 de l\u2019air",
             "Filtrer les condensats de l\u2019\u00e9vacuation",
@@ -672,15 +675,16 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 29,
-        "difficulty": 1,
+        "id": 28,
+        "difficulty": 2,
         "theme": "ventilation",
         "question_fr": "Quelle est la fonction principale de la mise en service ?",
         "question_nl": "Wat is de belangrijkste functie van de indienststelling?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "R\u00e9glage = le bon d\u00e9bit au bon endroit. \nLe r\u00e9glage est g\u00e9n\u00e9ralement r\u00e9alis\u00e9 directement sur les bouches (\u00e9quilibrage) et la vitesse du ventilateur peut \u00eatre ajust\u00e9e (pour avoir le bon d\u00e9bit global)",
+        "explanation_nl": "De afstelling van een ge\u00efnstalleerd mechanische-ventilatie\nsysteem heeft tot doel te verzekeren dat het systeem de \nvoorziene ontwerpdebieten ook daadwerkelijk haalt (zie \nDe indienststelling van een mechanisch ventilatiesysteem heeft als doel te verzekeren dat de voorziene ontwerpdebieten effectief worden gehaald. Hiervoor worden de afstelkleppen (meestal de ventielen) en de ventilator(en) correct afgeregeld. Zo kan het systeem optimaal en volgens ontwerp functioneren.",
+        "explanationImage": null,
+        "reference_fr": "Note d'Information Technique 258 - Guide pratique des syst\u00e8mes de ventilation de base des logements",
+        "reference_nl": "Technische Voorlichting 258 ",
         "answers_fr": [
             "Contr\u00f4ler le co\u00fbt de l\u2019installation",
             "R\u00e9gler les d\u00e9bits d\u2019air par pi\u00e8ce",
@@ -696,15 +700,16 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 30,
-        "difficulty": 1,
+        "id": 29,
+        "difficulty": 3,
         "theme": "ventilation",
         "question_fr": "Sur quoi se concentre l\u2019Innovation Paper 41 ?",
         "question_nl": "Waar focust Innovation Paper 41 op?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "L\u2019Innovation Paper 41 est consacr\u00e9 aux syst\u00e8mes de ventilation innovants pour les logements dans un contexte de r\u00e9novation. Il pr\u00e9sente des concepts de ventilation qui facilitent l\u2019int\u00e9gration d\u2019un syst\u00e8me de ventilation lors de travaux de r\u00e9novation tout en pr\u00e9servant la qualit\u00e9 de l\u2019air int\u00e9rieur, les performances \u00e9nerg\u00e9tiques et le confort des occupants.",
+        "explanation_nl": "Innovation Paper 41 focust op innovatieve ventilatiesystemen voor woningen in een renovatiecontext. De publicatie reikt praktische ventilatieconcepten aan die de installatie van ventilatie bij renovaties vergemakkelijken, terwijl een goede binnenluchtkwaliteit, energieprestatie en comfort behouden blijven.",
+        "explanationImage": null,
+        "reference_fr": "Innovation Paper 41 - Syst\u00e8mes de ventilation innovants pour les logements en r\u00e9novation",
+        "reference_nl": "Innovation paper 41",
         "answers_fr": [
             "Ventilation en nouvelle construction",
             "Ventilation non r\u00e9sidentielle",
@@ -720,15 +725,16 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 31,
-        "difficulty": 1,
+        "id": 30,
+        "difficulty": 3,
         "theme": "ventilation",
         "question_fr": "Pourquoi faut-il remplacer les filtres \u00e0 air dans un syst\u00e8me de ventilation ?",
         "question_nl": "Waarom dienen luchtfilters in een ventilatiesysteem vervangen te worden?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Filtre sale = augmentation de la consommation du ventilateur pour compenser la r\u00e9sistance, ou bien diminution du d\u00e9bit. \nLes filtres doivent donc \u00eatre r\u00e9guli\u00e8rement nettoy\u00e9s ou remplac\u00e9es",
+        "explanation_nl": "Naarmate een filter vervuild raakt stijgt de drukval over de filter, waardoor het ventilatiesysteem meer energie nodig heeft om hetzelfde debiet te leveren of, in het slechtste geval, het ventilatiedebiet afneemt. Daarom is het belangrijk om filters regelmatig te inspecteren en tijdig te vervangen.",
+        "explanationImage": null,
+        "reference_fr": "Article Buildiwse 2014-02.11 - Entretien des syst\u00e8mes de ventilation",
+        "reference_nl": "Buildwise artikel 'Onderhoud van ventilatiesystemen' (https://www.buildwise.be/nl/publicaties/buildwise-artikels/2014-02.11/)",
         "answers_fr": [
             "Parce qu\u2019ils commencent \u00e0 provoquer des probl\u00e8mes d\u2019odeur",
             "Parce que les filtres deviennent moins efficaces pour capter la poussi\u00e8re avec le temps",
@@ -744,39 +750,16 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 32,
-        "difficulty": 1,
-        "theme": "ventilation",
-        "question_fr": "Que peut-on notamment faire avec la version desktop d\u2019Optivent ?",
-        "question_nl": "Wat kan je onder andere doen met de Optivent desktop-versie?",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
-        "answers_fr": [
-            "Calculer les d\u00e9bits requis et fixer les d\u00e9bits de conception",
-            "Calculer les pertes de pression et dimensionner le r\u00e9seau m\u00e9canique (syst\u00e8mes B, C et D)",
-            "Calculer le niveau sonore dans chaque pi\u00e8ce",
-            "Toutes les r\u00e9ponses ci-dessus"
-        ],
-        "answers_nl": [
-            "Berekenen ge\u00ebiste debieten en vastleggen ontwerpdebieten",
-            "Berekenen drukverliezen en dimensioneren mechanische netwerk (systemen B, C en D)",
-            "Berekenen geluidsniveau in elke ruimte",
-            "Alle voorgaande antwoorden"
-        ],
-        "correct": 3
-    },
-    {
-        "id": 33,
-        "difficulty": 1,
+        "id": 31,
+        "difficulty": 3,
         "theme": "ventilation",
         "question_fr": "L\u2019installation d\u2019un filtre \u00e0 poches ePM2,5 70 % pour un groupe de ventilation double flux\u2026",
         "question_nl": "De installatie van een fijne ePM2,5 70% zakkenfilter voor de balansventilatiegroep\u2026",
-        "explanation_fr": "texte",
-        "explanation_nl": "tekst",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Un fltre ePM2.5 70% ne prot\u00e8ge pas seulement le syst\u00e8me de ventilation, mais diminue \u00e9galement la quantit\u00e9 de particules fines qui viennent de l'air ext\u00e9rieur. Avec un filtre \u00e0 poche, la surface est tr\u00e8s grande et la perte de charge augmente tr\u00e8s lentemenet. Cette solution demande moins d'entretien et peut sans probl\u00e8me fonctionner 1 an sans nettoyage interm\u00e9diaire",
+        "explanation_nl": "Een ePM2,5 70% zakkenfilter beschermt niet alleen het ventilatiesysteem tegen vervuiling, maar vermindert ook de hoeveelheid fijnstofdeeltjes in de aangevoerde buitenlucht. Dankzij het grote filteroppervlak bouwt het drukverlies slechts langzaam op, waardoor deze oplossing minder onderhoud vraagt en een jaar lang gebruikt kan worden zonder tussentijdse reiniging.",
+        "explanationImage": null,
+        "reference_fr": "Article Buildwise 2025-04.05 - Ventilation r\u00e9sidentielle avec filtres \u00e0 poches : finis les soucis d\u2019entretien",
+        "reference_nl": "Buildwise artikel 'Residenti\u00eble ventilatie met zakkenfilters: geen zorgen over filteronderhoud' (https://www.buildwise.be/nl/publicaties/buildwise-artikels/2025-04.05/)",
         "answers_fr": [
             "Assure uniquement la protection du syst\u00e8me de ventilation",
             "Combine la protection du syst\u00e8me avec une am\u00e9lioration de la qualit\u00e9 de l\u2019air ext\u00e9rieur insuffl\u00e9",
@@ -792,15 +775,16 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 34,
+        "id": 32,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Quelle est la temp\u00e9rature recommand\u00e9e de l'eau chaude sanitaire au d\u00e9part de la boucle de distribution ?",
         "question_nl": "Wat is de aanbevolen temperatuur van het sanitair warm water bij het begin van een circulatieleiding?",
-        "explanation_fr": "Il s'agit de la temp\u00e9rature minimale n\u00e9cessaire pour r\u00e9duire la concentration d\u00e8s que colonies de Legionella. Voir https://www.buildwise.be/fr/publications/innovation-paper/31/",
-        "explanation_nl": "Dit is de minimale temperatuur die nodig is om de concentratie van Legionellakolonies te verminderen.\nZie : https://www.buildwise.be/nl/publicaties/innovation-papers/31/",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Il s'agit de la temp\u00e9rature minimale n\u00e9cessaire pour r\u00e9duire la concentration d\u00e8s que colonies de Legionella. ",
+        "explanation_nl": "Dit is de minimale temperatuur die nodig is om de concentratie van Legionellakolonies te verminderen.",
+        "explanationImage": null,
+        "reference_fr": "Note d\u2019information technique 301 - Installations de distribution d\u2019eau potable dans les b\u00e2timents\n",
+        "reference_nl": "Innovation paper n\u00b031",
         "answers_fr": [
             "50\u00b0C",
             "60\u00b0C",
@@ -816,15 +800,16 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 35,
+        "id": 33,
         "difficulty": 1,
         "theme": "sanitaire",
         "question_fr": "Quel mat\u00e9riau est d\u00e9conseill\u00e9 pour la distribution d'eau chaude sanitaire\u00a0?",
         "question_nl": "Welk materiaal wordt afgeraden voor de distributie van sanitair warm water?",
-        "explanation_fr": "Les conduites en acier galvanis\u00e9 sont particuli\u00e8rement sensibles \u00e0 la corrosion. Celle-ci entra\u00eene la lib\u00e9ration de fer et la formation de nodules de corrosion, pouvant notamment favoriser le d\u00e9veloppement de germes de l\u00e9gionelle. De plus, la d\u00e9gradation du rev\u00eatement en zinc peut conduire \u00e0 la lib\u00e9ration de composants toxiques (plomb lorsqu\u2019il est pr\u00e9sent, p. ex.).\nVoir : https://www.buildwise.be/fr/publications/notes-d-information-technique/301/",
-        "explanation_nl": "Leidingen uit gegalvaniseerd staal zijn bijzonder gevoelig voor corrosie. Dit leidt tot het vrijkomen van ijzer en de vorming van corrosienodules, die de ontwikkeling van legionellabacteri\u00ebn kunnen bevorderen. Bovendien kan schade aan de zinken bekleding resulteren in het vrijkomen van giftige stoffen (bv. lood indien aanwezig).\nZie : https://www.buildwise.be/nl/publicaties/technische-voorlichtingen/301/",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Les conduites en acier galvanis\u00e9 sont particuli\u00e8rement sensibles \u00e0 la corrosion. Celle-ci entra\u00eene la lib\u00e9ration de fer ou d'autres composants toxiques (plomb lorsqu\u2019il est pr\u00e9sent, p. ex.).",
+        "explanation_nl": "Leidingen van gegalvaniseerd staal zijn bijzonder gevoelig voor corrosie. Hierdoor komen ijzer of andere giftige stoffen vrij (bijvoorbeeld lood, indien aanwezig).",
+        "explanationImage": null,
+        "reference_fr": "Note d\u2019information technique 301 - Installations de distribution d\u2019eau potable dans les b\u00e2timents\n",
+        "reference_nl": "TV 301",
         "answers_fr": [
             "L'acier galvanis\u00e9",
             "Le tuyaux multicouche",
@@ -840,15 +825,16 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 36,
-        "difficulty": 1,
+        "id": 34,
+        "difficulty": 3,
         "theme": "sanitaire",
         "question_fr": "Que dois-je installer directement apr\u00e8s le compteur de la compagnie distributrice d\u2019eau publique ?",
         "question_nl": "Wat moet ik direct na de meter van het watermaatschappij installeren?",
-        "explanation_fr": "Il est important d'installer la protection de type EA directement apr\u00e8s le compteur afin d'\u00e9viter des risques d'eau possible vers le r\u00e9seau d'eau publique.\nVoir : https://www.buildwise.be/fr/publications/notes-d-information-technique/301/",
-        "explanation_nl": "Het is belangrijk om de EA-beveiliging direct achter de meter te installeren om te voorkomen dat er water in het openbare waternet terechtkomt.\nZie : https://www.buildwise.be/nl/publicaties/technische-voorlichtingen/301/",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Une protection de type EA plac\u00e9e directement apr\u00e8s le compteur \u00e9vite des risques d'eau possible vers le r\u00e9seau d'eau publique.",
+        "explanation_nl": "Een EA-beveiliging die direct achter de meter is geplaatst, voorkomt dat er mogelijk water in het openbare waternet terechtkomt.",
+        "explanationImage": null,
+        "reference_fr": "Note d\u2019information technique 301 - Installations de distribution d\u2019eau potable dans les b\u00e2timents\n",
+        "reference_nl": "TV 301",
         "answers_fr": [
             "Un robinet double service",
             "Un r\u00e9ducteur de pression",
@@ -864,15 +850,16 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 37,
-        "difficulty": 1,
+        "id": 35,
+        "difficulty": 3,
         "theme": "sanitaire",
         "question_fr": "Pour \u00e9viter des nuisances acoustiques, quelle est la vitesse maximale de l\u2019eau dans des conduites traversant des locaux habit\u00e9s ?",
         "question_nl": "Wat is de maximale stroomsnelheid van het water in leidingen die door bewoonde ruimtes lopen om geluidsoverlast te voorkomen?",
-        "explanation_fr": "Une vitesse de 1 m/s est requise pour \u00e9viter que les occupants des locaux habit\u00e9s (chambres, salon, bureau) entendent l'eau circuler dans les tuyaux lors des puisages.\nVoir : https://www.buildwise.be/media/3m1b5bvl/contact_fr_06_2020.pdf",
-        "explanation_nl": "Er is een snelheid van 1 m/s vereist om te voorkomen dat de bewoners van de woonruimtes (slaapkamers, woonkamer, kantoor) het water door de leidingen horen stromen wanneer er water wordt getapt\nZie :  https://www.buildwise.be/nl/publicaties/buildwise-artikels/2020-06.05/",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Une vitesse de 1 m/s est requise pour \u00e9viter que les occupants des locaux habit\u00e9s (chambres, salon, bureau) entendent l'eau circuler dans les tuyaux lors des puisages.\n",
+        "explanation_nl": "Er is een snelheid van 1 m/s vereist om te voorkomen dat de bewoners van de woonruimtes (slaapkamers, woonkamer, kantoor) het water door de leidingen horen stromen wanneer er water wordt getapt",
+        "explanationImage": null,
+        "reference_fr": "Article Buildwise 2020-06.05 - Dimensionnement des conduites d'eau dans les installations sanitaires\n ",
+        "reference_nl": "WTCB Contact 2020/6",
         "answers_fr": [
             "0,5 m/s",
             "1 m/s",
@@ -888,15 +875,16 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 38,
-        "difficulty": 1,
+        "id": 36,
+        "difficulty": 2,
         "theme": "sanitaire",
         "question_fr": "Si le client veut utiliser simultan\u00e9ment une douche et un \u00e9vier de cuisine avec une production d'eau chaude sanitaire instantan\u00e9e, quelle est la puissance n\u00e9cessaire\u00a0?",
         "question_nl": "Als de klant tegelijkertijd een douche en een gootsteen wil gebruiken met een doorstroomboiler, hoeveel vermogen is er dan nodig?",
-        "explanation_fr": "Cette puissance est n\u00e9cessaire pour un usage simultan\u00e9 et pour des \u00e9quipements sanitaires standards. \nVoir : lien vers le nouveau Waterdim ou \u00e0 d\u00e9faut https://www.buildwise.be/fr/publications/methodes-de-dimensionnement/24/",
-        "explanation_nl": "Dit vermogen is nodig voor gelijktijdig gebruik van standaard sanitair. \nZie: link naar de nieuwe Waterdim of, indien niet beschikbaar, https://www.buildwise.be/nl/publicaties/dimensioneringsmethodes/24/",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Cette puissance est n\u00e9cessaire pour un usage simultan\u00e9 et pour des \u00e9quipements sanitaires standards. \nVous pouvez aussi simplement utiliser notre application WaterDim !",
+        "explanation_nl": "Dit vermogen is nodig voor gelijktijdig gebruik van standaard sanitair. \n",
+        "explanationImage": null,
+        "reference_fr": "M\u00e9thode de dimensionnement 24 - Production d'eau chaude sanitaire dans les logements unifamiliaux.\nhttps://waterdim.buildwise.be/",
+        "reference_nl": "Dimnesionnering methode n\u00b024",
         "answers_fr": [
             "16kW",
             "24kW",
@@ -912,15 +900,16 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 39,
-        "difficulty": 1,
+        "id": 37,
+        "difficulty": 3,
         "theme": "sanitaire",
         "question_fr": "Dans un logement avec deux chambres, quel devrait-\u00eatre le volume de mon boiler thermodynamique ?",
         "question_nl": "Hoe groot moet de warmtepompboiler zijn in een woning met twee slaapkamers?",
-        "explanation_fr": "Ce volume est le volume r\u00e9el du ballon n\u00e9cessaire pour assurer le confort avec des puisages d'eau chaude sanitaire standards.\nVoir : lien vers le nouveau Waterdim ou \u00e0 d\u00e9faut https://www.buildwise.be/fr/publications/methodes-de-dimensionnement/24/",
-        "explanation_nl": "Dit is het werkelijke volume van de boiler dat nodig is om comfort te garanderen bij standaardverbruik van warm water.\nZie: link naar de nieuwe Waterdim of, indien niet beschikbaar https://www.buildwise.be/nl/publicaties/dimensioneringsmethodes/24/",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
+        "explanation_fr": "Ce volume est le volume r\u00e9el du ballon n\u00e9cessaire pour assurer le confort avec des puisages d'eau chaude sanitaire standards.",
+        "explanation_nl": "Dit is het werkelijke volume van de boiler dat nodig is om comfort te garanderen bij standaardverbruik van warm water.\n",
+        "explanationImage": null,
+        "reference_fr": "M\u00e9thode de dimensionnement 24 - Production d'eau chaude sanitaire dans les logements unifamiliaux.\nhttps://waterdim.buildwise.be/",
+        "reference_nl": "Dimnesionnering methode n\u00b024",
         "answers_fr": [
             "120l",
             "160l",
@@ -936,135 +925,91 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 40,
-        "difficulty": 1,
+        "id": 38,
+        "difficulty": 2,
         "theme": "sanitaire",
-        "question_fr": "Que faut-il faire en cas de risque de refoulement dans l\u2019\u00e9gout public lorsque l\u2019installation d\u2019\u00e9vacuation priv\u00e9e (collecteur d\u2019\u00e9gouttage priv\u00e9) se situe sous le niveau de refoulement de la rue ?",
-        "question_nl": "Wat moet gebeuren bij gevaar voor terugstuwing in de openbare riolering en wanneer de huisriolering (collector private riolering) zich onder het terugstuwniveau van de straat bevindt?",
-        "explanation_fr": "TV 265, \u00a7 4.1.1.10",
-        "explanation_nl": "Zie TV 265, \u00a7 4.1.1.10",
-        "reference_fr": "nan",
+        "question_fr": "Quelle est la pente minimale recommand\u00e9e des conduites horizontales d\u2019\u00e9vacuation des eaux us\u00e9es ?",
+        "question_nl": "Wat is de aanbevolen minimale helling van afvalwaterafvoerleidingen met horizontaal verloop? ",
+        "explanation_fr": "La pente des tuyaux de raccordement doit en prin cipe \u00eatre de 1\u00a0% (1\u00a0cm/m). Une pente plus faible, ne pouvant toutefois \u00eatre inf\u00e9rieure \u00e0 0,5\u00a0% (0,5\u00a0cm/m), augmente le risque de d\u00e9p\u00f4ts.",
+        "explanation_nl": "Zie TV 265, \u00a7 4.3.1, \u00a7 4.3.2, \u00a7 4.5.1. ",
+        "explanationImage": null,
+        "reference_fr": "Note d\u2019information technique 265 - Installations pour l'\u00e9vacuation des eaux us\u00e9es dans les b\u00e2timents.",
         "reference_nl": "nan",
         "answers_fr": [
-            "Dans ce cas, il faut toujours installer une station de pompage pour \u00e9vacuer les eaux us\u00e9es.",
-            "Un clapet anti-retour peut \u00eatre install\u00e9 et tous les appareils de d\u00e9versement situ\u00e9s au-dessus du niveau de refoulement doivent \u00eatre raccord\u00e9s en aval de ce clapet anti-retour.",
-            "Un clapet anti-retour peut \u00eatre install\u00e9 et tous les appareils de d\u00e9versement situ\u00e9s au-dessus du niveau de refoulement doivent \u00eatre raccord\u00e9s en amont de ce clapet anti-retour.",
-            "Aucune solution satisfaisante n\u2019est possible, l\u2019ex\u00e9cution n\u2019est pas conforme au code de bonne pratique."
+            "5%",
+            "2%",
+            "1%",
+            "0,50 %"
         ],
         "answers_nl": [
-            "Er moet in dit geval altijd een pompput geplaatst worden om het afvalwater te kunnen afvoeren. ",
-            "Er mag een terugslagklep geplaatst worden en alle lozingstoestellen boven terugstuwniveau moeten stroomafwaarts van deze terugslagklep aangesloten worden. ",
-            "Er mag een terugslagklep geplaatst worden en alle lozingstoestellen boven terugstuwniveau moeten stroomopwaarts van deze terugslagklep aangesloten worden. ",
-            "Er is geen goede oplossing mogelijk, de uitvoering is niet volgens code van goede praktijk. "
+            "5%",
+            "2%",
+            "1%",
+            "0,50 %"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 39,
+        "difficulty": 2,
+        "theme": "sanitaire",
+        "question_fr": "Quelle est la r\u00e8gle fondamentale concernant la gestion des eaux us\u00e9es domestiques et des eaux pluviales ?",
+        "question_nl": "nan",
+        "explanation_fr": "Si l'\u00e9gout est s\u00e9paratif, les deux flux sont \u00e9vacu\u00e9s vers leurs conduites respectifs.\nSi l'\u00e9gout est unitaire, les deux sont m\u00e9lang\u00e9s apr\u00e8s la limite de la parcelle",
+        "explanation_nl": "nan",
+        "explanationImage": null,
+        "reference_fr": "Note d\u2019information technique 265 - Installations pour l'\u00e9vacuation des eaux us\u00e9es dans les b\u00e2timents.",
+        "reference_nl": "nan",
+        "answers_fr": [
+            "Elles peuvent \u00eatre m\u00e9lang\u00e9es \u00e0 l'int\u00e9rieur du b\u00e2timent si l'\u00e9gout public est de type unitaire.",
+            "Elles doivent toujours \u00eatre \u00e9vacu\u00e9es s\u00e9par\u00e9ment l'une de l'autre au sein de l'installation.",
+            "Elles sont m\u00e9lang\u00e9es uniquement apr\u00e8s un traitement pr\u00e9alable des eaux pluviales.",
+            "Le choix de les m\u00e9langer ou de les s\u00e9parer d\u00e9pend principalement de la taille de l'immeuble."
+        ],
+        "answers_nl": [
+            "nan",
+            "nan",
+            "nan",
+            "nan"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 40,
+        "difficulty": 2,
+        "theme": "sanitaire",
+        "question_fr": "Quel est le r\u00f4le principal d'un clapet a\u00e9rateur (\u00e9galement appel\u00e9 clapet \u00e9quilibreur de pression) dans une installation d'\u00e9vacuation des eaux us\u00e9es ?",
+        "question_nl": "nan",
+        "explanation_fr": "Il s'ouvre de mani\u00e8re \u00e0 aspirer de l'air en cas de d\u00e9pression et se ferme m\u00e9caniquement l'ouverture \u00e0 l'air ambiant afin d'emp\u00eacher la propagation des odeurs",
+        "explanation_nl": "nan",
+        "explanationImage": null,
+        "reference_fr": "Note d\u2019information technique 265 - Installations pour l'\u00e9vacuation des eaux us\u00e9es dans les b\u00e2timents.",
+        "reference_nl": "nan",
+        "answers_fr": [
+            "Il emp\u00eache le refoulement des eaux de l'\u00e9gout public vers l'\u00e9gout priv\u00e9.",
+            "Il permet d'aspirer de l'air en cas de d\u00e9pression dans les conduites et se ferme pour \u00e9viter la propagation des odeurs.",
+            "Il assure la filtration des particules solides pour \u00e9viter les obstructions dans les tuyauteries.",
+            "Il r\u00e9gule la temp\u00e9rature de l'eau \u00e9vacu\u00e9e afin de pr\u00e9venir le gel des installations."
+        ],
+        "answers_nl": [
+            "nan",
+            "nan",
+            "nan",
+            "nan"
         ],
         "correct": 1
     },
     {
         "id": 41,
         "difficulty": 1,
-        "theme": "sanitaire",
-        "question_fr": "Quelle est la pente minimale recommand\u00e9e des conduites horizontales d\u2019\u00e9vacuation des eaux us\u00e9es ?",
-        "question_nl": "Wat is de aanbevolen minimale helling van afvalwaterafvoerleidingen met horizontaal verloop? ",
-        "explanation_fr": "TV 265, \u00a7 4.3.1, \u00a7 4.3.2, \u00a7 4.5.1",
-        "explanation_nl": "Zie TV 265, \u00a7 4.3.1, \u00a7 4.3.2, \u00a7 4.5.1. ",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
-        "answers_fr": [
-            "5%",
-            "2%",
-            "1%",
-            "0,50 %"
-        ],
-        "answers_nl": [
-            "5%",
-            "2%",
-            "1%",
-            "0,50 %"
-        ],
-        "correct": 2
-    },
-    {
-        "id": 42,
-        "difficulty": 1,
-        "theme": "sanitaire",
-        "question_fr": "Quelle est la pente maximale recommand\u00e9e d\u2019une goutti\u00e8re ?",
-        "question_nl": "Wat is de aanbevolen maximale helling van een dakgoot? ",
-        "explanation_fr": "TV 270, \u00a7 4.3.2.2",
-        "explanation_nl": "Zie TV 270, \u00a7 4.3.2.2",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
-        "answers_fr": [
-            "10%",
-            "5%",
-            "2%",
-            "1%"
-        ],
-        "answers_nl": [
-            "10%",
-            "5%",
-            "2%",
-            "1%"
-        ],
-        "correct": 3
-    },
-    {
-        "id": 43,
-        "difficulty": 1,
-        "theme": "sanitaire",
-        "question_fr": "Quel \u00e9l\u00e9ment d\u2019une installation d\u2019\u00e9vacuation des eaux pluviales ne peut pas \u00eatre calcul\u00e9 et n\u2019est connu qu\u2019\u00e0 partir de r\u00e9sultats d\u2019essais ?",
-        "question_nl": "Welk onderdeel van een afvoerinstallatie voor hemelwater kan niet berekend worden en is enkel gekend op basis van testresultaten? ",
-        "explanation_fr": "TV 270, \u00a7 5.3.2",
-        "explanation_nl": "Zie TV 270, \u00a7 5.3.2",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
-        "answers_fr": [
-            "Avaloir de toiture pr\u00e9fabriqu\u00e9",
-            "Goutti\u00e8re \u00e0 section triangulaire",
-            "Colonne de chute \u00e0 section carr\u00e9e",
-            "\u00c9vacuation en rive de toiture (exutoire lat\u00e9ral) \u00e0 section rectangulaire"
-        ],
-        "answers_nl": [
-            "geprefabriceerde dakkolk",
-            "goot met driehoekige doorsnede",
-            "standleiding met vierkante doorsnede",
-            "dakrandafvoer met rechthoekige doorsnede"
-        ],
-        "correct": 0
-    },
-    {
-        "id": 44,
-        "difficulty": 1,
-        "theme": "sanitaire",
-        "question_fr": "Qu\u2019est-ce que la ventilation primaire dans une installation d\u2019\u00e9vacuation ?",
-        "question_nl": "Wat is primaire verluchting  in een afvoerinstallatie? ",
-        "explanation_fr": "TV 265, d\u00e9finition p. 10",
-        "explanation_nl": "Zie TV 265, definitie op p. 10",
-        "reference_fr": "nan",
-        "reference_nl": "nan",
-        "answers_fr": [
-            "La ventilation primaire est une conduite qui relie le tuyau de raccordement d\u2019un appareil sanitaire \u00e0 une colonne de ventilation.",
-            "La ventilation primaire est assur\u00e9e par le clapet a\u00e9rateur plac\u00e9 le plus haut dans l\u2019installation d\u2019\u00e9vacuation.",
-            "La ventilation primaire est la partie de la colonne de chute qui est prolong\u00e9e au-dessus du raccordement le plus \u00e9lev\u00e9 jusqu\u2019au-dessus de la toiture ou jusqu\u2019\u00e0 un clapet a\u00e9rateur.",
-            "La ventilation primaire concerne la ventilation via une \u00e9vacuation sans siphon, puisqu\u2019elle reste ouverte \u00e0 l\u2019air libre, comme par exemple une \u00e9vacuation de toiture ou de balcon."
-        ],
-        "answers_nl": [
-            "Primaire verluchting is een leiding die de aansluitleiding van een lozingstoestel verbindt met een verluchtingsstandleiding",
-            "Primaire verluchting is de verluchting via de hoogst geplaatste beluchtingsklep in de afvoerinstallatie",
-            "Primaire verluchting is het gedeelte van de afvoerstandleiding dat boven de hoogste aansluiting verlengd wordt tot boven het dak of tot aan een beluchtingsklep",
-            "Primaire verluchting heeft betrekking op de verluchting via een afvoer zonder sifon aangezien bij deze afvoer een open verbinding blijft met de buitenlucht, zoals bij bv. een dakafvoer of balkonafvoer.  "
-        ],
-        "correct": 2
-    },
-    {
-        "id": 45,
-        "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Quel est l\u2019objectif de la maintenance pr\u00e9ventive ?",
         "question_nl": "Wat is het doel van preventief onderhoud?",
         "explanation_fr": "La maintenance pr\u00e9ventive consiste \u00e0 intervenir avant la panne afin de r\u00e9duire les d\u00e9faillances et les temps d\u2019arr\u00eat impr\u00e9vus",
-        "explanation_nl": "Preventief onderhoud bestaat erin v\u00f3\u00f3r een storing in te grijpen om fouten en ongeplande stilstanden te verminderen. Zie : https://www.buildwise.be/nl/publicaties/buildwise-artikels/2024-04.08/",
-        "reference_fr": "Article Buildwise 2024-04.08 - Approche intelligente de la maintenance des installations techniques",
-        "reference_nl": "nan",
+        "explanation_nl": "Preventief onderhoud bestaat erin v\u00f3\u00f3r een storing in te grijpen om fouten en ongeplande stilstanden te verminderen. ",
+        "explanationImage": null,
+        "reference_fr": "Article Buildwise 2024-04.08 - Approche intelligente de la maintenance des installations technique",
+        "reference_nl": "https://www.buildwise.be/nl/publicaties/buildwise-artikels/2024-04.08/",
         "answers_fr": [
             "R\u00e9parer les \u00e9quipements apr\u00e8s une panne",
             "R\u00e9duire les co\u00fbts d\u2019investissement initial",
@@ -1080,15 +1025,16 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 46,
+        "id": 42,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Quel est le r\u00f4le principal d\u2019un Energy Management System (EMS) dans un b\u00e2timent ?",
         "question_nl": "Wat is de belangrijkste rol van een Energy Management System (EMS) in een gebouw?",
         "explanation_fr": "Un EMS est un syst\u00e8me qui permet de surveiller, analyser et optimiser la consommation d\u2019\u00e9nergie afin de r\u00e9duire les co\u00fbts et am\u00e9liorer l\u2019efficacit\u00e9 \u00e9nerg\u00e9tique.",
         "explanation_nl": "Een EMS is een systeem dat het mogelijk maakt om het energieverbruik te monitoren, analyseren en optimaliseren om kosten te verlagen en de energie\u2011effici\u00ebntie te verbeteren.",
-        "reference_fr": "Smartheating.be",
-        "reference_nl": "nan",
+        "explanationImage": null,
+        "reference_fr": "SmartHeating.be - Een blik op opensources EMS - https://smartheating.be/een-blik-op-ems-opensources/",
+        "reference_nl": "https://smartheating.be/een-blik-op-ems-opensources/",
         "answers_fr": [
             "Produire de l\u2019\u00e9nergie renouvelable",
             "Surveiller, contr\u00f4ler et optimiser la consommation d\u2019\u00e9nergie",
@@ -1104,15 +1050,16 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 47,
-        "difficulty": 1,
+        "id": 43,
+        "difficulty": 2,
         "theme": "smart appliances",
         "question_fr": "Quel est le principal avantage des capteurs de chaleur connect\u00e9s dans un syst\u00e8me de chauffage ?",
         "question_nl": "Wat is het belangrijkste voordeel van verbonden warmtesensoren in een verwarmingssysteem?",
         "explanation_fr": "les capteurs de chaleur connect\u00e9s dans un syst\u00e8me de chauffage permettent de mesurer et transmettre les donn\u00e9es de temp\u00e9rature en temps r\u00e9el",
-        "explanation_nl": "Vverbonden warmtesensoren in een verwarmingssysteem sturen temperatuurgegevens in real time meten en door - zie https://www.buildwise.be/nl/publicaties/buildwise-artikels/2024-04.09/",
-        "reference_fr": "Article Buildwise 2024-04.09 - Compteurs de chaleur connect\u00e9s : une obligation, mais aussi une opportunit\u00e9.",
-        "reference_nl": "nan",
+        "explanation_nl": "Vverbonden warmtesensoren in een verwarmingssysteem sturen temperatuurgegevens in real time meten en door ",
+        "explanationImage": null,
+        "reference_fr": "Article Buildwise 2024-04.09 - Compteurs de chaleur connect\u00e9s : une obligation, mais aussi une opportunit\u00e9",
+        "reference_nl": "https://www.buildwise.be/nl/publicaties/buildwise-artikels/2024-04.09/",
         "answers_fr": [
             "Produire directement de la chaleur",
             "Mesurer et transmettre les donn\u00e9es de temp\u00e9rature en temps r\u00e9el",
@@ -1128,15 +1075,16 @@ window.HVAC_QUESTIONS = [
         "correct": 1
     },
     {
-        "id": 48,
-        "difficulty": 1,
+        "id": 44,
+        "difficulty": 2,
         "theme": "smart appliances",
         "question_fr": "Assurer la flexibilit\u00e9 \u00e9nerg\u00e9tique d\u2019un b\u00e2timent consiste principalement \u00e0 :",
         "question_nl": "Om de energieflexibiliteit van een gebouw te waarborgen, komt het vooral neer op:",
         "explanation_fr": "La flexibilit\u00e9 \u00e9nerg\u00e9tique correspond \u00e0 la capacit\u00e9 d\u2019un b\u00e2timent \u00e0 adapter sa consommation (ou son stockage/production) selon les besoins du r\u00e9seau et la disponibilit\u00e9 de l\u2019\u00e9nergie, afin d\u2019\u00e9quilibrer plus efficacement le syst\u00e8me \u00e9lectrique",
-        "explanation_nl": "Energieflexibiliteit is het vermogen van een gebouw om zijn energieverbruik aan te passen aan de behoeften van het net en de beschikbaarheid van energie. - Zie : https://www.buildwise.be/nl/publicaties/buildwise-artikels/2018-02.12/",
-        "reference_fr": "Article Buildwise 2018-02.12 - La flexibilit\u00e9 \u00e9nerg\u00e9tique des b\u00e2timents.",
-        "reference_nl": "nan",
+        "explanation_nl": "Energieflexibiliteit is het vermogen van een gebouw om zijn energieverbruik aan te passen aan de behoeften van het net en de beschikbaarheid van energie. ",
+        "explanationImage": null,
+        "reference_fr": "Article Buildwise 2018-02.12 - La flexibilit\u00e9 \u00e9nerg\u00e9tique des b\u00e2timents",
+        "reference_nl": "https://www.buildwise.be/nl/publicaties/buildwise-artikels/2018-02.12/",
         "answers_fr": [
             "Augmenter en permanence sa consommation d\u2019\u00e9nergie",
             "Remplacer ses sources de production d\u2019\u00e9nergie renouvelable",
@@ -1152,15 +1100,16 @@ window.HVAC_QUESTIONS = [
         "correct": 3
     },
     {
-        "id": 49,
-        "difficulty": 1,
+        "id": 45,
+        "difficulty": 3,
         "theme": "smart appliances",
         "question_fr": "Le protocole sans fil LoRa (et LoRaWAN) est principalement utilis\u00e9 pour :",
         "question_nl": "Het draadloze protocol LoRa (en LoRaWAN) wordt voornamelijk gebruikt om:",
         "explanation_fr": "LoRa est con\u00e7u pour permettre des communications longue port\u00e9e avec une consommation \u00e9nerg\u00e9tique tr\u00e8s faible, id\u00e9al pour les capteurs et applications Smart Buildings ou Smart City.",
-        "explanation_nl": "LoRa is ontworpen voor communicatie over lange afstand met een zeer laag energieverbruik, ideaal voor sensoren en toepassingen in Smart Buildings of Smart Cities. - Zie : https://www.buildwise.be/nl/publicaties/buildwise-artikels/2019-05.05/",
+        "explanation_nl": "LoRa is ontworpen voor communicatie over lange afstand met een zeer laag energieverbruik, ideaal voor sensoren en toepassingen in Smart Buildings of Smart Cities. ",
+        "explanationImage": null,
         "reference_fr": "Article Buildwise 2019-05.05 - Connectivit\u00e9 sans fil dans et autour des b\u00e2timents : pas que le wifi !",
-        "reference_nl": "nan",
+        "reference_nl": "https://www.buildwise.be/nl/publicaties/buildwise-artikels/2019-05.05/",
         "answers_fr": [
             "Transmettre de grandes quantit\u00e9s de donn\u00e9es \u00e0 tr\u00e8s haute vitesse",
             "Remplacer les r\u00e9seaux Wi\u2011Fi domestiques",
@@ -1176,15 +1125,16 @@ window.HVAC_QUESTIONS = [
         "correct": 2
     },
     {
-        "id": 50,
+        "id": 46,
         "difficulty": 1,
         "theme": "smart appliances",
         "question_fr": "Quel est un objectif cl\u00e9 que doit remplir un b\u00e2timent \u00e9quip\u00e9 d'un syst\u00e8me d\u2019automatisation et de contr\u00f4le des b\u00e2timents (ou BACS - Building Automation Control Systems) ?",
         "question_nl": "Wat is een belangrijke doelstelling waaraan een gebouw met een gebouwautomatiserings- en controlesysteem (of BACS \u2013 Building Automation Control Systems) moet voldoen?",
         "explanation_fr": "Un syst\u00e8me BACS doit permettre de surveiller, analyser et contr\u00f4ler automatiquement les installations afin d\u2019optimiser la performance \u00e9nerg\u00e9tique et d\u00e9tecter les inefficacit\u00e9s",
-        "explanation_nl": "Een BACS moet in staat zijn om installaties te monitoren, analyseren en automatisch te sturen om de energieprestaties te optimaliseren en ineffici\u00ebnties op te sporen. - zie https://www.buildwise.be/nl/publicaties/buildwise-artikels/2025-04.11/",
+        "explanation_nl": "Een BACS moet in staat zijn om installaties te monitoren, analyseren en automatisch te sturen om de energieprestaties te optimaliseren en ineffici\u00ebnties op te sporen,",
+        "explanationImage": null,
         "reference_fr": "Article Buildwise 2025-04.11 - Automatisation des b\u00e2timents : de nouvelles exigences europ\u00e9ennes",
-        "reference_nl": "nan",
+        "reference_nl": "https://www.buildwise.be/nl/publicaties/buildwise-artikels/2025-04.11/",
         "answers_fr": [
             "Fonctionner uniquement avec un contr\u00f4le manuel des installations",
             "Afficher les consommations sans action possible",
@@ -1194,21 +1144,22 @@ window.HVAC_QUESTIONS = [
         "answers_nl": [
             "Alleen functioneren met manuele bediening van de installaties",
             "Het verbruik weergeven zonder acties uit te voeren",
-            "Technische systemen volledig van elkaar scheiden",
-            "Het energieverbruik meten, analyseren en automatisch regelen"
+            "Het energieverbruik meten, analyseren en automatisch regelen",
+            "Technische systemen volledig van elkaar scheiden"
         ],
         "correct": 2
     },
     {
-        "id": 51,
-        "difficulty": 1,
+        "id": 47,
+        "difficulty": 2,
         "theme": "smart appliances",
         "question_fr": "Que signifie l\u2019acronyme BACS dans le domaine des b\u00e2timents intelligents ?",
         "question_nl": "Wat betekent de afkorting BACS op het gebied van slimme gebouwen?",
         "explanation_fr": "L'acronyme BACS est utilis\u00e9 pour Building Automation and Control Systems ou syst\u00e8mes d\u2019automatisation et de contr\u00f4le des b\u00e2timents",
-        "explanation_nl": "De afkorting BACS betekent Building Automation and Control Systems (of Gebouwautomatisering en controlesystemen) - zie https://www.buildwise.be/nl/publicaties/buildwise-artikels/2025-04.11/",
+        "explanation_nl": "De afkorting BACS betekent Building Automation and Control Systems (of Gebouwautomatisering en controlesystemen) ",
+        "explanationImage": null,
         "reference_fr": "Article Buildwise 2025-04.11 - Automatisation des b\u00e2timents : de nouvelles exigences europ\u00e9ennes",
-        "reference_nl": "nan",
+        "reference_nl": "https://www.buildwise.be/nl/publicaties/buildwise-artikels/2025-04.11/",
         "answers_fr": [
             "Building Automation and Control Systems",
             "Basic Architecture Construction Setup",
@@ -1224,15 +1175,16 @@ window.HVAC_QUESTIONS = [
         "correct": 0
     },
     {
-        "id": 52,
-        "difficulty": 1,
+        "id": 48,
+        "difficulty": 3,
         "theme": "smart appliances",
         "question_fr": "Que sont BACnet et KNX ?",
         "question_nl": "Wat zijn BACnet en KNX?",
         "explanation_fr": "Ces protocoles sont les plus courant pour la gestion technique des grands b\u00e2timents. ",
-        "explanation_nl": "Deze protocollen zijn de meest gebruikte voor het technisch beheer van grote gebouwen. BACnet wordt veel gebruikt in Noord-Amerika, terwijl KNX vaker voorkomt in Europa.",
-        "reference_fr": "Article \"Digitale connectiviteit in gebouwen\" https://www.smartbuildingsinuse.be/",
-        "reference_nl": "nan",
+        "explanation_nl": "Deze protocollen zijn de meest gebruikte voor het technisch beheer van grote gebouwen.",
+        "explanationImage": null,
+        "reference_fr": "Article SmartBuildingInUse - Digitale connectiviteit in gebouwen - https://www.smartbuildingsinuse.be/publicaties-en-artikels/",
+        "reference_nl": "https://www.smartbuildingsinuse.be/wp-content/uploads/2022/04/Digitale-connectiviteit-in-gebouwen-v20220405.pdf",
         "answers_fr": [
             "Des syst\u00e8mes de gestion technique centralis\u00e9e (GTC)",
             "Des applications /logiciels pour le suivi \u00e0 distance des installations",
@@ -1246,5 +1198,80 @@ window.HVAC_QUESTIONS = [
             "Bedrijven die producten verkopen voor het beheer en de controle van gebouwen"
         ],
         "correct": 2
+    },
+    {
+        "id": 49,
+        "difficulty": 2,
+        "theme": "smart appliances",
+        "question_fr": "Quelles sont les 3 fonctions de base d'un Smart Building ?",
+        "question_nl": "Wat zijn de drie basisfuncties van een Smart Building?",
+        "explanation_fr": "Les donn\u00e9es & l'analyse ainsi que l'automatisation et l'optimisation sont des fonctions de base du smart Building mais celuis-ci n'est rien s'il n'y a pas d'interaction avec l'utilisateur",
+        "explanation_nl": "Gegevens en analyse, evenals automatisering en optimalisatie, zijn basisfuncties van het smart building, maar dit concept is zinloos als er geen interactie met de gebruiker plaatsvindt",
+        "explanationImage": null,
+        "reference_fr": "Innovation Paper 45 - Smart Buildings",
+        "reference_nl": "https://www.buildwise.be/nl/publicaties/innovation-papers/45/",
+        "answers_fr": [
+            "Donn\u00e9es & Analyse - Automatisation & Optimisation - Maintenance automatique",
+            "Donn\u00e9es & Analyse - Automatisation & Optimisation - Gestion Autonome",
+            "Donn\u00e9es & Analyse - Automatisation & Optimisation - Flexibilit\u00e9 \u00e9nerg\u00e9tique",
+            "Donn\u00e9es & Analyse - Automatisation & Optimisation - Interaction avec l'utilisateur"
+        ],
+        "answers_nl": [
+            "Gegevens & Analyse - Automatisering & Optimalisatie - Automatisch onderhoud",
+            "Gegevens & Analyse - Automatisering & Optimalisatie - Autonoom beheer",
+            "Gegevens & Analyse - Automatisering & Optimalisatie - Flexibiliteit op energiegebied",
+            "Gegevens & Analyse - Automatisering & Optimalisatie - Gebuikersinteractie"
+        ],
+        "correct": 3
+    },
+    {
+        "id": 50,
+        "difficulty": 3,
+        "theme": "smart appliances",
+        "question_fr": "Qu'est-ce que le CERT.be ?",
+        "question_nl": "Wat is CERT.be?",
+        "explanation_fr": "CERT.be est le Computer Emergency Response Team f\u00e9d\u00e9ral belge, int\u00e9gr\u00e9 au Centre pour la Cybers\u00e9curit\u00e9 Belgique (CCB) sous l'autorit\u00e9 du Premier ministre. Il agit comme un \u00ab cyber-pompier \u00bb, charg\u00e9 d'analyser, de contenir et d'\u00e9radiquer les cyberattaques touchant la Belgique tout en fournissant une expertise technique aux minist\u00e8res et entit\u00e9s gouvernementales. ",
+        "explanation_nl": "CERT.be is het Belgische federale Computer Emergency Response Team, dat deel uitmaakt van het Centrum voor Cyberveiligheid Belgi\u00eb (CCB) en onder het gezag van de premier staat. Het fungeert als een \u201ecyberbrandweer\u201d en heeft tot taak cyberaanvallen op Belgi\u00eb te analyseren, in te dammen en uit te roeien, en tegelijkertijd technische expertise te verstrekken aan ministeries en overheidsinstanties. ",
+        "explanationImage": null,
+        "reference_fr": "Innovation Paper 45 - Smart Buildings",
+        "reference_nl": "https://www.buildwise.be/nl/publicaties/innovation-papers/45/",
+        "answers_fr": [
+            "Construction, Energy & Research Team",
+            "Connected Efficient Real-estate Technologies",
+            "Computer Emergency Response Team",
+            "Construction Energy Readiness & Transition"
+        ],
+        "answers_nl": [
+            "Construction, Energy & Research Team",
+            "Connected Efficient Real-estate Technologies",
+            "Computer Emergency Response Team",
+            "Construction Energy Readiness & Transition"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 51,
+        "difficulty": 3,
+        "theme": "smart appliances",
+        "question_fr": "Quel type d'outil informatique est utilis\u00e9 pour planifier, suivre et g\u00e9rer les op\u00e9rations de maintenance d'un b\u00e2timent ?",
+        "question_nl": "nan",
+        "explanation_fr": "GMAO (Gestion de la Maintenance Assist\u00e9e par Ordinateur). La fonctionalit\u00e9 principale de ces outils r\u00e9side dans la planification et le suivi des activit\u00e9s de maintenance pr\u00e9ventive et corrective, via des ordres de travail (\u00e9galement appel\u00e9s tickets).",
+        "explanation_nl": "CMMS (Computerized Maintenance Management System). De voornaamste functie van deze tools bestaat erin om preventieve en correctieve onderhoudsactiviteiten in te plannen en op te volgen met behulp van werkorders (ook wel 'tickets' genoemd).",
+        "explanationImage": null,
+        "reference_fr": "Article 2025-04.10 - xxx\n",
+        "reference_nl": "https://www.buildwise.be/nl/publicaties/buildwise-artikels/2025-04.10/",
+        "answers_fr": [
+            "BIM",
+            "GMAO",
+            "ERP",
+            "GTC"
+        ],
+        "answers_nl": [
+            "BIM",
+            "CMMS",
+            "ERP",
+            "GBS"
+        ],
+        "correct": 1
     }
 ]
