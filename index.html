@@ -18,5 +18,16 @@
   <script src="src/model.js"></script>
   <!-- UI (rendering, events) -->
   <script src="src/ui.js"></script>
+  
+  <script>
+  document.body.insertAdjacentHTML(
+  "beforeend",
+  `<pre style="position:fixed;bottom:0;left:0;background:white;color:black;
+               padding:10px;z-index:99999">
+    WakeLock supported: ${"wakeLock" in navigator}
+  </pre>`
+);
+</script>
+  
 </body>
 </html>
