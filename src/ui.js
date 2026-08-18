@@ -306,21 +306,23 @@
 
     const llPhone = createLifelineBtn("phone", "lifelinePhone", "📞", GameState.lifelines.phone, async () => {
       sfxClick();
-      const modal = showPhoneModal(t("thinking"), true);
-      try {
+      const modal = showPhoneModal(llPhone, true);
+      /*try {
         const answer = await callPhoneFriend();
         updatePhoneModal(modal, answer);
       } catch {
         updatePhoneModal(modal, lang === "fr" ? "Désolé, je ne peux pas répondre maintenant." : "Sorry, ik kan nu niet antwoorden.");
-      }
+      }*/
     });
+
+
 
     const llTool = createLifelineBtn("tool", "lifelineTool", "🔧", GameState.lifelines.tool, () => {
       sfxClick();
-      GameState.lifelines.tool = true;
+      //GameState.lifelines.tool = true; //this disables the lifelinse in state --> not ok
       //llTool.classList.add("used");
       //llTool.disabled = true;
-      showToolModal(llTool);
+      showToolModal(llTool,GameState.lifelines.tool);
     });
 
     lifelines.appendChild(ll5050);
@@ -637,9 +639,9 @@
     return overlay;
   }
 
-function showPhoneModal(initialText, loading, url = "https://tooli.be/c/new?spec=spec-oraaglzqjtpy") {
+function showPhoneModal(llphoneBtn, loading, url = "https://tooli.be/c/new?spec=spec-oraaglzqjtpy") {
 
-	buildQuizPrompt()
+  buildQuizPrompt()
 
   const overlay = document.createElement("div");
   overlay.className = "modal-overlay";
@@ -683,6 +685,10 @@ function showPhoneModal(initialText, loading, url = "https://tooli.be/c/new?spec
   // Open URL in new tab
   box.querySelector(".ai-tool-btn")
     .addEventListener("click", () => {
+	  console.log("lifeline used!")
+	  llphoneBtn.disabled = true
+      llphoneBtn.classList.add("used");
+      GameState.lifelines.phone = true;
       window.open(url, "_blank");
     });
 
@@ -743,7 +749,7 @@ const tools = [
   
 ];
 
-function showToolModal(lltool) {
+function showToolModal(lltool,toolUsed) {
 
   const overlay = el("div", "modal-overlay");
   const box = el("div", "modal-box tool-modal");
@@ -781,12 +787,14 @@ function showToolModal(lltool) {
 
     card.addEventListener("click", () => {
 
+	 console.log("TOOL IS USED")
+
       const url = card.dataset.url;
 
       // Mark tool as used
       lltool.classList.add("used");
       lltool.disabled = true;
-
+	  toolUsed = true
       // Open URL
       window.open(url, "_blank");
 
