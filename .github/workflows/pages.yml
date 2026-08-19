@@ -72,6 +72,20 @@ jobs:
           cp -r development/img site/dev/
 
       # --------------------------
+      # Apply DEV-only styling
+      # --------------------------
+      - name: Apply DEV theme
+        run: |
+          cat >> site/dev/src/style.css <<'EOF'
+
+          /* DEV theme - injected during deployment only */
+          :root {
+            --bw-blue: #795548;
+          }
+          EOF
+
+
+      # --------------------------
       # Configure GitHub Pages
       # --------------------------
       - name: Setup Pages
