@@ -1,0 +1,93 @@
+name: Deploy production and development
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+  # Allows you to launch it manually from GitHub Actions
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # --------------------------
+      # Get production version
+      # --------------------------
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: production
+
+      # --------------------------
+      # Get development version
+      # --------------------------
+      - name: Checkout develop
+        uses: actions/checkout@v4
+        with:
+          ref: develop
+          path: development
+
+      # --------------------------
+      # Assemble website
+      #
+      # site/
+      #   index.html
+      #   src/
+      #   img/
+      #   dev/
+      #     index.html
+      #     src/
+      #     img/
+      # --------------------------
+      - name: Prepare Pages site
+        run: |
+          mkdir -p site
+          mkdir -p site/dev
+
+          cp production/index.html site/
+          cp -r production/src site/
+          cp -r production/img site/
+
+          cp development/index.html site/dev/
+          cp -r development/src site/dev/
+          cp -r development/img site/dev/
+
+      # --------------------------
+      # Configure GitHub Pages
+      # --------------------------
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # --------------------------
+      # Upload combined site
+      # --------------------------
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+      # --------------------------
+      # Deploy
+      # --------------------------
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
