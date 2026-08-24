@@ -903,8 +903,8 @@ window.HVAC_QUESTIONS = [
         "id": 37,
         "difficulty": 3,
         "theme": "sanitaire",
-        "question_fr": "Dans un logement avec deux chambres, quel devrait-\u00eatre le volume de mon boiler thermodynamique ?",
-        "question_nl": "Hoe groot moet de warmtepompboiler zijn in een woning met twee slaapkamers?",
+        "question_fr": "Dans un logement avec deux chambres et 3 occupants, quel devrait-\u00eatre le volume de mon boiler thermodynamique ?",
+        "question_nl": "Hoe groot moet de warmtepompboiler zijn in een woning met twee slaapkamers en drie inwoners?",
         "explanation_fr": "Ce volume est le volume r\u00e9el du ballon n\u00e9cessaire pour assurer le confort avec des puisages d'eau chaude sanitaire standards.",
         "explanation_nl": "Dit is het werkelijke volume van de boiler dat nodig is om comfort te garanderen bij standaardverbruik van warm water.\n",
         "explanationImage": null,
@@ -912,13 +912,13 @@ window.HVAC_QUESTIONS = [
         "reference_nl": "Dimensioneringsmethode 24 - Sanitairwarmwaterproductie in eengezinswoningen\nhttps://waterdim.buildwise.be/",
         "answers_fr": [
             "120l",
-            "160l",
+            "180l",
             "240l",
             "360l"
         ],
         "answers_nl": [
             "120l",
-            "160l",
+            "180l",
             "240l",
             "360l"
         ],
