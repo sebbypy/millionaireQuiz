@@ -27,6 +27,34 @@
     WakeLock supported: ${"wakeLock" in navigator}
   </pre>`
 );*/
+
+let wakeLock = null;
+
+async function requestWakeLock() {
+  try {
+    wakeLock = await navigator.wakeLock.request("screen");
+
+    console.log("Screen wake lock active");
+
+    wakeLock.addEventListener("release", () => {
+      wakeLock = null;
+      console.log("Screen wake lock released");
+    });
+  } catch (err) {
+    console.error("Wake lock failed:", err);
+  }
+}
+
+// Acquire when the app starts
+requestWakeLock();
+
+// Safari may release it when the app/tab becomes inactive.
+// Acquire it again when the page becomes visible.
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible" && !wakeLock) {
+    requestWakeLock();
+  }
+});
 </script>
   
 </body>
