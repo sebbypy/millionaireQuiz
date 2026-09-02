@@ -30,31 +30,51 @@
 
 let wakeLock = null;
 
+function debug(msg) {
+  let el = document.getElementById("wake-debug");
+
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "wake-debug";
+    Object.assign(el.style, {
+      position: "fixed",
+      bottom: "10px",
+      left: "10px",
+      zIndex: 999999,
+      background: "#000",
+      color: "#0f0",
+      padding: "8px",
+      font: "14px monospace"
+    });
+    document.body.appendChild(el);
+  }
+
+  el.textContent = msg;
+}
+
 async function requestWakeLock() {
   try {
     wakeLock = await navigator.wakeLock.request("screen");
 
-    console.log("Screen wake lock active");
+    debug("Wake lock ACTIVE");
 
     wakeLock.addEventListener("release", () => {
       wakeLock = null;
-      console.log("Screen wake lock released");
+      debug("Wake lock RELEASED");
     });
+
   } catch (err) {
-    console.error("Wake lock failed:", err);
+    debug(`Wake lock FAILED: ${err.name} - ${err.message}`);
   }
 }
 
-// Acquire when the app starts
-requestWakeLock();
-
-// Safari may release it when the app/tab becomes inactive.
-// Acquire it again when the page becomes visible.
 document.addEventListener("visibilitychange", () => {
   if (document.visibilityState === "visible" && !wakeLock) {
     requestWakeLock();
   }
 });
+
+requestWakeLock();
 </script>
   
 </body>
